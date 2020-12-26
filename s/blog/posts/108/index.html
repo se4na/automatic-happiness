@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+
+<html lang='ja'>
+<head>
+<link href='https://michilu.com/blog/posts/108/' rel='canonical'>
+<link href='https://michilu.com/blog/posts/108/' rel='amphtml'>
+<meta content='noindex' name='robots'>
+<meta charset='utf-8'>
+<meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'>
+<meta content='telephone=no' name='format-detection'>
+<script async custom-element='amp-form' src='https://cdn.ampproject.org/v0/amp-form-0.1.js'></script>
+<script async custom-element='amp-analytics' src='https://cdn.ampproject.org/v0/amp-analytics-0.1.js'></script>
+<script async custom-element='amp-list' src='https://cdn.ampproject.org/v0/amp-list-0.1.js'></script>
+<script async custom-template='amp-mustache' src='https://cdn.ampproject.org/v0/amp-mustache-0.2.js'></script>
+<script async custom-element='amp-fit-text' src='https://cdn.ampproject.org/v0/amp-fit-text-0.1.js'></script>
+<script async custom-element='amp-carousel' src='https://cdn.ampproject.org/v0/amp-carousel-0.1.js'></script>
+<script async src='https://cdn.ampproject.org/v0.js'></script>
+<style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+<title>[Django]: Django和訳ドキュメント sync to r5922&middot;ツキヨミチル</title>
+<style amp-custom>
+body,hr{position:relative}figure,p{padding-bottom:2.4rem}*{border:0;font:inherit;margin:0;padding:0;text-rendering:geometricPrecision}code,kbd,pre,samp{border-radius:2px;overflow-y:hidden;overflow-x:auto}html{box-sizing:border-box;font-size:62.5%;height:100%}@media screen and (min-width:960px){html{font-size:78.125%}}body{box-sizing:border-box;color:#3c3c3d;font-size:1.6rem;line-height:2.4rem;min-height:100%}h1,h2,h3,h4,h5,h6{font-weight:500}h1,h2,h3{line-height:4.8rem;padding:.8rem 0 1.6rem}form,h4,h5,h6{padding:2.4rem 0}h1{font-size:3.6rem}h2{font-size:3.2rem}h3{font-size:2.8rem}h4{font-size:2rem}h5{font-size:1.8rem}h6{font-size:1.6rem}.fs-small,code,kbd,pre,samp,small,sub,sup{font-size:1.2rem}code,kbd,pre,samp{background-color:#efeff0;color:#e528b0;font-family:Consolas,Monaco,"Courier New",monospace;line-height:1}code,kbd,samp{padding:.4rem .4rem .2rem}pre{line-height:2.4rem;padding:1.2rem 1rem;margin:0 0 2.4rem}pre code,pre kbd,pre samp{background-color:transparent;border:none;border-radius:0;padding:0}a:link{color:#4076D4}a:visited{color:#9140D4}a:focus,a:hover{color:#2e68cc}a:active{color:#D44076}img,video{max-width:100%;display:table}hr{height:4.8rem;margin-bottom:2.4rem}hr:before{background-color:#cdcdce;content:'';height:1px;position:absolute;top:50%;width:100%}ol,ul{margin-left:2rem;padding:0 0 2.4rem}ol{list-style-type:decimal}blockquote p:last-child,ol ol,ul ul{padding-bottom:0}ul{list-style-type:disc}cite,dt,em,i,q>q{font-style:italic}dd{padding-left:2rem}blockquote{margin:0 0 2.4rem 1.2rem;border-left:.3rem solid #cdcdce;padding:2.4rem 1.2rem}figure{margin:0 auto}figure img{display:table;margin:0 auto}small,sub,sup{line-height:1}caption,figcaption{font-size:1.2rem;font-style:italic;text-align:center}.ta-left,table th{text-align:left}b,strong,var{font-weight:700}q:after,q:before{content:"'"}.checkbox:before,.checkbox__label:after,.radio:before,.radio__label:after{content:'';margin-top:-10px;position:absolute}abbr,dfn{border-bottom:.1rem dotted #5a5a5b;cursor:default}table{border-radius:2px;border-collapse:separate;border-spacing:0;margin-bottom:2.4rem;width:100%}table th{font-weight:500}table td,table th{padding:0 .6rem}label{color:#7d7d7e}button,input,label,select,textarea{display:block;resize:none;-webkit-appearance:none;-moz-appearance:none}input:-webkit-autofill,select:-webkit-autofill,textarea:-webkit-autofill{color:#3c3c3d;-webkit-text-fill-color:#3c3c3d;-webkit-box-shadow:0 0 0 1000px #fff inset}.checkbox [disabled],.checkbox [disabled]+*,.disabled,.radio [disabled],.radio [disabled]+*,.select [disabled],.select [disabled]+*,.textfield [disabled],.textfield [disabled]+*,[type=button][disabled],[type=submit][disabled],button[disabled]{cursor:default;opacity:.5;pointer-events:none}.smooth{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.f-none{float:none}.f-left{float:left}.f-right{float:right}.clearfix{clear:both;overflow:hidden}.ta-center{text-align:center}.ta-right{text-align:right}.fs-base{font-size:1.6rem}.fs-large{font-size:2rem}.fw-light{font-weight:300}.fw-normal{font-weight:400}.fw-semibold{font-weight:600}.fw-bold{font-weight:700}.btn,[type=button],[type=submit],button{background-color:#E83FB8;border:none;border-radius:.2rem;box-sizing:border-box;color:#fff;cursor:pointer;display:inline-block;height:4.8rem;line-height:4.8rem;max-width:100%;-webkit-transition-property:background-color;transition-property:background-color;-webkit-transition-duration:.2s;transition-duration:.2s;margin:0 auto;padding:0 3rem;text-align:center;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;width:auto}.btn:link,.btn:visited,[type=button]:link,[type=button]:visited,[type=submit]:link,[type=submit]:visited,button:link,button:visited{color:#fff;text-decoration:none}.btn:focus,.btn:hover,[type=button]:focus,[type=button]:hover,[type=submit]:focus,[type=submit]:hover,button:focus,button:hover{background-color:#e528b0;color:#fff}.btn:focus,[type=button]:focus,[type=submit]:focus,button:focus{outline:#7d7d7e dotted .1rem}.btn:active,[type=button]:active,[type=submit]:active,button:active{background-color:#E83FB8}.btn--secondary{background-color:#efeff0;color:#3c3c3d}.btn--secondary:link,.btn--secondary:visited{color:#3c3c3d}.btn--secondary:focus,.btn--secondary:hover{background-color:#dededf;color:#3c3c3d}.btn--link,.btn--link:active{background-color:transparent}.btn--secondary:active{color:#7d7d7e}.btn--link,.btn--link:link{color:#4076D4}.btn--link{text-decoration:underline}.btn--link:visited{color:#9140D4}.btn--link:focus,.btn--link:hover{color:#2e68cc;background-color:transparent}.btn--link:active{color:#D44076}.checkbox,.radio{cursor:pointer;display:inline-block;margin-bottom:2.4rem;padding:0 1rem 0 2.25rem;position:relative}.checkbox:before,.radio:before{background-color:#fff;border:2px solid #7d7d7e;height:16px;left:0;top:50%;width:16px}.checkbox input[type=checkbox],.radio input[type=radio]{opacity:0;position:absolute;z-index:-1}.checkbox__label,.radio__label{color:#7d7d7e;font-size:1.2rem;line-height:1}.checkbox__label:after,.radio__label:after{border:1px solid transparent;height:18px;left:0;top:50%;width:18px}.checkbox input[type=checkbox]:focus+.checkbox__label:after,.radio input[type=radio]:focus+.radio__label:after{border-color:#E83FB8;box-shadow:0 1px 2px 1px #dededf inset}.select,.textfield{background-color:#fff;display:block;margin-top:-2px;margin-bottom:2.4rem;position:relative}.select__label,.textfield__label{background-color:#fff;font-size:1.2rem;position:absolute;left:1px;line-height:1;padding:.5rem;right:1px;top:1px}.select select,.textfield input,.textfield textarea{background-color:transparent;border:1px solid #7d7d7e;border-radius:2px;box-sizing:border-box;padding:1.8rem .5rem .6rem;position:relative;width:100%}.select select:focus,.textfield :focus{border-color:#E83FB8;box-shadow:0 1px 2px 0 #dededf inset;outline:0}.radio:before,.radio__label:after{border-radius:20px}.radio input[type=radio]:checked+.radio__label:before{background-color:#e528b0;border-radius:20px;content:'';height:10px;left:5px;margin-top:-5px;position:absolute;top:50%;width:10px}.checkbox:before,.checkbox__label:after{border-radius:2px}.checkbox input[type=checkbox]:checked+.checkbox__label:after{color:#e528b0;content:'\2714';font-size:14px;line-height:18px;text-align:center}.select:after{content:'';border-left:.6rem solid transparent;border-right:.6rem solid transparent;border-top:.6rem solid #7d7d7e;height:0;margin-top:-.5rem;position:absolute;right:1rem;bottom:1.3rem;width:0}.select select{z-index:100}.select option[disabled]{background-color:#efeff0;color:#5a5a5b}.grid{display:-ms-flexbox;display:-webkit-box;display:flex}.grid>*{-ms-flex:1;flex:1;-webkit-box-flex:4;-ms-flex-positive:4;flex-grow:4;padding-left:1rem;padding-right:1rem}.grid>:first-child:not(:last-child){margin-left:-1rem}.grid>:last-child:not(:first-child){margin-right:-1rem}.grid>.column--light{-webkit-box-flex:2;-ms-flex-positive:2;flex-grow:2}.grid>.column--heavy{-webkit-box-flex:8;-ms-flex-positive:8;flex-grow:8}@media (max-width:599px){.grid--medium{display:block}.grid--medium>*{padding-left:0;padding-right:0}.grid--medium>:first-child{margin-left:0}.grid--medium>:last-child{margin-right:0}}@media (max-width:959px){.grid--large{display:block}.grid--large>*{padding-left:0;padding-right:0}.grid--large>:first-child{margin-left:0}.grid--large>:last-child{margin-right:0}}.wrapper{margin:0 auto;max-width:960px;padding:4.8rem 0}.wrapper--large{max-width:1200px;padding:7.2rem 0}.wrapper--small{max-width:640px;padding:2.4rem 0}
+.btn--primary{background-color:#3FE8B8}.btn--primary:focus,.btn--primary:hover{background-color:#28e5b0}.btn--primary:active{color:#3FE8B8}.btn--success{background-color:#3FE8B8}.btn--success:focus,.btn--success:hover{background-color:#28e5b0}.btn--success:active{color:#3FE8B8}.btn--info{background-color:#3FB8E8}.btn--info:focus,.btn--info:hover{background-color:#28b0e5}.btn--info:active{color:#3FB8E8}.btn--warning{background-color:#E8B83F}.btn--warning:focus,.btn--warning:hover{background-color:#e5b028}.btn--warning:active{color:#E8B83F}.btn--danger{background-color:#E8633F}.btn--danger:focus,.btn--danger:hover{background-color:#e55028}.btn--danger:active{color:#E8633F}@media only screen and (orientation: portrait){.gsc-results-wrapper-overlay{left:3%;top:2%;width:94%;height:96%;padding:30px 15px 15px}}#navbar-top{position:fixed}#navbar-bottom{max-width:800px;bottom:0}#navbar-top,#navbar-bottom{width:100%;z-index:2;transition-delay:0s,0s;transition-duration:.2s,.2s;transition-timing-function:ease,ease}@media screen and (orientation: landscape){#navbar-top{width:inherit;left:inherit;right:0}}#share-icon{width:100%;margin:0;background:#fff;box-shadow:0 0 1px #767676}#share-icon>a{padding-top:0;padding-bottom:10px;color:#999;text-decoration:none}#share-icon>a:first-child{box-shadow:inset -1.5px 0 0px #f3f3f3;border-radius:0}@media screen and (orientation: landscape){#share-icon>a:first-child{min-width:calc(100vw/6)}}#share-icon>a [class^="icon-"],#share-icon>a [class*=" icon-"]{background-color:#fff}#share-icon>a.share-facebook:hover,#share-icon>a.share-facebook:active,#share-icon>a.share-facebook:focus{color:#3b5998}#share-icon>a.share-twitter:hover,#share-icon>a.share-twitter:active,#share-icon>a.share-twitter:focus{color:#68aade}#share-icon>a.share-line:hover,#share-icon>a.share-line:active,#share-icon>a.share-line:focus{color:#00cf00}#share-icon>a.share-hatena:hover,#share-icon>a.share-hatena:active,#share-icon>a.share-hatena:focus{color:#008fde}#share-icon>a.share-pinterest:hover,#share-icon>a.share-pinterest:active,#share-icon>a.share-pinterest:focus{color:#e60023}body{font-family:Cambria,"Times New Roman",Times,"游明朝体","Yu Mincho",YuMincho,"Hiragino Mincho ProN",serif}header{margin:0;border:0;top:0;left:0;background-color:#4f8ef6;color:#fff}header:nth-of-type(1) amp-img:nth-of-type(1){vertical-align:text-top}header .btn{color:#fff;text-decoration:none;opacity:inherit}header .btn:link,header .btn:visited{color:#fff}@media only screen and (max-width: 693px) and (orientation: portrait){.--first-view{min-height:100vh}}h1:nth-of-type(1){margin-top:0}img{max-width:100%}amp-img[layout='fill']>img[src]{object-fit:cover}amp-img[layout='responsive']>img[src]{object-fit:scale-down}hr{height:0;margin:0;padding:0;border:0;border-top:1px solid rgba(0,0,0,0.1);border-bottom:1px solid #fff}a{color:rgba(0,0,0,0.8)}a:active,a:hover,a:visited{color:rgba(0,0,0,0.8);text-decoration:none}article .--pre-bar-spacer{height:24px}article header .h1,article header .h2,article header .h3,article header .h4,article header .h5,article header .h6,article header h1,article header h2,article header h3,article header h4,article header h5,article header h6,article section .h1,article section .h2,article section .h3,article section .h4,article section .h5,article section .h6,article section h1,article section h2,article section h3,article section h4,article section h5,article section h6{letter-spacing:-0.02em;font-weight:700;margin-left:-1.8px;line-height:1.15;margin-top:40px;margin-bottom:4px}article header .h1,article header .h2,article header h1,article header h2,article section .h1,article section .h2,article section h1,article section h2{font-size:28px}article header .h2,article header h2,article section .h2,article section h2{font-weight:700;margin-top:16px;margin-bottom:6px}article header p,article section p{margin-bottom:30px}article header li,article section li{margin-bottom:15px}article header p,article header li,article section p,article section li{font-size:18px;letter-spacing:.005rem;line-height:1.45;font-weight:400}article .share--btn{padding:0 10px}article .pocket-btn{display:inline-block;height:20px;vertical-align:middle;margin-top:-2px}article amp-ad[type='adsense']{margin-bottom:1rem}article.has-ads .grid>amp-ad{padding:0}@media screen and (orientation: landscape){article.has-ads .grid>amp-ad{max-height:calc(100vh - 48px - 50px)}}@media only screen and (max-width: 693px){article.has-ads .wrapper:nth-child(4) .--pc{display:none}}@media only screen and (min-width: 694px){article.has-ads{display:-webkit-flex;display:-moz-flex;display:-ms-flex;display:-o-flex;display:flex;-webkit-flex-wrap:wrap;-moz-flex-wrap:wrap;-o-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-flex-direction:row-reverse;-moz-flex-direction:row-reverse;-o-flex-direction:row-reverse;-ms-flex-direction:row-reverse;flex-direction:row-reverse;-webkit-justify-content:flex-start;-moz-justify-content:flex-start;-o-justify-content:flex-start;-ms-justify-content:flex-start;justify-content:flex-start}article.has-ads .wrapper:nth-child(1),article.has-ads .wrapper:nth-child(3){width:calc(100% - 336px - 2.4rem);margin:0;padding:2.4rem;padding-right:0}article.has-ads .wrapper:nth-child(1){order:-2}article.has-ads .wrapper:nth-child(2){display:none}article.has-ads .wrapper:nth-child(4){order:-1;width:336px;height:0;padding:0;margin-top:48px}article.has-ads .wrapper:nth-child(4) .fs-small{margin-left:.7rem}article.has-ads .wrapper:nth-child(4) .--pc .fs-small{margin-top:calc(100vh - 30px - 48px - 90px)}article.has-ads .wrapper:nth-child(4) .--pc.is-amp .fs-small{margin-top:calc(100vh - 30px - 48px)}}@media only screen and (min-width: 694px) and (orientation: landscape){article.has-ads .wrapper:nth-child(4) .--pc .fs-small{margin-top:calc(100vh - 30px - 90px)}article.has-ads .wrapper:nth-child(4) .--pc.is-amp .fs-small{margin-top:calc(100vh - 30px)}}@media only screen and (min-width: 694px){article.has-ads .wrapper:nth-child(4) amp-ad[type='adsense']{margin-bottom:0}}.share-icon [class^="icon-"],.share-icon [class*=" icon-"]{color:#999;text-decoration:underline;background-color:#fff}.share-icon .icon-share-hatena{color:#008fde}.share-icon .icon-share-hatena:hover,.share-icon .icon-share-hatena:active,.share-icon .icon-share-hatena:focus{color:#008fde}.share-icon .icon-share-pocket{color:#ff004c}.share-icon .icon-share-pocket:hover,.share-icon .icon-share-pocket:active,.share-icon .icon-share-pocket:focus{color:#ff004c}@media only screen and (orientation: portrait){article header .h1,article header .h2,article header .h3,article header .h4,article header .h5,article header .h6,article header h1,article header h2,article header h3,article header h4,article header h5,article header h6,article section .h1,article section .h2,article section .h3,article section .h4,article section .h5,article section .h6,article section h1,article section h2,article section h3,article section h4,article section h5,article section h6{line-height:1.2}article header .h1,article header .h2,article header h1,article header h2,article section .h1,article section .h2,article section h1,article section h2{font-size:26px}article header p,article header li,article section p,article section li{font-size:20px;line-height:1.6}}.embed-responsive-3by1{padding-bottom:30%}.embed-responsive-3by1 .embed-responsive-item{height:auto;margin-top:-16.66666%}.text-muted{color:#777}amp-list>[overflow]{position:absolute;bottom:0}amp-list article{padding-top:.7rem}amp-list article a{text-decoration:none}amp-list article a:link,amp-list article a:visited{color:inherit}amp-list article a>p:nth-child(1){margin-left:1vw;margin-right:2vw}amp-list article a>p:nth-of-type(2){overflow:hidden}amp-list figure{position:relative;width:8em;height:8em;padding-bottom:initial;margin-right:1%}amp-list amp-img{max-width:100%}amp-list amp-img[layout]{margin-start:initial;-webkit-margin-start:initial}amp-list p{margin-left:4vw;margin-right:4vw;font-family:"Helvetica Neue",Helvetica,Arial,"游ゴシック体","Yu Gothic",YuGothic,"Hiragino Kaku Gothic ProN",Meiryo,sans-serif}.explore{width:100vw;top:0;bottom:0;left:-100vw;z-index:3;transition:left ease-in-out .2s}.explore>div{min-height:100vh;position:relative;z-index:2;background-color:#fefefe}.explore amp-carousel{margin:0 auto;max-width:calc((100vh - 48px - 1em)*4/3);max-height:calc(100vh - 48px - 1em)}@media only screen and (min-aspect-ratio: 3 / 4) and (min-height: 768px){.explore amp-carousel{max-width:calc((100vh - 48px - 1em)*4/3/2);max-height:calc((100vh - 48px - 1em)/2)}}.explore amp-carousel amp-fit-text{position:absolute;margin:auto 0 0;max-height:calc(100%*2/3);color:#fefefe;font-weight:600;text-shadow:.5px 1.5px rgba(0,0,0,0.15);z-index:0}.explore amp-carousel amp-fit-text>div:first-of-type{background-image:url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwLjAiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMDAwMDAiIHN0b3Atb3BhY2l0eT0iMC41NCIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');background-size:100%;background-image:-webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(0,0,0,0)),color-stop(100%, rgba(0,0,0,0.54)));background-image:-moz-linear-gradient(rgba(0,0,0,0) 0%,rgba(0,0,0,0.54) 100%);background-image:-webkit-linear-gradient(rgba(0,0,0,0) 0%,rgba(0,0,0,0.54) 100%);background-image:linear-gradient(rgba(0,0,0,0) 0%,rgba(0,0,0,0.54) 100%);backdrop-filter:blur(1px)}.explore .next{min-width:100vw;max-width:none;overflow-x:auto}.explore .next amp-list{min-height:0}.explore .next amp-list>[role='list']{position:relative;height:auto;width:auto;min-width:100vw;max-width:none;display:-webkit-flex;display:-moz-flex;display:-ms-flex;display:-o-flex;display:flex;flex-wrap:wrap;-webkit-justify-content:space-between;-moz-justify-content:space-between;-o-justify-content:space-between;-ms-justify-content:space-between;justify-content:space-between}.explore .next amp-list>[role='list']>a[role='listitem']{color:rgba(255,255,255,0.95);margin-top:1px;position:relative;z-index:0;overflow:hidden;-webkit-border-radius:2px;-moz-border-radius:2px;-o-border-radius:2px;-ms-border-radius:2px;border-radius:2px;width:calc((100vw - 2px)/3);height:calc((100vh - 2px)/3)}.explore .next amp-list>[role='list']>a[role='listitem']:active,.explore .next amp-list>[role='list']>a[role='listitem']:hover,.explore .next amp-list>[role='list']>a[role='listitem']:visited{color:rgba(255,255,255,0.95);text-decoration:none}@media only screen and (min-aspect-ratio: 3 / 4){.explore .next amp-list>[role='list']>a[role='listitem']{width:calc((100vw - 2px)/3);height:calc((100vh - 1px)/2)}}.explore .next amp-list>[role='list']>a[role='listitem']:nth-of-type(12n+6),.explore .next amp-list>[role='list']>a[role='listitem']:nth-of-type(12n+9),.explore .next amp-list>[role='list']>a[role='listitem']:nth-of-type(12n+11){margin-top:calc(-1*(100vh - 2px)/3)}@media only screen and (min-aspect-ratio: 3 / 4){.explore .next amp-list>[role='list']>a[role='listitem']:nth-of-type(12n+6),.explore .next amp-list>[role='list']>a[role='listitem']:nth-of-type(12n+9),.explore .next amp-list>[role='list']>a[role='listitem']:nth-of-type(12n+11){margin-top:calc(-1*(100vh - 1px)/2)}}.explore .next amp-list>[role='list']>a[role='listitem']:nth-of-type(12n+5),.explore .next amp-list>[role='list']>a[role='listitem']:nth-of-type(12n+11){width:calc((100vw - 2px)/3*2 + 1px);height:calc((100vh - 2px)/3*2 + 1px)}@media only screen and (min-aspect-ratio: 3 / 4){.explore .next amp-list>[role='list']>a[role='listitem']:nth-of-type(12n+5),.explore .next amp-list>[role='list']>a[role='listitem']:nth-of-type(12n+11){width:calc((100vw - 2px)/3*2 + 1px);height:100vh}}.explore .next amp-list>[role='list']>a[role='listitem']>amp-fit-text{position:absolute;bottom:0;width:100%;max-height:100%;color:#fefefe;font-family:"Helvetica Neue",Helvetica,Arial,"游ゴシック体","Yu Gothic",YuGothic,"Hiragino Kaku Gothic ProN",Meiryo,sans-serif;font-weight:600;text-shadow:.5px 1.5px rgba(0,0,0,0.15)}.explore .next amp-list>[role='list']>a[role='listitem']>amp-fit-text>div:first-of-type{background-image:url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwLjAiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMDAwMDAiIHN0b3Atb3BhY2l0eT0iMC41NCIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');background-size:100%;background-image:-webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(0,0,0,0)),color-stop(100%, rgba(0,0,0,0.54)));background-image:-moz-linear-gradient(rgba(0,0,0,0) 0%,rgba(0,0,0,0.54) 100%);background-image:-webkit-linear-gradient(rgba(0,0,0,0) 0%,rgba(0,0,0,0.54) 100%);background-image:linear-gradient(rgba(0,0,0,0) 0%,rgba(0,0,0,0.54) 100%);backdrop-filter:blur(1px)}.explore .next amp-img{background-color:#999}.explore header figure{position:relative;width:48px;height:48px;margin-left:-1rem;padding-bottom:0}.explore amp-img{max-width:100%}.explore amp-img[layout]{margin-start:initial;-webkit-margin-start:initial}.explore amp-img,.explore amp-video,.explore amp-youtube{margin-start:initial;-webkit-margin-start:initial}.explore p{margin-left:4vw;margin-right:4vw}.footer{display:-webkit-flex;display:-moz-flex;display:-ms-flex;display:-o-flex;display:flex;-webkit-justify-content:space-around;-moz-justify-content:space-around;-o-justify-content:space-around;-ms-justify-content:space-around;justify-content:space-around}.footer a{font-size:1.3rem;color:rgba(0,0,0,0.67);text-decoration:none}.footer a:active,.footer a:focus,.footer a:hover{text-decoration:underline}#copyright{color:rgba(0,0,0,0.15);line-height:1.2em;height:1.2em;padding-bottom:.4em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;display:-webkit-flex;display:-moz-flex;display:-ms-flex;display:-o-flex;display:flex;-webkit-justify-content:center;-moz-justify-content:center;-o-justify-content:center;-ms-justify-content:center;justify-content:center}#copyright .rtl{direction:rtl;unicode-bidi:bidi-override;overflow:hidden;text-overflow:ellipsis}.bar-bottom{position:absolute;max-width:100vw;min-width:100vw;z-index:-1}html{background-color:#fff}.bar-bottom,.footer-ads-spacer{height:50px}@media only screen and (min-width: 694px){.bar-bottom,.footer-ads-spacer{height:90px}}.footer-chat-spacer{height:50px}@media screen{body,div,article,p{margin:0;padding:0}body{-webkit-text-size-adjust:100%;background-color:#e6e6e6;color:#1b1b1b;-webkit-font-smoothing:subpixel-antialiased;font-size:19px;line-height:30px;text-rendering:optimizeLegibility}body>article{padding-left:4vw;padding-right:4vw}body amp-img,body amp-video,body amp-youtube,body amp-iframe{margin-start:-4vw;-webkit-margin-start:-4vw}}@media only screen and (min-width: 694px){body>article{padding-left:0;padding-right:0}body amp-img,body amp-video,body amp-youtube,body amp-iframe{margin-start:0;-webkit-margin-start:0}}@media screen{body>header,body>article,body>footer{max-width:800px;margin-left:auto;margin-right:auto;text-align:start;word-wrap:break-word}body>article,body>footer{position:relative;background-color:#fbfbfb}body div,body p,body a{max-width:100%}body amp-img{width:100vw}body amp-img img{min-width:100vw}body amp-video,body amp-youtube,body amp-iframe{width:100vw}body video{width:100vw;height:auto;position:relative}}@media only screen and (min-width: 694px){body{margin:0 auto}body amp-img,body amp-video,body amp-youtube,body amp-iframe{width:initial}body img{min-width:initial}body>article,body>footer{box-shadow:0 12px 12px 3px rgba(0,0,0,0.2)}}@font-face{font-family:'siphandon';src:url("/fonts/siphandon.ttf?9zhtrx") format("truetype"),url("/fonts/siphandon.woff?9zhtrx") format("woff"),url("/fonts/siphandon.svg?9zhtrx#siphandon") format("svg");font-weight:normal;font-style:normal}.icon-explore,.icon-map,.icon-notifications,.icon-search{font-family:'siphandon';speak:none;font-style:normal;font-weight:normal;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.icon-explore:before{content:"🌍"}.icon-map:before{content:"🗺"}.icon-notifications:before{content:"🔔"}.icon-search:before{content:"🔍"}/*!
+ ** @package IcoFont
+ ** @version 1.0.1
+ ** @author IcoFont https://icofont.com
+ ** @copyright Copyright (c) 2015 - 2020 IcoFont
+ ** @license - https://icofont.com/license/ */@font-face{font-family:"IcoFont";font-weight:normal;font-style:"Regular";src:url("/fonts/20201223.woff2") format("woff2"),url("/fonts/20201223.woff") format("woff")}[class^="icofont-"],[class*=" icofont-"]{font-family:"IcoFont";speak:none;font-style:normal;font-weight:normal;font-variant:normal;text-transform:none;white-space:nowrap;word-wrap:normal;direction:ltr;line-height:1;-webkit-font-feature-settings:"liga";-webkit-font-smoothing:antialiased}.icofont-pinterest:before{content:""}.icofont-xs{font-size:.5em}.icofont-sm{font-size:.75em}.icofont-md{font-size:1.25em}.icofont-lg{font-size:1.5em}.icofont-1x{font-size:1em}.icofont-2x{font-size:2em}.icofont-3x{font-size:3em}.icofont-4x{font-size:4em}.icofont-5x{font-size:5em}.icofont-6x{font-size:6em}.icofont-7x{font-size:7em}.icofont-8x{font-size:8em}.icofont-9x{font-size:9em}.icofont-10x{font-size:10em}.icofont-fw{text-align:center;width:1.25em}.icofont-ul{list-style-type:none;padding-left:0;margin-left:0}.icofont-ul>li{position:relative;line-height:2em}.icofont-ul>li .icofont{display:inline-block;vertical-align:middle}.icofont-border{border:solid .08em #f1f1f1;border-radius:.1em;padding:.2em .25em .15em}.icofont-pull-left{float:left}.icofont-pull-right{float:right}.icofont.icofont-pull-left{margin-right:.3em}.icofont.icofont-pull-right{margin-left:.3em}.icofont-spin{-webkit-animation:icofont-spin 2s infinite linear;animation:icofont-spin 2s infinite linear;display:inline-block}.icofont-pulse{-webkit-animation:icofont-spin 1s infinite steps(8);animation:icofont-spin 1s infinite steps(8);display:inline-block}@-webkit-keyframes icofont-spin{0%{-webkit-transform:rotate(0deg);transform:rotate(0deg)}100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}@keyframes icofont-spin{0%{-webkit-transform:rotate(0deg);transform:rotate(0deg)}100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}.icofont-rotate-90{-ms-filter:"progid:DXImageTransform.Microsoft.BasicImage(rotation=1)";-webkit-transform:rotate(90deg);transform:rotate(90deg)}.icofont-rotate-180{-ms-filter:"progid:DXImageTransform.Microsoft.BasicImage(rotation=2)";-webkit-transform:rotate(180deg);transform:rotate(180deg)}.icofont-rotate-270{-ms-filter:"progid:DXImageTransform.Microsoft.BasicImage(rotation=3)";-webkit-transform:rotate(270deg);transform:rotate(270deg)}.icofont-flip-horizontal{-ms-filter:"progid:DXImageTransform.Microsoft.BasicImage(rotation=0, mirror=1)";-webkit-transform:scale(-1, 1);transform:scale(-1, 1)}.icofont-flip-vertical{-ms-filter:"progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1)";-webkit-transform:scale(1, -1);transform:scale(1, -1)}.icofont-flip-horizontal.icofont-flip-vertical{-ms-filter:"progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1)";-webkit-transform:scale(-1, -1);transform:scale(-1, -1)}:root .icofont-rotate-90,:root .icofont-rotate-180,:root .icofont-rotate-270,:root .icofont-flip-horizontal,:root .icofont-flip-vertical{-webkit-filter:none;filter:none;display:inline-block}.icofont-inverse{color:#fff}.sr-only{border:0;clip:rect(0, 0, 0, 0);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px}.sr-only-focusable:active,.sr-only-focusable:focus{clip:auto;height:auto;margin:0;overflow:visible;position:static;width:auto}@font-face{font-family:'style';src:url("/fonts/style.ttf?225wom") format("truetype"),url("/fonts/style.woff?225wom") format("woff"),url("/fonts/style.svg?225wom#style") format("svg");font-weight:normal;font-style:normal}.icon-share-google,.icon-feedly,.icon-share-pocket,.icon-share-line,.icon-share-hatena,.icon-share-facebook,.icon-share-twitter,.icon-notifications,.icon-search{font-family:'style';speak:none;font-style:normal;font-weight:normal;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.icon-share-google:before{content:"🔗"}.icon-feedly:before{content:"🔥"}.icon-share-pocket:before{content:"📑"}.icon-share-line:before{content:"💬"}.icon-share-hatena:before{content:"❔"}.icon-share-facebook:before{content:"🗣"}.icon-share-twitter:before{content:"🐦"}.icon-notifications:before{content:"🔔"}.icon-search:before{content:"🔍"}
+
+
+article[data-src='https://michilu.com/blog/posts/108/']{display:none}
+</style>
+<style>
+
+</style>
+<script type='application/ld+json'>{"publisher": {"logo": {"url": "https://michilu.com/img/apple-touch-icon-180x.png", "width": 60, "@type": "ImageObject", "height": 60}, "@type": "Organization", "name": "Site Author:"}, "author": {"@type": "Person", "name": "Site Author:"}, "headline": "[Django]: Django\u548c\u8a33\u30c9\u30ad\u30e5\u30e1\u30f3\u30c8 sync to r5922&amp;mdash;", "image": {"url": "https://michilu.com/img/apple-touch-icon-180x.png", "width": 700, "@type": "ImageObject", "height": 470}, "datePublished": "2007-08-27T12:38:19+09:00", "@type": "BlogPosting", "mainEntityOfPage": "https://michilu.com/blog/posts/108/", "@context": "http://schema.org", "dateModified": "2007-08-27T12:38:19+09:00"}</script>
+
+<meta content='🌝ﾂｷﾖﾐﾁﾙ' name='apple-mobile-web-app-title'>
+
+
+<meta content='ツキヨミチル' itemprop='name'>
+<meta content='ツキヨミチル' property='og:site_name'>
+
+<meta content='article' property='og:type'>
+<meta content='[Django]: Django和訳ドキュメント sync to r5922' property='og:title'>
+
+<meta content='https://michilu.com/blog/posts/108/' property='og:url'>
+<meta content="[Django]: Django和訳ドキュメント sync to r5922" property='og:description'>
+
+<meta content='https://michilu.com/img/apple-touch-icon-200x.png' property='og:image'>
+
+
+
+<link href='/manifest.json' rel='manifest'>
+
+<link href='/img/apple-touch-icon-180x.png' rel='apple-touch-icon' sizes='180x180'>
+<link href='/img/apple-touch-icon-180x.png' rel='apple-touch-icon-precomposed'>
+<link href='/img/apple-touch-icon-180x.png' rel='shortcut icon'>
+<link href='/img/apple-touch-icon-192x.png' rel='icon' sizes='192x192'>
+</head>
+<body>
+<amp-analytics type='googleanalytics'>
+<script type='application/json'>{"requests": {"scrollEvent": "${host}/debug/collect?${basePrefix}&t=event\n&ec=${eventCategory}&ea=${eventAction}&el=${eventLabel}&ev=${eventValue}\n&ni=${ni}\n${baseSuffix}", "scrollTiming": "${host}/debug/collect?${basePrefix}&t=timing\n&utc=${timingCategory}&utv=${timingVar}&utt=${timingValue}&utl=${timingLabel}\n${baseSuffix}"}, "vars": {"account": null}, "triggers": {"trackPageview": {"on": "visible", "request": "pageview"}, "scrollPercentage": {"on": "scroll", "request": "scrollEvent", "vars": {"ni": true, "account": null, "eventLabel": "${verticalScrollBoundary}%", "eventValue": 1, "eventCategory": "Scroll Depth", "eventAction": "Percentage"}, "scrollSpec": {"verticalBoundaries": [0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100]}}, "scrollPixel": {"on": "scroll", "request": "scrollEvent", "vars": {"ni": true, "account": null, "eventLabel": "${scrollTop}", "eventValue": 1, "eventCategory": "Scroll Depth", "eventAction": "Pixel Depth"}, "scrollSpec": {"verticalBoundaries": [0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100]}}, "scrollTiming": {"on": "scroll", "request": "scrollTiming", "vars": {"timingCategory": "Scroll Depth", "timingValue": "${totalEngagedTime}000", "timingLabel": "${verticalScrollBoundary}%", "timingVar": "Percentage", "account": null}, "scrollSpec": {"verticalBoundaries": [0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100]}}}}</script>
+</amp-analytics>
+<header class='grid' id='navbar-top'>
+<div class='column--heavy grid' id='share-icon'>
+<a class='btn btn--link visible-xs-inline-block' href='/'>
+<span aria-hidden='true' class='icon-map'></span>
+</a>
+<a class='btn btn--link share-line visible-xs-inline-block' href='https://line.me/R/msg/text/?[Django]: Django和訳ドキュメント sync to r5922 https://michilu.com/blog/posts/108/' target='_blank' title='LINEで送る'>
+<span aria-hidden='true' class='icon-share-line'></span>
+</a>
+<a class='btn btn--link share-hatena' href='http://b.hatena.ne.jp/add?mode=confirm&amp;url=https://michilu.com/blog/posts/108/' rel='noopener' target='_blank' title='はてブに追加する'>
+<span aria-hidden='true' class='icon-share-hatena'></span>
+</a>
+<a class='btn btn--link share-twitter' href='https://twitter.com/share?u=https://michilu.com/blog/posts/108/&amp;text=[Django]: Django和訳ドキュメント sync to r5922' rel='noopener' target='_blank' title='Twitterにツイートする'>
+<span aria-hidden='true' class='icon-share-twitter'></span>
+</a>
+<a class='btn btn--link share-facebook' href='https://www.facebook.com/share.php?u=https://michilu.com/blog/posts/108/' rel='noopener' target='_blank' title='Facebookでシェアする'>
+<span aria-hidden='true' class='icon-share-facebook'></span>
+</a>
+<a class='btn btn--link share-pinterest' href='https://www.pinterest.com/pin/create/button/?url=https://michilu.com/blog/posts/108/' rel='noopener' target='_blank' title='Pinterestに保存する'>
+<span aria-hidden='true' class='icofont-pinterest'></span>
+</a>
+</div>
+</header>
+
+<article class=''>
+
+<div class='wrapper wrapper--small'>
+
+<div class='--pre-bar-spacer grid'>
+<div class='btn btn--link disabled'>&#8203;</div>
+</div>
+<section>
+
+<h1>[Django]: Django和訳ドキュメント sync to r5922</h1>
+
+
+<div class="section" id="django-django-sync-to-r5922">
+<h1>[Django]: Django和訳ドキュメント sync to r5922</h1>
+<p><a class="reference external" href="http://michilu.com/django/doc-ja/index/">Django オンラインドキュメント和訳</a> 更新。 Revision 5881:5922 (2007/08/20). 「mod_python PythonPath」「./manage.py testserver」「testing」についての記述が更新されています。</p>
+<ul class="simple">
+<li><a class="reference external" href="http://michilu.com/django/doc-ja/modpython/">mod_python で Django を動かす</a></li>
+<li>django-admin.py と manage.py - 利用可能なアクション - <a class="reference external" href="http://michilu.com/django/doc-ja/django-admin/#testserver-fixture-fixture">testserver</a></li>
+<li><a class="reference external" href="http://michilu.com/django/doc-ja/testing/">Djangoアプリケーションのテスト</a></li>
+</ul>
+<p>以下、 主な変更です。</p>
+<div class="section" id="id2">
+<h2><a class="reference external" href="http://michilu.com/django/doc-ja/modpython/">mod_python で Django を動かす</a></h2>
+<p><tt class="docutils literal">PythonPath</tt> には、アプリケーションから import したいモジュールの各々の
+親ディレクトリを入れなければなりません。また、 <tt class="docutils literal">DJANGO_SETTINGS_MODULE</tt>
+の親ディレクトリも入れねばなりません。対話シェルを使う場合に Python パスを
+設定するのと同じです。何かモジュールを import する際には、Python は必ず
+<tt class="docutils literal">sys.path</tt> の各ディレクトリを順に調べ、その下から該当モジュールを import
+しようと試み、 import に成功するまで探索を続けます。</p>
+<p>分かりやすくするために例を挙げましょう。アプリケーションを
+<tt class="docutils literal"><span class="pre">/usr/local/django-apps/</span></tt> の下に配置しているとします (例えば、
+<tt class="docutils literal"><span class="pre">/usr/local/django-apps/weblog/</span></tt> のようにです) 。そして、 <tt class="docutils literal">mysite</tt> プロ
+ジェクトが <tt class="docutils literal">/var/www/</tt> 下にあるとしましょう。上の例のように
+<tt class="docutils literal">DJANGO_SETTINGS_MODULE</tt> を設定している場合には、 <tt class="docutils literal">PythonPath</tt> を以下の
+ように書かねばなりません:</p>
+<pre class="literal-block">
+PythonPath &quot;['/usr/local/django-apps/', '/var/www'] + sys.path&quot;
+</pre>
+<p>これで、 <tt class="docutils literal">import weblog</tt> や <tt class="docutils literal">import mysite.settings</tt> が正しく動作します。
+コード中で <tt class="docutils literal">import blogroll</tt> していて、 <tt class="docutils literal">blogroll</tt> が <tt class="docutils literal">weblog/</tt> ディ
+レクトリの下にあるようなら、 <tt class="docutils literal"><span class="pre">/usr/local/django-apps/weblog/</span></tt> も
+<tt class="docutils literal">PythonPath</tt> に加えねばなりません。 import したいモジュールの
+<strong>親ディレクトリ</strong> を Python パスに入れねばならないことに注意してください。</p>
+</div>
+<div class="section" id="testserver-fixture-fixture">
+<h2><a class="reference external" href="http://michilu.com/django/doc-ja/django-admin/#testserver-fixture-fixture">testserver</a> [fixture fixture ...]</h2>
+<p><strong>開発版の Django で新たに登場した機能です</strong></p>
+<p>指定したフィクスチャを使って、 (<tt class="docutils literal">runserver</tt> と同様に) 開発用サーバを起動
+します。</p>
+<p>例えば、次のコマンド:</p>
+<pre class="literal-block">
+django-admin.py testserver mydata.json
+</pre>
+<p>を実行すると、以下のようなステップを実行します:</p>
+<blockquote>
+<ol class="arabic simple">
+<li><a class="reference external" href="../testing/">Django アプリケーションのテスト</a> 手順に従って、テストデータベース
+を生成します。</li>
+<li>指定したフィクスチャを使ってテストデータベースに値を入れます (フィク
+スチャの説明は <tt class="docutils literal">loaddata</tt> ドキュメントを参照してください)。</li>
+<li>生成したテストデータベースを使って (<tt class="docutils literal">runserver</tt> と同様に) 開発サー
+バを実行します。</li>
+</ol>
+</blockquote>
+<p><tt class="docutils literal">testserver</tt> が便利な局面はいくつかあります:</p>
+<blockquote>
+<ul class="simple">
+<li>特定のフィクスチャデータに対するビューの動作を調べるための
+ユニットテスト を書いている際に、ブラウザでの表示を手動で調べるの
+に <tt class="docutils literal">testserver</tt> を使えます。</li>
+<li>Django アプリケーションを開発していて、「無垢の状態の」データベースを
+使って操作してみたいとしましょう。データベースを (前述の <tt class="docutils literal">dumpdata</tt>
+コマンドを使って) フィクスチャとしてダンプしておき、 <tt class="docutils literal">testserver</tt>
+を使って Web アプリケーションを実行すれば、アプリケーション上でどんな
+操作を行っても、変更はテストデータベースにしか加えられないので、好き
+にデータベースを「汚せ」ます。</li>
+</ul>
+</blockquote>
+<p>このサーバはローカルホスト上でデフォルトのポートでしか起動せず、 <tt class="docutils literal">host</tt>
+や <tt class="docutils literal">port</tt> パラメタを受け付けません。</p>
+</div>
+</div>
+<div class="section" id="id4">
+<h1><a class="reference external" href="http://michilu.com/django/doc-ja/testing/">Djangoアプリケーションのテスト</a></h1>
+<p>Django でテストを書く方法は主に 2 つあり、それぞれ Python の標準ライブラリ
+についてくる二つのテストフレームワークに対応しています。フレームワークは以
+下の 2 つです:</p>
+<blockquote>
+<ul>
+<li><p class="first"><strong>doctest</strong> -- 関数やクラスの docstring (ドキュメンテーション文字列)
+に埋め込まれたテストで、例えば以下のように Python の対話インタプリタ
+セッションを模した方法で書かれています</p>
+<pre class="code python literal-block">
+def my_func(a_list, idx):
+    &quot;&quot;&quot;
+    &gt;&gt;&gt; a = ['larry', 'curly', 'moe']
+    &gt;&gt;&gt; my_func(a, 0)
+    'larry'
+    &gt;&gt;&gt; my_func(a, 1)
+    'curly'
+    &quot;&quot;&quot;
+    return a_list[idx]
+</pre>
+</li>
+<li><p class="first"><strong>ユニットテスト (unit test)</strong> -- 以下の例のように、テストを
+<tt class="docutils literal">unittest.TestCase`</tt> のサブクラスのメソッドとして表現したものです</p>
+<pre class="code python literal-block">
+import unittest
+
+class MyFuncTestCase(unittest.TestCase)
+    def testBasic(self):
+        a = ['larry', 'curly', 'moe']
+        self.assertEquals(my_func(a, 0), 'larry')
+        self.assertEquals(my_func(a, 1), 'curly')
+</pre>
+</li>
+</ul>
+</blockquote>
+<p>好みに応じて、どちらのテストを使ってもかまいませんし、両方のテストを組み合
+わせてもかまいません。また、後でほんの少しだけ説明しますが、他のテストフレー
+ムワークを使っても構いません。</p>
+<blockquote>
+<p>例えば、下の関数には、関数の説明の入った docstring があります:</p>
+<pre class="literal-block">
+def add_two(num):
+    &quot;引数に指定した数に 2 を加えて返します。&quot;
+    return num + 2
+</pre>
+<p>テストはそれ自体素晴らしいドキュメントになることも多いので、テストをそ
+のまま docstring に入れておけば、ドキュメント化とコードのテストの
+<em>両方を</em> 効率的に行えます。</p>
+</blockquote>
+<p>テストランナは、 Django アプリケーションの中の以下のファイルから doctest を
+探して実行します:</p>
+<blockquote>
+<ul class="simple">
+<li><tt class="docutils literal">models.py</tt> ファイル。モジュールレベル、かつ/またはモデルレベルの
+doctest を記述します。一般には、アプリケーションレベルの doctest はモ
+ジュールの docstring として記述し、モデルレベルの docstring はモデル
+クラスの docstring として記述します。</li>
+<li>アプリケーションディレクトリ、すなわち <tt class="docutils literal">models.py</tt> の入ったディレク
+トリ下に置かれた <tt class="docutils literal">tests.py</tt> という名前のファイル。このファイルは、
+モデルに関係しないような doctest を書きたい場合のフックとして使えます。</li>
+</ul>
+</blockquote>
+<p>doctest の文字列は <tt class="docutils literal">models.py</tt> の全てのオブジェクトに対して記述できますが、
+慣習的には、アプリケーションレベルの doctest はモジュールの docstring に、
+モデルレベルの doctest は各モデルの docstring に配置します。</p>
+<p>モデルテストの場合、テストランナが独自にテストデータベースを作成します。す
+なわち、データベースに対してアクセスするテスト -- 例えば、モデルインスタン
+スを生成して保存するようなテスト -- が、実運用のためのデータベースに影響を
+及ぼすことはありません。 doctest はいずれも「白紙状態」、すなわち、各モデル
+のデータベーステーブルが空の状態で実行されます (詳しくは、後述のフィクスチャ
+の節を参照してください) 。</p>
+<div class="section" id="id5">
+<h2>ユニットテストを書く</h2>
+<p>Django の単体テストもまた、doctest と同様、標準ライブラリモジュールの
+unittest を使います。このモジュールは、 doctest とは違った、 クラスベース
+のやり方でテストを定義します。</p>
+<p>doctest と同様、 Django のテストランナは、以下の二つの場所からユニットテス
+トを探します:</p>
+<blockquote>
+<ul class="simple">
+<li><tt class="docutils literal">models.py</tt> ファイル。テストランナはこのモジュールから
+<tt class="docutils literal">unittest.TestCase</tt> のサブクラスを探します。</li>
+<li>アプリケーションディレクトリ、すなわち <tt class="docutils literal">models.py</tt> の入ったディレク
+トリ下に置かれた <tt class="docutils literal">tests.py</tt> という名前のファイル。上と同様に、テス
+トランナはこのモジュールから <tt class="docutils literal">unittest.TestCase</tt> のサブクラスを探し
+ます。</li>
+</ul>
+</blockquote>
+<p>開発バージョンの Django には、あるモジュールのテストスイートを定義する方法
+をもう一つ提供しています
+<tt class="docutils literal">models.py</tt> や <tt class="docutils literal">tests.py</tt> で <tt class="docutils literal">suite()</tt> メ
+ソッドを定義している場合、 Django のテストランナはこのメソッドを使ってテス
+トスイートを構築します。この仕様は、ユニットテストにおいて
+推奨されているテストスイートの構築方法 に従っています。複雑なテストスイー
+トの構築方法についての詳細は Python のドキュメントを参照してください。</p>
+</div>
+<div class="section" id="id6">
+<h2>テストの出力を理解する</h2>
+<p>テストを実行すると、まずテストランナ自身の初期化メッセージが表示されます:</p>
+<pre class="literal-block">
+Creating test database...
+Creating table myapp_animal
+Creating table myapp_mineral
+Loading 'initial_data' fixtures...
+No fixtures found.
+</pre>
+<p>このメッセージは、テストランナがテストデータベースを作成したことを示してい
+ます。テストデータベースは、空の、何もない状態から作成したデータベースで、
+(モデルテストのような) データベースの必要なテストで使われます。</p>
+<p>「本番用の」(実運用の) データベースのことは心配いりません。 Django はテスト
+用にまったく別のデータベースを作成します。このデータベースの名前は、
+<tt class="docutils literal">DATABASE_NAME</tt> に指定したデータベース名の前に <tt class="docutils literal">test_</tt> を付けたものにな
+ります。テストデータベースの名前をデフォルト意外の値にしたければ、
+<tt class="docutils literal">TEST_DATABASE_NAME</tt> 設定を使って名前を指定します。</p>
+<p>テスト用に別のデータベースを使うことを除けば、テストランナは設定ファイルの
+データベースに関する他の設定、 <tt class="docutils literal">DATABASE_ENGINE</tt>, <tt class="docutils literal">DATABASE_USER</tt>,
+<tt class="docutils literal">DATABASE_HOST</tt> などをそのまま使います。テストデータベースは
+<tt class="docutils literal">DATABASE_USER</tt> の権限で作成されるので、このユーザは新たに生成されたデー
+タベースを操作する権限を備えていなければなりません。</p>
+<p>エラー出力の詳細はこのドキュメントの範囲を超えるので解説はしませんが、ほと
+んど直感的に理解できる内容のはずです。詳しくは、 Python の <tt class="docutils literal">unittest</tt> ラ
+イブラリのドキュメントを参照してください。</p>
+<p>スクリプトのリターンコードは失敗したテストや出力のおかしかったテストの総数で
+す。全てのテストにパスしていれば、リターンコードは 0 です。この仕様は、テス
+トランナをシェルスクリプト上で動かしたり、テストが成功したかどうかをテスト
+ランナのレベルで調べたい場合に便利です。</p>
+<p>テストにパスしたか否かに関係なく、テストを全て実行し終えると、テストデータ
+ベースは消去されます。</p>
+</div>
+</div>
+<div class="section" id="id7">
+<span id="testing-tools"></span><h1>テスト用のツール</h1>
+<p>Django は、テストを書くときに便利なツールをいくつか提供しています。</p>
+<div class="section" id="id8">
+<span id="the-test-client"></span><h2>テストクライアント</h2>
+<p>テストクライアント (test client) は、簡単なダミーブラウザとして動作する
+Python のクラスです。テストクライアントを使うと、ビューをテストしたり、
+プログラムを使ってDjango で作られたアプリケーションとやりとりできます。</p>
+<p>テストクライアントを使ってできることをいくつか挙げましょう:</p>
+<blockquote>
+<ul class="simple">
+<li>ある URL に対する GET や POST をシミュレートでき、低水準の HTTP (レスポ
+ンスヘッダや状態コード) 情報から、ページの内容まで、リクエストに対するレ
+スポンスの全てを調べられます。</li>
+<li>特定の URL に対して正しいビューが呼び出されるかどうかを調べられます。</li>
+<li>特定のリクエストに対して、特定のテンプレートを使ったレンダリングが行わ
+れ、その際に特定の値が入ったコンテキストが使われているかどうかを調べら
+れます。</li>
+</ul>
+</blockquote>
+<p>テストクライアントは <a class="reference external" href="http://twill.idyll.org/">Twill</a> や <a class="reference external" href="http://www.openqa.org/selenium/">Selenium</a> やその他のブラウザ自動化フレームワー
+クを置き換えようとするものではありません。 Django のテストクライアントはもっ
+と別の部分に焦点を当てているのです。すなわち:</p>
+<blockquote>
+<ul class="simple">
+<li>正しいビューが呼び出され、ビューが正しいコンテキストデータを生成してい
+るかどうかは、 Django のテストクライアントを使って調べてください。</li>
+<li>Twill や Selenium は、 <em>レンダリング済みの</em> HTML や、 JavaScript の機能
+のような Web ページの <em>ビヘイビア</em> のテストに使ってください。</li>
+</ul>
+</blockquote>
+<p>網羅的なテストスイートでは、両方のタイプのテストを組み合わせて使うはずです。</p>
+<div class="section" id="id9">
+<h3>テストの概要と簡単な例</h3>
+<p>テストクライアントを使うには、 <tt class="docutils literal">django.test.client.Client</tt> をインスタンス
+化して、 Web ページを取得します</p>
+<pre class="code pyhton literal-block">
+&gt;&gt;&gt; from django.test.client import Client
+&gt;&gt;&gt; c = Client()
+&gt;&gt;&gt; response = c.post('/login/', {'username': 'john', 'password': 'smith'})
+&gt;&gt;&gt; response.status_code
+200
+&gt;&gt;&gt; response = c.get('/customer/details/')
+&gt;&gt;&gt; response.content
+'&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 ...'
+</pre>
+<p>上の例でわかるように、 <tt class="docutils literal">Client</tt> は Python 対話インタプリタのセッション中
+でもインスタンス化できます。</p>
+<p>テストクライアントの動作には重要な点がいくつかあります:</p>
+<blockquote>
+<ul>
+<li><p class="first">テストクライアントを実行するために Web サーバを起動する必要は
+<em>ありません</em> 。実際、 Web サーバがまったく動いていなくても、テストは
+何の問題もなく実行できるのです。というのも、テストクライアントは HTTP
+通信のオーバヘッドを回避して、 Django フレームワークに直接アクセスし
+ているからです。このからくりによって、ユニットテストを高速に実行でき
+ます。</p>
+</li>
+<li><p class="first">ページを取得するときには、ドメインを含まない <em>パス部分だけ</em> を指定す
+るよう気をつけてください。例えば、以下の呼び出し:</p>
+<pre class="literal-block">
+&gt;&gt;&gt; c.get('/login/')
+</pre>
+<p>は正しいですが、次の呼び出し:</p>
+<pre class="literal-block">
+&gt;&gt;&gt; c.get('http://www.example.com/login/')
+</pre>
+<p>は正しくありません。</p>
+<p>Django のプロジェクトから生成されていない Web ページは、テストクライ
+アントで取得できません。Django 以外の Web ページを取得したければ、
+<a class="reference external" href="http://docs.python.org/lib/module-urllib.html">urllib</a> や <a class="reference external" href="http://docs.python.org/lib/module-urllib2.html">urllib2</a> のような Python 標準ライブラリを使ってください。</p>
+</li>
+<li><p class="first">テストクライアントは URL の解決に <tt class="docutils literal">ROOT_URLCONF</tt> に指定された
+URLconf を使います。</p>
+</li>
+<li><p class="first">上の例は Python の対話インタプリタ中でも動作しますが、一部のテンプレー
+ト関連の機能などは <em>テストの実行中だけ</em> でしか使えません。</p>
+<p>というのも、 Django のテストランナは、あるビューでどのテンプレートが
+ロードされるかを決定するためにちょっとした黒魔術的なコードを使ってい
+るからです。この黒魔術 (実際には、メモリ上のテンプレートシステムに対
+するパッチ) は、テスト実行時にしか適用されません。</p>
+</li>
+</ul>
+</blockquote>
+</div>
+<div class="section" id="id10">
+<span id="making-requests"></span><h3>リクエスト生成</h3>
+<p>リクエストの生成には、 <tt class="docutils literal">django.test.client.Client</tt> クラスを使います。
+<tt class="docutils literal">Client</tt> は引数なしで生成します。:</p>
+<pre class="literal-block">
+&gt;&gt;&gt; c = Client()
+</pre>
+<p><tt class="docutils literal">Client</tt> のインスタンスからは、以下のメソッドを呼び出せます:</p>
+<dl class="docutils">
+<dt><tt class="docutils literal">get(path, <span class="pre">data={})</span></tt></dt>
+<dd><p class="first"><tt class="docutils literal">path</tt> に対する GET リクエストを行い、 <tt class="docutils literal">Response</tt> オブジェクトを返
+します。 <tt class="docutils literal">Response</tt> オブジェクトについては後で説明します。</p>
+<p>引数 <tt class="docutils literal">data</tt> は辞書オブジェクトで、キー／値のペアが GET データのペイロー
+ドの生成に使われます。例えば:</p>
+<pre class="literal-block">
+&gt;&gt;&gt; c = Client()
+&gt;&gt;&gt; c.get('/customers/details/', {'name':'fred', 'age':7})
+</pre>
+<p>は、以下のような GET リクエストの送信と同じです:</p>
+<pre class="last literal-block">
+/customers/details/?name=fred&amp;age=7
+</pre>
+</dd>
+<dt><tt class="docutils literal">post(path, <span class="pre">data={},</span> content_type=MULTIPART_CONTENT)</tt></dt>
+<dd><p class="first"><tt class="docutils literal">path</tt> に対する POST リクエストを行い、 <tt class="docutils literal">Response</tt> オブジェクトを返
+します。</p>
+<p>引数 <tt class="docutils literal">data</tt> は辞書オブジェクトで、キー／値のペアが POST データのペイ
+ロード生成に使われます。例えば:</p>
+<pre class="literal-block">
+&gt;&gt;&gt; c = Client()
+&gt;&gt;&gt; c.post('/login/', {'name': 'fred', 'passwd': 'secret'})
+</pre>
+<p>は、以下のパス:</p>
+<pre class="literal-block">
+/login/
+</pre>
+<p>への POST リクエストで、以下の POST データ:</p>
+<pre class="literal-block">
+name=fred&amp;passwd=secret
+</pre>
+<p>を伴います。</p>
+<p><tt class="docutils literal">content_type</tt> を指定した場合 (例えば XML ペイロードの場合には
+<tt class="docutils literal">text/xml</tt>)、引数 <tt class="docutils literal">data</tt> の中身は POST リクエストそのままで送信され、
+<tt class="docutils literal"><span class="pre">Content-Type</span></tt> ヘッダに <tt class="docutils literal">content_type</tt> の値を使います。</p>
+<p><tt class="docutils literal">content_type</tt> を指定しなければ、 <tt class="docutils literal">data</tt> の中身は
+<tt class="docutils literal"><span class="pre">multipart/form-data</span></tt> で送信されます。この場合、 <tt class="docutils literal">data</tt> の中のキー／
+値のペアは、マルチパートメッセージにエンコードされ、 POST データのペイ
+ロード生成に使われます。</p>
+<p>あるキーに対して複数の値を提出 (submit) する場合 (例えば、
+<tt class="docutils literal">&lt;select multiple&gt;</tt> の選択結果を指定する場合など) は、キーに対する値
+をリストやタプルにしてください。例えば、<tt class="docutils literal">choices</tt> という名前のフィー
+ルドから 3 つの行を選択して提出したければ:</p>
+<pre class="literal-block">
+``{'choices': ('a', 'b', 'd')}``
+</pre>
+<p>のようにします。</p>
+<p>ファイルの送信には特別な扱いが必要です。ファイルの POST を行う場合、以
+下のように、ファイル名フィールドの名前をキーに、アップロードしたいファ
+イルのファイルハンドルを値に設定します:</p>
+<pre class="literal-block">
+&gt;&gt;&gt; c = Client()
+&gt;&gt;&gt; f = open('wishlist.doc')
+&gt;&gt;&gt; c.post('/customers/wishes/', {'name':'fred', 'attachment':f})
+&gt;&gt;&gt; f.close()
+</pre>
+<p>(<tt class="docutils literal">attachment</tt> という名前には特に意味はありません。ファイルを処理する
+コードで使いたい名前を指定してください)</p>
+<p class="last">送信するファイルのハンドルは、 <tt class="docutils literal">post()</tt> 後に手動で閉じねばならないの
+で注意してください。</p>
+</dd>
+<dt><tt class="docutils literal"><span class="pre">login(**credentials)</span></tt></dt>
+<dd><p class="first"><strong>開発バージョンの Django で新たに追加されました</strong></p>
+<p>Django の <a class="reference external" href="../authentication/">認証システム</a> を使っていて、ログイン済みのユーザを扱う必要
+がある場合、テストクライアントの <tt class="docutils literal">login()</tt> メソッドを使えば、サイトへ
+ログインするユーザをシミュレートできます。</p>
+<p>このメソッドを呼び出すと、テストクライアントはログインに必要なクッキー
+とセッションデータを持つようになり、テスト対象のビューのうち、ログイン
+の必要なテストをパスできるようになります。</p>
+<p><tt class="docutils literal">credentials</tt> 引数の形式は、使っている <a class="reference external" href="../authentication/#other-authentication-sources">認証バックエンド</a> によって変
+わります (認証バックエンドは <tt class="docutils literal">AUTHENTICATION_BACKENDS</tt> で設定します)。
+Django が提供している標準の認証バックエンド (<tt class="docutils literal">ModelBackend</tt>) を使う場
+合、 <tt class="docutils literal">credentials</tt> にはユーザのユーザ名とパスワードをキーワード引数で
+指定します:</p>
+<pre class="literal-block">
+&gt;&gt;&gt; c = Client()
+&gt;&gt;&gt; c.login(username='fred', password='secret')
+&gt;&gt;&gt; # これでログイン保護されたビューに入れるようになりました。
+</pre>
+<p>認証バックエンドを変えた場合、このメソッドは違った認証情報を要求するか
+もしれません。その場合、 <tt class="docutils literal">login()</tt> は、認証バックエンドの
+<tt class="docutils literal">authenticate()</tt> メソッドが必要とする認証情報をそのまま要求します。</p>
+<p><tt class="docutils literal">login()</tt> は、指定した認証情報が承認され、ログインに成功した場合に
+<tt class="docutils literal">True</tt> を返します。</p>
+<p class="last">このメソッドを使には、事前にユーザを登録しておかねばなりません。上で説
+明したように、テストランナはテストデータベースを使ってテストを実行する
+ので、デフォルトではユーザが登録されていません。そのため、運用環境で使
+えるユーザはテスト環境では使えないのです。テストスイートの一環として、
+手動で (Django のモデル API を使って) ユーザを作成するか、フィクスチャ
+でユーザを登録してください。</p>
+</dd>
+<dt><tt class="docutils literal">logout()</tt></dt>
+<dd><p class="first">Django の <a class="reference external" href="../authentication/">認証システム</a> を使っている場合、 <tt class="docutils literal">logout()</tt> メソッドで、
+サイトからユーザをログアウトさせる効果をシミュレートできます。</p>
+<p class="last">このメソッドを呼び出すと、テストクライアントはクッキーとセッションデー
+タを全て消去して、デフォルトの状態に戻します。それ以降のリクエストは、
+ビューからは <tt class="docutils literal">AnonymousUser</tt> から送信されたリクエストとみなされます。</p>
+</dd>
+</dl>
+</div>
+<div class="section" id="id13">
+<h3>レスポンスのテスト</h3>
+<p><tt class="docutils literal">get()</tt> および <tt class="docutils literal">post()</tt> メソッドは、いずれも <tt class="docutils literal">Response</tt> オブジェクト
+を返します。 <tt class="docutils literal">Response</tt> オブジェクトは Django のビューが返す
+<tt class="docutils literal">HttpResponse</tt> オブジェクトと同じ <em>ではありません</em> 。このオブジェクトは
+<tt class="docutils literal">HttpResponse</tt> よりも単純で、テスト用の便利なデータをいくつか備えています。</p>
+<p><tt class="docutils literal">Response</tt> オブジェクトには以下のようなプロパティがあります:</p>
+<pre class="literal-block">
+================  ========================================================
+属性              説明
+================  ========================================================
+``status_code``   レスポンスの HTTP 状態コードです。全ての HTTP 状態コー
+                  ドのリストは RFC2616_ を参照してください。
+
+``content``       レスポンスの本体部分 (body) です。ビューがレンダリン
+                  グによって生成した最終的なページコンテンツか、エラー
+                  メッセージ (302 リダイレクトの場合のリダイレクト先
+                  URL など) です。
+
+``template``      最終的なページコンテンツのレンダリングに使われた
+                  Template のインスタンスです。テンプレートをファイルか
+                  らロードした場合、テンプレートのファイル名を
+                  ``template.name`` で調べられます
+                  (``'admin/index.html'`` のような形式の文字列です)。
+
+                  複数のテンプレートをレンダリングしている場合 (例えば
+                  `テンプレートの継承`_ を使っている場合) 、
+                  ``template`` はレンダリング順に並んだ  Template オブ
+                  ジェクトのリストになります。
+
+``context``       レスポンスのページコンテンツのレンダに使われた
+                  Context オブジェクトです。
+
+                  ``template`` と同様、複数のテンプレートを使ってレンダ
+                  リングを行った場合、 ``context`` は Context オブジェ
+                  クトをレンダリングで使った順に並べたリストになります。
+================  ========================================================
+</pre>
+</div>
+<div class="section" id="id15">
+<span id="exceptions"></span><h3>例外</h3>
+<p>テストクライアントのアクセス先のビューが例外を送出するような場合、テストケー
+ス内で例外にアクセスできます。例外のテストを行うには、通常の
+<tt class="docutils literal"><span class="pre">try...catch</span></tt> ブロックか、 <tt class="docutils literal">unittest.TestCase.assertRaises()</tt> を使いま
+す。</p>
+<p>ただし、 <tt class="docutils literal">Http404</tt> や <tt class="docutils literal">PermissionDenied</tt>, <tt class="docutils literal">SystemExit</tt> といった例外は
+テストケースからアクセスできません。 Django はこれらの例外を内部的に捕捉し
+て、対応する適切な HTTP 応答コードに変換してしまうからです。これらの例外に
+対しては、 <tt class="docutils literal">response.status_code</tt> のチェックで対応してください。</p>
+</div>
+<div class="section" id="id16">
+<span id="persistent-state"></span><h3>セッションの永続性</h3>
+<p>テストクライアントの動作はステートフルです。あるレスポンスにクッキーが入っ
+ていると、クッキーはテストクライアント中に保存され、それ以降の <tt class="docutils literal">get()</tt> や
+<tt class="docutils literal">post()</tt> リクエストで使われます。</p>
+<p>テストクライアントは、クッキーの有効期限ポリシを守りません。クッキーを期限
+切れにしたければ、該当クッキーを <tt class="docutils literal">client.cookies</tt> から手動で削除するか、
+新たな <tt class="docutils literal">Client</tt> インスタンスを生成してください (全てのクッキーを除去しま
+す)。</p>
+<p>テストクライアントには、永続セッション情報 (persistent state information)
+を保存するためのプロパティが二つあります。これらのプロパティは、必要に応じ
+てテスト条件の一部として検査できます。</p>
+<pre class="literal-block">
+===============  ====================================================
+プロパティ       説明
+===============  ====================================================
+``cookies``      Python の ``SimpleCookie`` 型のオブジェクトで、
+                 全てのクライアントクッキーの現在値が入っています。
+                 詳しくは `Cookie モジュールのドキュメント`_ を参照
+                 してください。
+
+``session``      セッション情報の入った辞書ライクなオブジェクトです。
+                 詳しくは `セッションのドキュメント`_ を参照してくださ
+                 い。
+===============  ====================================================
+</pre>
+</div>
+<div class="section" id="id18">
+<span id="example"></span><h3>ユニットテストの例</h3>
+<p>テストクライアントを使った簡単なユニットテストを以下に示します</p>
+<pre class="code python literal-block">
+import unittest
+from django.test.client import Client
+
+class SimpleTest(unittest.TestCase):
+    def setUp(self):
+        # unittest を使う場合、毎回 Client を生成する必要があります。
+        self.client = Client()
+
+    def test_details(self):
+        # GET リクエストを発行します。
+        response = self.client.get('/customer/details/')
+
+        # レスポンスが 200 OK であるか調べます。
+        self.failUnlessEqual(response.status_code, 200)
+
+        # レンダリングされるコンテキストの customers の長さが 5 である
+        # か確かます。
+        self.failUnlessEqual(len(response.context['customers']), 5)
+</pre>
+</div>
+<div class="section" id="id19">
+<h3>デフォルトのテストクライアント</h3>
+<p><strong>開発バージョンの Django で新たに追加されました</strong></p>
+<p><tt class="docutils literal">django.test.TestCase</tt> クラスのインスタンス内に入っているテストケースは全
+て、デフォルトの <a class="reference internal" href="#id8">テストクライアント</a> にアクセスできます。このテストクライ
+アントは <tt class="docutils literal">self.client</tt> で参照できます。テストクライアントはテストごとに再
+生成されるので、テスト間でクッキーのような状態情報が継承される心配はありま
+せん。</p>
+<p>例えば、以下のコード</p>
+<pre class="code python literal-block">
+import unittest
+from django.test.client import Client
+
+class SimpleTest(unittest.TestCase):
+    def test_details(self):
+        client = Client()
+        response = client.get('/customer/details/')
+        self.failUnlessEqual(response.status_code, 200)
+
+    def test_index(self):
+        client = Client()
+        response = client.get('/customer/index/')
+        self.failUnlessEqual(response.status_code, 200)
+</pre>
+<p>では、各テストで <tt class="docutils literal">Client</tt> をインスタンス化していますが、実際は次のコード
+のように、 <tt class="docutils literal">self.client</tt> を参照するだけでよいのです</p>
+<pre class="code python literal-block">
+from django.test import TestCase
+from django.test.client import Client
+
+class SimpleTest(TestCase):
+    def test_details(self):
+        response = self.client.get('/customer/details/')
+        self.failUnlessEqual(response.status_code, 200)
+
+    def test_index(self):
+        response = self.client.get('/customer/index/')
+        self.failUnlessEqual(response.status_code, 200)
+</pre>
+<hr class="docutils" />
+<p><a class="reference external" href="http://MiCHiLU.com/blog/posts/108/">http://MiCHiLU.com/blog/posts/108/</a></p>
+<blockquote>
+<ul class="simple">
+<li>Added at         Mon, 27 Aug 2007 12:38:19 +0900</li>
+<li>Last modified at Mon, 27 Aug 2007 12:38:19 +0900</li>
+</ul>
+</blockquote>
+<p>This work is licensed under a Creative Commons Attribution-Noncommercial-Share Alike 2.1 Japan License.
+<a class="reference external" href="http://creativecommons.org/licenses/by-nc-sa/2.1/jp/">http://creativecommons.org/licenses/by-nc-sa/2.1/jp/</a></p>
+</div>
+</div>
+</div>
+
+<p>
+author:
+
+
+
+
+<br>
+Posted on
+<time datetime='2007-08-27T12:38:19+09:00'>2007-8-27</time>
+
+
+<br>
+Updated on
+<time datetime='2007-08-27T12:38:19+09:00'>2007-8-27</time>
+
+</p>
+
+</section>
+</div>
+
+</article>
+
+<script>
+  (function() {
+    var element, i, len, ref, selector;
+  
+    if (window.matchMedia('(max-width: 629px)').matches) {
+      selector = '.\\-\\-pc';
+    } else {
+      selector = '.\\-\\-sp';
+    }
+  
+    ref = document.querySelectorAll(selector);
+    for (i = 0, len = ref.length; i < len; i++) {
+      element = ref[i];
+      element.parentNode.removeChild(element);
+    }
+  
+  }).call(this);
+</script>
+
+
+
+<div class='explore'>
+<div>
+<header class='grid'>
+<div class='grid'>
+<a class='btn btn--link visible-xs-inline-block disabled'>
+<figure>
+<amp-img alt='Author Avatar' class='img-circle' layout='fill' src='/img/author_avatar.jpg'></amp-img>
+</figure>
+</a>
+<a class='btn btn--link visible-xs-inline-block disabled'>&#8203;</a>
+<a class='btn btn--link' href='https://feedly.com/i/subscription/feed/https://michilu.com/rss.xml' target='_blank'>
+<span class='icon-feedly'></span>
+</a>
+<a class='btn btn--link visible-xs-inline-block disabled'>&#8203;</a>
+<a class='btn btn--link visible-xs-inline-block disabled'>&#8203;</a>
+</div>
+</header>
+
+<amp-carousel autoplay delay='3500' height='320' layout='responsive' loop type='slides' width='320'>
+<div class='slide'>
+<amp-img layout='fill' src='https://picsum.photos/2048.webp?random'></amp-img>
+<amp-fit-text class='caption' layout='fill' min-font-size='15'></amp-fit-text>
+</div>
+</amp-carousel>
+<div class='next'>
+<amp-list height='1' layout='responsive' src='/amp-list/newer.json?RANDOM' width='320'>
+<template type='amp-mustache'>
+<a href='{{root_relative_url}}'>
+<amp-fit-text height='152' layout='responsive' width='320'>{{title}}</amp-fit-text>
+{{#image}}
+<amp-img layout='fill' src='{{.}}'></amp-img>
+{{/image}}
+{{^image}}
+<amp-img layout='fill' src='https://picsum.photos/2048.webp?{{root_relative_url}}'></amp-img>
+{{/image}}
+</a>
+</template>
+</amp-list>
+</div>
+</div>
+</div>
+<footer class='ta-center fs-small text-muted' id='copyright'>
+&copy;<span>2001-</span><span id='this-year'>2020</span>&nbsp;
+ツキヨミチル
+</footer>
+</body>
+</html>
+<script async src='/js/script.js?d1c2727beb38af70907976dee9ffe7e4'></script>

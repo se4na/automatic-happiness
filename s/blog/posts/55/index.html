@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+
+<html lang='ja'>
+<head>
+<link href='https://michilu.com/blog/posts/55/' rel='canonical'>
+<link href='https://michilu.com/blog/posts/55/' rel='amphtml'>
+<meta content='noindex' name='robots'>
+<meta charset='utf-8'>
+<meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'>
+<meta content='telephone=no' name='format-detection'>
+<script async custom-element='amp-form' src='https://cdn.ampproject.org/v0/amp-form-0.1.js'></script>
+<script async custom-element='amp-analytics' src='https://cdn.ampproject.org/v0/amp-analytics-0.1.js'></script>
+<script async custom-element='amp-list' src='https://cdn.ampproject.org/v0/amp-list-0.1.js'></script>
+<script async custom-template='amp-mustache' src='https://cdn.ampproject.org/v0/amp-mustache-0.2.js'></script>
+<script async custom-element='amp-fit-text' src='https://cdn.ampproject.org/v0/amp-fit-text-0.1.js'></script>
+<script async custom-element='amp-carousel' src='https://cdn.ampproject.org/v0/amp-carousel-0.1.js'></script>
+<script async src='https://cdn.ampproject.org/v0.js'></script>
+<style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+<title>[Django]: Django和訳ドキュメント sync to r5241&middot;ツキヨミチル</title>
+<style amp-custom>
+body,hr{position:relative}figure,p{padding-bottom:2.4rem}*{border:0;font:inherit;margin:0;padding:0;text-rendering:geometricPrecision}code,kbd,pre,samp{border-radius:2px;overflow-y:hidden;overflow-x:auto}html{box-sizing:border-box;font-size:62.5%;height:100%}@media screen and (min-width:960px){html{font-size:78.125%}}body{box-sizing:border-box;color:#3c3c3d;font-size:1.6rem;line-height:2.4rem;min-height:100%}h1,h2,h3,h4,h5,h6{font-weight:500}h1,h2,h3{line-height:4.8rem;padding:.8rem 0 1.6rem}form,h4,h5,h6{padding:2.4rem 0}h1{font-size:3.6rem}h2{font-size:3.2rem}h3{font-size:2.8rem}h4{font-size:2rem}h5{font-size:1.8rem}h6{font-size:1.6rem}.fs-small,code,kbd,pre,samp,small,sub,sup{font-size:1.2rem}code,kbd,pre,samp{background-color:#efeff0;color:#e528b0;font-family:Consolas,Monaco,"Courier New",monospace;line-height:1}code,kbd,samp{padding:.4rem .4rem .2rem}pre{line-height:2.4rem;padding:1.2rem 1rem;margin:0 0 2.4rem}pre code,pre kbd,pre samp{background-color:transparent;border:none;border-radius:0;padding:0}a:link{color:#4076D4}a:visited{color:#9140D4}a:focus,a:hover{color:#2e68cc}a:active{color:#D44076}img,video{max-width:100%;display:table}hr{height:4.8rem;margin-bottom:2.4rem}hr:before{background-color:#cdcdce;content:'';height:1px;position:absolute;top:50%;width:100%}ol,ul{margin-left:2rem;padding:0 0 2.4rem}ol{list-style-type:decimal}blockquote p:last-child,ol ol,ul ul{padding-bottom:0}ul{list-style-type:disc}cite,dt,em,i,q>q{font-style:italic}dd{padding-left:2rem}blockquote{margin:0 0 2.4rem 1.2rem;border-left:.3rem solid #cdcdce;padding:2.4rem 1.2rem}figure{margin:0 auto}figure img{display:table;margin:0 auto}small,sub,sup{line-height:1}caption,figcaption{font-size:1.2rem;font-style:italic;text-align:center}.ta-left,table th{text-align:left}b,strong,var{font-weight:700}q:after,q:before{content:"'"}.checkbox:before,.checkbox__label:after,.radio:before,.radio__label:after{content:'';margin-top:-10px;position:absolute}abbr,dfn{border-bottom:.1rem dotted #5a5a5b;cursor:default}table{border-radius:2px;border-collapse:separate;border-spacing:0;margin-bottom:2.4rem;width:100%}table th{font-weight:500}table td,table th{padding:0 .6rem}label{color:#7d7d7e}button,input,label,select,textarea{display:block;resize:none;-webkit-appearance:none;-moz-appearance:none}input:-webkit-autofill,select:-webkit-autofill,textarea:-webkit-autofill{color:#3c3c3d;-webkit-text-fill-color:#3c3c3d;-webkit-box-shadow:0 0 0 1000px #fff inset}.checkbox [disabled],.checkbox [disabled]+*,.disabled,.radio [disabled],.radio [disabled]+*,.select [disabled],.select [disabled]+*,.textfield [disabled],.textfield [disabled]+*,[type=button][disabled],[type=submit][disabled],button[disabled]{cursor:default;opacity:.5;pointer-events:none}.smooth{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.f-none{float:none}.f-left{float:left}.f-right{float:right}.clearfix{clear:both;overflow:hidden}.ta-center{text-align:center}.ta-right{text-align:right}.fs-base{font-size:1.6rem}.fs-large{font-size:2rem}.fw-light{font-weight:300}.fw-normal{font-weight:400}.fw-semibold{font-weight:600}.fw-bold{font-weight:700}.btn,[type=button],[type=submit],button{background-color:#E83FB8;border:none;border-radius:.2rem;box-sizing:border-box;color:#fff;cursor:pointer;display:inline-block;height:4.8rem;line-height:4.8rem;max-width:100%;-webkit-transition-property:background-color;transition-property:background-color;-webkit-transition-duration:.2s;transition-duration:.2s;margin:0 auto;padding:0 3rem;text-align:center;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;width:auto}.btn:link,.btn:visited,[type=button]:link,[type=button]:visited,[type=submit]:link,[type=submit]:visited,button:link,button:visited{color:#fff;text-decoration:none}.btn:focus,.btn:hover,[type=button]:focus,[type=button]:hover,[type=submit]:focus,[type=submit]:hover,button:focus,button:hover{background-color:#e528b0;color:#fff}.btn:focus,[type=button]:focus,[type=submit]:focus,button:focus{outline:#7d7d7e dotted .1rem}.btn:active,[type=button]:active,[type=submit]:active,button:active{background-color:#E83FB8}.btn--secondary{background-color:#efeff0;color:#3c3c3d}.btn--secondary:link,.btn--secondary:visited{color:#3c3c3d}.btn--secondary:focus,.btn--secondary:hover{background-color:#dededf;color:#3c3c3d}.btn--link,.btn--link:active{background-color:transparent}.btn--secondary:active{color:#7d7d7e}.btn--link,.btn--link:link{color:#4076D4}.btn--link{text-decoration:underline}.btn--link:visited{color:#9140D4}.btn--link:focus,.btn--link:hover{color:#2e68cc;background-color:transparent}.btn--link:active{color:#D44076}.checkbox,.radio{cursor:pointer;display:inline-block;margin-bottom:2.4rem;padding:0 1rem 0 2.25rem;position:relative}.checkbox:before,.radio:before{background-color:#fff;border:2px solid #7d7d7e;height:16px;left:0;top:50%;width:16px}.checkbox input[type=checkbox],.radio input[type=radio]{opacity:0;position:absolute;z-index:-1}.checkbox__label,.radio__label{color:#7d7d7e;font-size:1.2rem;line-height:1}.checkbox__label:after,.radio__label:after{border:1px solid transparent;height:18px;left:0;top:50%;width:18px}.checkbox input[type=checkbox]:focus+.checkbox__label:after,.radio input[type=radio]:focus+.radio__label:after{border-color:#E83FB8;box-shadow:0 1px 2px 1px #dededf inset}.select,.textfield{background-color:#fff;display:block;margin-top:-2px;margin-bottom:2.4rem;position:relative}.select__label,.textfield__label{background-color:#fff;font-size:1.2rem;position:absolute;left:1px;line-height:1;padding:.5rem;right:1px;top:1px}.select select,.textfield input,.textfield textarea{background-color:transparent;border:1px solid #7d7d7e;border-radius:2px;box-sizing:border-box;padding:1.8rem .5rem .6rem;position:relative;width:100%}.select select:focus,.textfield :focus{border-color:#E83FB8;box-shadow:0 1px 2px 0 #dededf inset;outline:0}.radio:before,.radio__label:after{border-radius:20px}.radio input[type=radio]:checked+.radio__label:before{background-color:#e528b0;border-radius:20px;content:'';height:10px;left:5px;margin-top:-5px;position:absolute;top:50%;width:10px}.checkbox:before,.checkbox__label:after{border-radius:2px}.checkbox input[type=checkbox]:checked+.checkbox__label:after{color:#e528b0;content:'\2714';font-size:14px;line-height:18px;text-align:center}.select:after{content:'';border-left:.6rem solid transparent;border-right:.6rem solid transparent;border-top:.6rem solid #7d7d7e;height:0;margin-top:-.5rem;position:absolute;right:1rem;bottom:1.3rem;width:0}.select select{z-index:100}.select option[disabled]{background-color:#efeff0;color:#5a5a5b}.grid{display:-ms-flexbox;display:-webkit-box;display:flex}.grid>*{-ms-flex:1;flex:1;-webkit-box-flex:4;-ms-flex-positive:4;flex-grow:4;padding-left:1rem;padding-right:1rem}.grid>:first-child:not(:last-child){margin-left:-1rem}.grid>:last-child:not(:first-child){margin-right:-1rem}.grid>.column--light{-webkit-box-flex:2;-ms-flex-positive:2;flex-grow:2}.grid>.column--heavy{-webkit-box-flex:8;-ms-flex-positive:8;flex-grow:8}@media (max-width:599px){.grid--medium{display:block}.grid--medium>*{padding-left:0;padding-right:0}.grid--medium>:first-child{margin-left:0}.grid--medium>:last-child{margin-right:0}}@media (max-width:959px){.grid--large{display:block}.grid--large>*{padding-left:0;padding-right:0}.grid--large>:first-child{margin-left:0}.grid--large>:last-child{margin-right:0}}.wrapper{margin:0 auto;max-width:960px;padding:4.8rem 0}.wrapper--large{max-width:1200px;padding:7.2rem 0}.wrapper--small{max-width:640px;padding:2.4rem 0}
+.btn--primary{background-color:#3FE8B8}.btn--primary:focus,.btn--primary:hover{background-color:#28e5b0}.btn--primary:active{color:#3FE8B8}.btn--success{background-color:#3FE8B8}.btn--success:focus,.btn--success:hover{background-color:#28e5b0}.btn--success:active{color:#3FE8B8}.btn--info{background-color:#3FB8E8}.btn--info:focus,.btn--info:hover{background-color:#28b0e5}.btn--info:active{color:#3FB8E8}.btn--warning{background-color:#E8B83F}.btn--warning:focus,.btn--warning:hover{background-color:#e5b028}.btn--warning:active{color:#E8B83F}.btn--danger{background-color:#E8633F}.btn--danger:focus,.btn--danger:hover{background-color:#e55028}.btn--danger:active{color:#E8633F}@media only screen and (orientation: portrait){.gsc-results-wrapper-overlay{left:3%;top:2%;width:94%;height:96%;padding:30px 15px 15px}}#navbar-top{position:fixed}#navbar-bottom{max-width:800px;bottom:0}#navbar-top,#navbar-bottom{width:100%;z-index:2;transition-delay:0s,0s;transition-duration:.2s,.2s;transition-timing-function:ease,ease}@media screen and (orientation: landscape){#navbar-top{width:inherit;left:inherit;right:0}}#share-icon{width:100%;margin:0;background:#fff;box-shadow:0 0 1px #767676}#share-icon>a{padding-top:0;padding-bottom:10px;color:#999;text-decoration:none}#share-icon>a:first-child{box-shadow:inset -1.5px 0 0px #f3f3f3;border-radius:0}@media screen and (orientation: landscape){#share-icon>a:first-child{min-width:calc(100vw/6)}}#share-icon>a [class^="icon-"],#share-icon>a [class*=" icon-"]{background-color:#fff}#share-icon>a.share-facebook:hover,#share-icon>a.share-facebook:active,#share-icon>a.share-facebook:focus{color:#3b5998}#share-icon>a.share-twitter:hover,#share-icon>a.share-twitter:active,#share-icon>a.share-twitter:focus{color:#68aade}#share-icon>a.share-line:hover,#share-icon>a.share-line:active,#share-icon>a.share-line:focus{color:#00cf00}#share-icon>a.share-hatena:hover,#share-icon>a.share-hatena:active,#share-icon>a.share-hatena:focus{color:#008fde}#share-icon>a.share-pinterest:hover,#share-icon>a.share-pinterest:active,#share-icon>a.share-pinterest:focus{color:#e60023}body{font-family:Cambria,"Times New Roman",Times,"游明朝体","Yu Mincho",YuMincho,"Hiragino Mincho ProN",serif}header{margin:0;border:0;top:0;left:0;background-color:#4f8ef6;color:#fff}header:nth-of-type(1) amp-img:nth-of-type(1){vertical-align:text-top}header .btn{color:#fff;text-decoration:none;opacity:inherit}header .btn:link,header .btn:visited{color:#fff}@media only screen and (max-width: 693px) and (orientation: portrait){.--first-view{min-height:100vh}}h1:nth-of-type(1){margin-top:0}img{max-width:100%}amp-img[layout='fill']>img[src]{object-fit:cover}amp-img[layout='responsive']>img[src]{object-fit:scale-down}hr{height:0;margin:0;padding:0;border:0;border-top:1px solid rgba(0,0,0,0.1);border-bottom:1px solid #fff}a{color:rgba(0,0,0,0.8)}a:active,a:hover,a:visited{color:rgba(0,0,0,0.8);text-decoration:none}article .--pre-bar-spacer{height:24px}article header .h1,article header .h2,article header .h3,article header .h4,article header .h5,article header .h6,article header h1,article header h2,article header h3,article header h4,article header h5,article header h6,article section .h1,article section .h2,article section .h3,article section .h4,article section .h5,article section .h6,article section h1,article section h2,article section h3,article section h4,article section h5,article section h6{letter-spacing:-0.02em;font-weight:700;margin-left:-1.8px;line-height:1.15;margin-top:40px;margin-bottom:4px}article header .h1,article header .h2,article header h1,article header h2,article section .h1,article section .h2,article section h1,article section h2{font-size:28px}article header .h2,article header h2,article section .h2,article section h2{font-weight:700;margin-top:16px;margin-bottom:6px}article header p,article section p{margin-bottom:30px}article header li,article section li{margin-bottom:15px}article header p,article header li,article section p,article section li{font-size:18px;letter-spacing:.005rem;line-height:1.45;font-weight:400}article .share--btn{padding:0 10px}article .pocket-btn{display:inline-block;height:20px;vertical-align:middle;margin-top:-2px}article amp-ad[type='adsense']{margin-bottom:1rem}article.has-ads .grid>amp-ad{padding:0}@media screen and (orientation: landscape){article.has-ads .grid>amp-ad{max-height:calc(100vh - 48px - 50px)}}@media only screen and (max-width: 693px){article.has-ads .wrapper:nth-child(4) .--pc{display:none}}@media only screen and (min-width: 694px){article.has-ads{display:-webkit-flex;display:-moz-flex;display:-ms-flex;display:-o-flex;display:flex;-webkit-flex-wrap:wrap;-moz-flex-wrap:wrap;-o-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-flex-direction:row-reverse;-moz-flex-direction:row-reverse;-o-flex-direction:row-reverse;-ms-flex-direction:row-reverse;flex-direction:row-reverse;-webkit-justify-content:flex-start;-moz-justify-content:flex-start;-o-justify-content:flex-start;-ms-justify-content:flex-start;justify-content:flex-start}article.has-ads .wrapper:nth-child(1),article.has-ads .wrapper:nth-child(3){width:calc(100% - 336px - 2.4rem);margin:0;padding:2.4rem;padding-right:0}article.has-ads .wrapper:nth-child(1){order:-2}article.has-ads .wrapper:nth-child(2){display:none}article.has-ads .wrapper:nth-child(4){order:-1;width:336px;height:0;padding:0;margin-top:48px}article.has-ads .wrapper:nth-child(4) .fs-small{margin-left:.7rem}article.has-ads .wrapper:nth-child(4) .--pc .fs-small{margin-top:calc(100vh - 30px - 48px - 90px)}article.has-ads .wrapper:nth-child(4) .--pc.is-amp .fs-small{margin-top:calc(100vh - 30px - 48px)}}@media only screen and (min-width: 694px) and (orientation: landscape){article.has-ads .wrapper:nth-child(4) .--pc .fs-small{margin-top:calc(100vh - 30px - 90px)}article.has-ads .wrapper:nth-child(4) .--pc.is-amp .fs-small{margin-top:calc(100vh - 30px)}}@media only screen and (min-width: 694px){article.has-ads .wrapper:nth-child(4) amp-ad[type='adsense']{margin-bottom:0}}.share-icon [class^="icon-"],.share-icon [class*=" icon-"]{color:#999;text-decoration:underline;background-color:#fff}.share-icon .icon-share-hatena{color:#008fde}.share-icon .icon-share-hatena:hover,.share-icon .icon-share-hatena:active,.share-icon .icon-share-hatena:focus{color:#008fde}.share-icon .icon-share-pocket{color:#ff004c}.share-icon .icon-share-pocket:hover,.share-icon .icon-share-pocket:active,.share-icon .icon-share-pocket:focus{color:#ff004c}@media only screen and (orientation: portrait){article header .h1,article header .h2,article header .h3,article header .h4,article header .h5,article header .h6,article header h1,article header h2,article header h3,article header h4,article header h5,article header h6,article section .h1,article section .h2,article section .h3,article section .h4,article section .h5,article section .h6,article section h1,article section h2,article section h3,article section h4,article section h5,article section h6{line-height:1.2}article header .h1,article header .h2,article header h1,article header h2,article section .h1,article section .h2,article section h1,article section h2{font-size:26px}article header p,article header li,article section p,article section li{font-size:20px;line-height:1.6}}.embed-responsive-3by1{padding-bottom:30%}.embed-responsive-3by1 .embed-responsive-item{height:auto;margin-top:-16.66666%}.text-muted{color:#777}amp-list>[overflow]{position:absolute;bottom:0}amp-list article{padding-top:.7rem}amp-list article a{text-decoration:none}amp-list article a:link,amp-list article a:visited{color:inherit}amp-list article a>p:nth-child(1){margin-left:1vw;margin-right:2vw}amp-list article a>p:nth-of-type(2){overflow:hidden}amp-list figure{position:relative;width:8em;height:8em;padding-bottom:initial;margin-right:1%}amp-list amp-img{max-width:100%}amp-list amp-img[layout]{margin-start:initial;-webkit-margin-start:initial}amp-list p{margin-left:4vw;margin-right:4vw;font-family:"Helvetica Neue",Helvetica,Arial,"游ゴシック体","Yu Gothic",YuGothic,"Hiragino Kaku Gothic ProN",Meiryo,sans-serif}.explore{width:100vw;top:0;bottom:0;left:-100vw;z-index:3;transition:left ease-in-out .2s}.explore>div{min-height:100vh;position:relative;z-index:2;background-color:#fefefe}.explore amp-carousel{margin:0 auto;max-width:calc((100vh - 48px - 1em)*4/3);max-height:calc(100vh - 48px - 1em)}@media only screen and (min-aspect-ratio: 3 / 4) and (min-height: 768px){.explore amp-carousel{max-width:calc((100vh - 48px - 1em)*4/3/2);max-height:calc((100vh - 48px - 1em)/2)}}.explore amp-carousel amp-fit-text{position:absolute;margin:auto 0 0;max-height:calc(100%*2/3);color:#fefefe;font-weight:600;text-shadow:.5px 1.5px rgba(0,0,0,0.15);z-index:0}.explore amp-carousel amp-fit-text>div:first-of-type{background-image:url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwLjAiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMDAwMDAiIHN0b3Atb3BhY2l0eT0iMC41NCIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');background-size:100%;background-image:-webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(0,0,0,0)),color-stop(100%, rgba(0,0,0,0.54)));background-image:-moz-linear-gradient(rgba(0,0,0,0) 0%,rgba(0,0,0,0.54) 100%);background-image:-webkit-linear-gradient(rgba(0,0,0,0) 0%,rgba(0,0,0,0.54) 100%);background-image:linear-gradient(rgba(0,0,0,0) 0%,rgba(0,0,0,0.54) 100%);backdrop-filter:blur(1px)}.explore .next{min-width:100vw;max-width:none;overflow-x:auto}.explore .next amp-list{min-height:0}.explore .next amp-list>[role='list']{position:relative;height:auto;width:auto;min-width:100vw;max-width:none;display:-webkit-flex;display:-moz-flex;display:-ms-flex;display:-o-flex;display:flex;flex-wrap:wrap;-webkit-justify-content:space-between;-moz-justify-content:space-between;-o-justify-content:space-between;-ms-justify-content:space-between;justify-content:space-between}.explore .next amp-list>[role='list']>a[role='listitem']{color:rgba(255,255,255,0.95);margin-top:1px;position:relative;z-index:0;overflow:hidden;-webkit-border-radius:2px;-moz-border-radius:2px;-o-border-radius:2px;-ms-border-radius:2px;border-radius:2px;width:calc((100vw - 2px)/3);height:calc((100vh - 2px)/3)}.explore .next amp-list>[role='list']>a[role='listitem']:active,.explore .next amp-list>[role='list']>a[role='listitem']:hover,.explore .next amp-list>[role='list']>a[role='listitem']:visited{color:rgba(255,255,255,0.95);text-decoration:none}@media only screen and (min-aspect-ratio: 3 / 4){.explore .next amp-list>[role='list']>a[role='listitem']{width:calc((100vw - 2px)/3);height:calc((100vh - 1px)/2)}}.explore .next amp-list>[role='list']>a[role='listitem']:nth-of-type(12n+6),.explore .next amp-list>[role='list']>a[role='listitem']:nth-of-type(12n+9),.explore .next amp-list>[role='list']>a[role='listitem']:nth-of-type(12n+11){margin-top:calc(-1*(100vh - 2px)/3)}@media only screen and (min-aspect-ratio: 3 / 4){.explore .next amp-list>[role='list']>a[role='listitem']:nth-of-type(12n+6),.explore .next amp-list>[role='list']>a[role='listitem']:nth-of-type(12n+9),.explore .next amp-list>[role='list']>a[role='listitem']:nth-of-type(12n+11){margin-top:calc(-1*(100vh - 1px)/2)}}.explore .next amp-list>[role='list']>a[role='listitem']:nth-of-type(12n+5),.explore .next amp-list>[role='list']>a[role='listitem']:nth-of-type(12n+11){width:calc((100vw - 2px)/3*2 + 1px);height:calc((100vh - 2px)/3*2 + 1px)}@media only screen and (min-aspect-ratio: 3 / 4){.explore .next amp-list>[role='list']>a[role='listitem']:nth-of-type(12n+5),.explore .next amp-list>[role='list']>a[role='listitem']:nth-of-type(12n+11){width:calc((100vw - 2px)/3*2 + 1px);height:100vh}}.explore .next amp-list>[role='list']>a[role='listitem']>amp-fit-text{position:absolute;bottom:0;width:100%;max-height:100%;color:#fefefe;font-family:"Helvetica Neue",Helvetica,Arial,"游ゴシック体","Yu Gothic",YuGothic,"Hiragino Kaku Gothic ProN",Meiryo,sans-serif;font-weight:600;text-shadow:.5px 1.5px rgba(0,0,0,0.15)}.explore .next amp-list>[role='list']>a[role='listitem']>amp-fit-text>div:first-of-type{background-image:url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwLjAiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMDAwMDAiIHN0b3Atb3BhY2l0eT0iMC41NCIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');background-size:100%;background-image:-webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(0,0,0,0)),color-stop(100%, rgba(0,0,0,0.54)));background-image:-moz-linear-gradient(rgba(0,0,0,0) 0%,rgba(0,0,0,0.54) 100%);background-image:-webkit-linear-gradient(rgba(0,0,0,0) 0%,rgba(0,0,0,0.54) 100%);background-image:linear-gradient(rgba(0,0,0,0) 0%,rgba(0,0,0,0.54) 100%);backdrop-filter:blur(1px)}.explore .next amp-img{background-color:#999}.explore header figure{position:relative;width:48px;height:48px;margin-left:-1rem;padding-bottom:0}.explore amp-img{max-width:100%}.explore amp-img[layout]{margin-start:initial;-webkit-margin-start:initial}.explore amp-img,.explore amp-video,.explore amp-youtube{margin-start:initial;-webkit-margin-start:initial}.explore p{margin-left:4vw;margin-right:4vw}.footer{display:-webkit-flex;display:-moz-flex;display:-ms-flex;display:-o-flex;display:flex;-webkit-justify-content:space-around;-moz-justify-content:space-around;-o-justify-content:space-around;-ms-justify-content:space-around;justify-content:space-around}.footer a{font-size:1.3rem;color:rgba(0,0,0,0.67);text-decoration:none}.footer a:active,.footer a:focus,.footer a:hover{text-decoration:underline}#copyright{color:rgba(0,0,0,0.15);line-height:1.2em;height:1.2em;padding-bottom:.4em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;display:-webkit-flex;display:-moz-flex;display:-ms-flex;display:-o-flex;display:flex;-webkit-justify-content:center;-moz-justify-content:center;-o-justify-content:center;-ms-justify-content:center;justify-content:center}#copyright .rtl{direction:rtl;unicode-bidi:bidi-override;overflow:hidden;text-overflow:ellipsis}.bar-bottom{position:absolute;max-width:100vw;min-width:100vw;z-index:-1}html{background-color:#fff}.bar-bottom,.footer-ads-spacer{height:50px}@media only screen and (min-width: 694px){.bar-bottom,.footer-ads-spacer{height:90px}}.footer-chat-spacer{height:50px}@media screen{body,div,article,p{margin:0;padding:0}body{-webkit-text-size-adjust:100%;background-color:#e6e6e6;color:#1b1b1b;-webkit-font-smoothing:subpixel-antialiased;font-size:19px;line-height:30px;text-rendering:optimizeLegibility}body>article{padding-left:4vw;padding-right:4vw}body amp-img,body amp-video,body amp-youtube,body amp-iframe{margin-start:-4vw;-webkit-margin-start:-4vw}}@media only screen and (min-width: 694px){body>article{padding-left:0;padding-right:0}body amp-img,body amp-video,body amp-youtube,body amp-iframe{margin-start:0;-webkit-margin-start:0}}@media screen{body>header,body>article,body>footer{max-width:800px;margin-left:auto;margin-right:auto;text-align:start;word-wrap:break-word}body>article,body>footer{position:relative;background-color:#fbfbfb}body div,body p,body a{max-width:100%}body amp-img{width:100vw}body amp-img img{min-width:100vw}body amp-video,body amp-youtube,body amp-iframe{width:100vw}body video{width:100vw;height:auto;position:relative}}@media only screen and (min-width: 694px){body{margin:0 auto}body amp-img,body amp-video,body amp-youtube,body amp-iframe{width:initial}body img{min-width:initial}body>article,body>footer{box-shadow:0 12px 12px 3px rgba(0,0,0,0.2)}}@font-face{font-family:'siphandon';src:url("/fonts/siphandon.ttf?9zhtrx") format("truetype"),url("/fonts/siphandon.woff?9zhtrx") format("woff"),url("/fonts/siphandon.svg?9zhtrx#siphandon") format("svg");font-weight:normal;font-style:normal}.icon-explore,.icon-map,.icon-notifications,.icon-search{font-family:'siphandon';speak:none;font-style:normal;font-weight:normal;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.icon-explore:before{content:"🌍"}.icon-map:before{content:"🗺"}.icon-notifications:before{content:"🔔"}.icon-search:before{content:"🔍"}/*!
+ ** @package IcoFont
+ ** @version 1.0.1
+ ** @author IcoFont https://icofont.com
+ ** @copyright Copyright (c) 2015 - 2020 IcoFont
+ ** @license - https://icofont.com/license/ */@font-face{font-family:"IcoFont";font-weight:normal;font-style:"Regular";src:url("/fonts/20201223.woff2") format("woff2"),url("/fonts/20201223.woff") format("woff")}[class^="icofont-"],[class*=" icofont-"]{font-family:"IcoFont";speak:none;font-style:normal;font-weight:normal;font-variant:normal;text-transform:none;white-space:nowrap;word-wrap:normal;direction:ltr;line-height:1;-webkit-font-feature-settings:"liga";-webkit-font-smoothing:antialiased}.icofont-pinterest:before{content:""}.icofont-xs{font-size:.5em}.icofont-sm{font-size:.75em}.icofont-md{font-size:1.25em}.icofont-lg{font-size:1.5em}.icofont-1x{font-size:1em}.icofont-2x{font-size:2em}.icofont-3x{font-size:3em}.icofont-4x{font-size:4em}.icofont-5x{font-size:5em}.icofont-6x{font-size:6em}.icofont-7x{font-size:7em}.icofont-8x{font-size:8em}.icofont-9x{font-size:9em}.icofont-10x{font-size:10em}.icofont-fw{text-align:center;width:1.25em}.icofont-ul{list-style-type:none;padding-left:0;margin-left:0}.icofont-ul>li{position:relative;line-height:2em}.icofont-ul>li .icofont{display:inline-block;vertical-align:middle}.icofont-border{border:solid .08em #f1f1f1;border-radius:.1em;padding:.2em .25em .15em}.icofont-pull-left{float:left}.icofont-pull-right{float:right}.icofont.icofont-pull-left{margin-right:.3em}.icofont.icofont-pull-right{margin-left:.3em}.icofont-spin{-webkit-animation:icofont-spin 2s infinite linear;animation:icofont-spin 2s infinite linear;display:inline-block}.icofont-pulse{-webkit-animation:icofont-spin 1s infinite steps(8);animation:icofont-spin 1s infinite steps(8);display:inline-block}@-webkit-keyframes icofont-spin{0%{-webkit-transform:rotate(0deg);transform:rotate(0deg)}100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}@keyframes icofont-spin{0%{-webkit-transform:rotate(0deg);transform:rotate(0deg)}100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}.icofont-rotate-90{-ms-filter:"progid:DXImageTransform.Microsoft.BasicImage(rotation=1)";-webkit-transform:rotate(90deg);transform:rotate(90deg)}.icofont-rotate-180{-ms-filter:"progid:DXImageTransform.Microsoft.BasicImage(rotation=2)";-webkit-transform:rotate(180deg);transform:rotate(180deg)}.icofont-rotate-270{-ms-filter:"progid:DXImageTransform.Microsoft.BasicImage(rotation=3)";-webkit-transform:rotate(270deg);transform:rotate(270deg)}.icofont-flip-horizontal{-ms-filter:"progid:DXImageTransform.Microsoft.BasicImage(rotation=0, mirror=1)";-webkit-transform:scale(-1, 1);transform:scale(-1, 1)}.icofont-flip-vertical{-ms-filter:"progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1)";-webkit-transform:scale(1, -1);transform:scale(1, -1)}.icofont-flip-horizontal.icofont-flip-vertical{-ms-filter:"progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1)";-webkit-transform:scale(-1, -1);transform:scale(-1, -1)}:root .icofont-rotate-90,:root .icofont-rotate-180,:root .icofont-rotate-270,:root .icofont-flip-horizontal,:root .icofont-flip-vertical{-webkit-filter:none;filter:none;display:inline-block}.icofont-inverse{color:#fff}.sr-only{border:0;clip:rect(0, 0, 0, 0);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px}.sr-only-focusable:active,.sr-only-focusable:focus{clip:auto;height:auto;margin:0;overflow:visible;position:static;width:auto}@font-face{font-family:'style';src:url("/fonts/style.ttf?225wom") format("truetype"),url("/fonts/style.woff?225wom") format("woff"),url("/fonts/style.svg?225wom#style") format("svg");font-weight:normal;font-style:normal}.icon-share-google,.icon-feedly,.icon-share-pocket,.icon-share-line,.icon-share-hatena,.icon-share-facebook,.icon-share-twitter,.icon-notifications,.icon-search{font-family:'style';speak:none;font-style:normal;font-weight:normal;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.icon-share-google:before{content:"🔗"}.icon-feedly:before{content:"🔥"}.icon-share-pocket:before{content:"📑"}.icon-share-line:before{content:"💬"}.icon-share-hatena:before{content:"❔"}.icon-share-facebook:before{content:"🗣"}.icon-share-twitter:before{content:"🐦"}.icon-notifications:before{content:"🔔"}.icon-search:before{content:"🔍"}
+
+
+article[data-src='https://michilu.com/blog/posts/55/']{display:none}
+</style>
+<style>
+
+</style>
+<script type='application/ld+json'>{"publisher": {"logo": {"url": "https://michilu.com/img/apple-touch-icon-180x.png", "width": 60, "@type": "ImageObject", "height": 60}, "@type": "Organization", "name": "Site Author:"}, "author": {"@type": "Person", "name": "Site Author:"}, "headline": "[Django]: Django\u548c\u8a33\u30c9\u30ad\u30e5\u30e1\u30f3\u30c8 sync to r5241&amp;mdash;", "image": {"url": "https://michilu.com/img/apple-touch-icon-180x.png", "width": 700, "@type": "ImageObject", "height": 470}, "datePublished": "2007-05-15T09:51:10+09:00", "@type": "BlogPosting", "mainEntityOfPage": "https://michilu.com/blog/posts/55/", "@context": "http://schema.org", "dateModified": "2007-05-15T09:56:11+09:00"}</script>
+
+<meta content='🌝ﾂｷﾖﾐﾁﾙ' name='apple-mobile-web-app-title'>
+
+
+<meta content='ツキヨミチル' itemprop='name'>
+<meta content='ツキヨミチル' property='og:site_name'>
+
+<meta content='article' property='og:type'>
+<meta content='[Django]: Django和訳ドキュメント sync to r5241' property='og:title'>
+
+<meta content='https://michilu.com/blog/posts/55/' property='og:url'>
+<meta content="[Django]: Django和訳ドキュメント sync to r5241" property='og:description'>
+
+<meta content='https://michilu.com/img/apple-touch-icon-200x.png' property='og:image'>
+
+
+
+<link href='/manifest.json' rel='manifest'>
+
+<link href='/img/apple-touch-icon-180x.png' rel='apple-touch-icon' sizes='180x180'>
+<link href='/img/apple-touch-icon-180x.png' rel='apple-touch-icon-precomposed'>
+<link href='/img/apple-touch-icon-180x.png' rel='shortcut icon'>
+<link href='/img/apple-touch-icon-192x.png' rel='icon' sizes='192x192'>
+</head>
+<body>
+<amp-analytics type='googleanalytics'>
+<script type='application/json'>{"requests": {"scrollEvent": "${host}/debug/collect?${basePrefix}&t=event\n&ec=${eventCategory}&ea=${eventAction}&el=${eventLabel}&ev=${eventValue}\n&ni=${ni}\n${baseSuffix}", "scrollTiming": "${host}/debug/collect?${basePrefix}&t=timing\n&utc=${timingCategory}&utv=${timingVar}&utt=${timingValue}&utl=${timingLabel}\n${baseSuffix}"}, "vars": {"account": null}, "triggers": {"trackPageview": {"on": "visible", "request": "pageview"}, "scrollPercentage": {"on": "scroll", "request": "scrollEvent", "vars": {"ni": true, "account": null, "eventLabel": "${verticalScrollBoundary}%", "eventValue": 1, "eventCategory": "Scroll Depth", "eventAction": "Percentage"}, "scrollSpec": {"verticalBoundaries": [0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100]}}, "scrollPixel": {"on": "scroll", "request": "scrollEvent", "vars": {"ni": true, "account": null, "eventLabel": "${scrollTop}", "eventValue": 1, "eventCategory": "Scroll Depth", "eventAction": "Pixel Depth"}, "scrollSpec": {"verticalBoundaries": [0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100]}}, "scrollTiming": {"on": "scroll", "request": "scrollTiming", "vars": {"timingCategory": "Scroll Depth", "timingValue": "${totalEngagedTime}000", "timingLabel": "${verticalScrollBoundary}%", "timingVar": "Percentage", "account": null}, "scrollSpec": {"verticalBoundaries": [0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100]}}}}</script>
+</amp-analytics>
+<header class='grid' id='navbar-top'>
+<div class='column--heavy grid' id='share-icon'>
+<a class='btn btn--link visible-xs-inline-block' href='/'>
+<span aria-hidden='true' class='icon-map'></span>
+</a>
+<a class='btn btn--link share-line visible-xs-inline-block' href='https://line.me/R/msg/text/?[Django]: Django和訳ドキュメント sync to r5241 https://michilu.com/blog/posts/55/' target='_blank' title='LINEで送る'>
+<span aria-hidden='true' class='icon-share-line'></span>
+</a>
+<a class='btn btn--link share-hatena' href='http://b.hatena.ne.jp/add?mode=confirm&amp;url=https://michilu.com/blog/posts/55/' rel='noopener' target='_blank' title='はてブに追加する'>
+<span aria-hidden='true' class='icon-share-hatena'></span>
+</a>
+<a class='btn btn--link share-twitter' href='https://twitter.com/share?u=https://michilu.com/blog/posts/55/&amp;text=[Django]: Django和訳ドキュメント sync to r5241' rel='noopener' target='_blank' title='Twitterにツイートする'>
+<span aria-hidden='true' class='icon-share-twitter'></span>
+</a>
+<a class='btn btn--link share-facebook' href='https://www.facebook.com/share.php?u=https://michilu.com/blog/posts/55/' rel='noopener' target='_blank' title='Facebookでシェアする'>
+<span aria-hidden='true' class='icon-share-facebook'></span>
+</a>
+<a class='btn btn--link share-pinterest' href='https://www.pinterest.com/pin/create/button/?url=https://michilu.com/blog/posts/55/' rel='noopener' target='_blank' title='Pinterestに保存する'>
+<span aria-hidden='true' class='icofont-pinterest'></span>
+</a>
+</div>
+</header>
+
+<article class=''>
+
+<div class='wrapper wrapper--small'>
+
+<div class='--pre-bar-spacer grid'>
+<div class='btn btn--link disabled'>&#8203;</div>
+</div>
+<section>
+
+<h1>[Django]: Django和訳ドキュメント sync to r5241</h1>
+
+
+<p><a class="reference external" href="http://michilu.com/django/doc-ja/index/">Django オンラインドキュメント和訳</a> 更新しました。 Revision 5241 (2007/05/14). newforms - <a class="reference external" href="http://michilu.com/django/doc-ja/newforms/#id18">組み込みフォームフィールドクラス</a> についての記述が更新されています。</p>
+<p>以下、 diff -r 5221:5241 の主な変更分です。</p>
+<div class="section" id="id2">
+<h1>組み込みフォームフィールドクラス</h1>
+<p>通常， <tt class="docutils literal">newforms</tt> ライブラリには，一般的なバリデーション機能を備えたフィー
+ルドクラスのセットがついてきます．この節では，そうした組み込みフィールドに
+ついて述べます．</p>
+<p>各フィールドについて， <tt class="docutils literal">widget</tt> パラメタを指定しなかったときのデフォルト
+のウィジェット型について説明しています．また，データが空の値だったとき
+(前述の <tt class="docutils literal">requied</tt> の節を参照してください) に返される値についても定義して
+います．</p>
+<div class="section" id="booleanfield">
+<h2><tt class="docutils literal">BooleanField</tt></h2>
+<blockquote>
+<ul class="simple">
+<li>デフォルトのウィジェット: <tt class="docutils literal">CheckboxInput</tt></li>
+<li>空のフォームデータに対する値: <tt class="docutils literal">None</tt></li>
+<li>Python データへの正規化: Python の <tt class="docutils literal">True</tt> または <tt class="docutils literal">False</tt> 値</li>
+<li>バリデーションなし (<tt class="docutils literal">ValidationError</tt> を送出しない)</li>
+</ul>
+</blockquote>
+</div>
+<div class="section" id="charfield">
+<h2><tt class="docutils literal">CharField</tt></h2>
+<blockquote>
+<ul class="simple">
+<li>デフォルトのウィジェット: <tt class="docutils literal">TextInput</tt></li>
+<li>空のフォームデータに対する値: <tt class="docutils literal">''</tt> (空文字列)</li>
+<li>Python データへの正規化: Unicode 文字列オブジェクト</li>
+<li><tt class="docutils literal">max_length</tt> や <tt class="docutils literal">min_length</tt> を指定しないかぎり，
+バリデーションなし</li>
+</ul>
+</blockquote>
+<p>オプションの引数として， <tt class="docutils literal">max_length</tt> と <tt class="docutils literal">min_length</tt> の二つをとれます．
+これらの引数を指定すると，文字列長が最大，あるいは最小値の条件を満たしてい
+るか検証します．</p>
+</div>
+<div class="section" id="choicefield">
+<h2><tt class="docutils literal">ChoiceField</tt></h2>
+<blockquote>
+<ul class="simple">
+<li>デフォルトのウィジェット: <tt class="docutils literal">Select</tt></li>
+<li>空のフォームデータに対する値: <tt class="docutils literal">''</tt> (空文字列)</li>
+<li>Python データへの正規化: Unicode 文字列オブジェクト</li>
+<li>入力値が選択肢内にある値かどうか検証します．</li>
+</ul>
+</blockquote>
+<p>追加の引数として， <tt class="docutils literal">choices</tt> 引数をとります． <tt class="docutils literal">choices</tt> 引数はイテレー
+ション可能オブジェクト (たとえばリストやタプルなど) で，各要素はフィールド
+の選択肢として使える 2 要素のタプルでなければなりません．</p>
+</div>
+<div class="section" id="datefield">
+<h2><tt class="docutils literal">DateField</tt></h2>
+<blockquote>
+<ul class="simple">
+<li>デフォルトのウィジェット: <tt class="docutils literal">TextInput</tt></li>
+<li>空のフォームデータに対する値: <tt class="docutils literal">None</tt></li>
+<li>Python データへの正規化: Python <tt class="docutils literal">datetime.date</tt> オブジェクト</li>
+<li>入力値が <tt class="docutils literal">datetime.date</tt> や <tt class="docutils literal">datetime.datetime</tt> オブジェクト，ま
+たは特定の日付フォーマットの形式に従っているか検証します．</li>
+</ul>
+</blockquote>
+<p>オプションの引数として， <tt class="docutils literal">input_formats</tt> をとります． <tt class="docutils literal">input_formats</tt>
+は，文字列から有効な <tt class="docutils literal">datetime.date</tt> オブジェクトへの変換を試みるために使
+われるフォーマット文字列からなるリストです．</p>
+<p><tt class="docutils literal">input_formats</tt> を指定しない場合，デフォルトで以下の入力フォーマットをサ
+ポートします:</p>
+<pre class="literal-block">
+'%Y-%m-%d', '%m/%d/%Y', '%m/%d/%y', # '2006-10-25', '10/25/2006', '10/25/06'
+'%b %d %Y', '%b %d, %Y',            # 'Oct 25 2006', 'Oct 25, 2006'
+'%d %b %Y', '%d %b, %Y',            # '25 Oct 2006', '25 Oct, 2006'
+'%B %d %Y', '%B %d, %Y',            # 'October 25 2006', 'October 25, 2006'
+'%d %B %Y', '%d %B, %Y',            # '25 October 2006', '25 October, 2006'
+</pre>
+</div>
+<div class="section" id="datetimefield">
+<h2><tt class="docutils literal">DateTimeField</tt></h2>
+<blockquote>
+<ul class="simple">
+<li>デフォルトのウィジェット: <tt class="docutils literal">TextInput</tt></li>
+<li>空のフォームデータに対する値: <tt class="docutils literal">None</tt></li>
+<li>Python データへの正規化: Python <tt class="docutils literal">datetime.datetime</tt> オブジェクト</li>
+<li>入力値が <tt class="docutils literal">datetime.date</tt> や <tt class="docutils literal">datetime.datetime</tt> オブジェクト，ま
+たは特定の日付フォーマットの形式に従っているか検証します．</li>
+</ul>
+</blockquote>
+<p>オプションの引数として， <tt class="docutils literal">input_formats</tt> をとります． <tt class="docutils literal">input_formats</tt>
+は，文字列から有効な <tt class="docutils literal">datetime.datetime</tt> オブジェクトへの変換を試みるため
+に使われるフォーマット文字列からなるリストです．</p>
+<p><tt class="docutils literal">input_formats</tt> を指定しない場合，デフォルトで以下の入力フォーマットをサ
+ポートします:</p>
+<pre class="literal-block">
+'%Y-%m-%d %H:%M:%S',     # '2006-10-25 14:30:59'
+'%Y-%m-%d %H:%M',        # '2006-10-25 14:30'
+'%Y-%m-%d',              # '2006-10-25'
+'%m/%d/%Y %H:%M:%S',     # '10/25/2006 14:30:59'
+'%m/%d/%Y %H:%M',        # '10/25/2006 14:30'
+'%m/%d/%Y',              # '10/25/2006'
+'%m/%d/%y %H:%M:%S',     # '10/25/06 14:30:59'
+'%m/%d/%y %H:%M',        # '10/25/06 14:30'
+'%m/%d/%y',              # '10/25/06'
+</pre>
+</div>
+<div class="section" id="emailfield">
+<h2><tt class="docutils literal">EmailField</tt></h2>
+<blockquote>
+<ul class="simple">
+<li>デフォルトのウィジェット: <tt class="docutils literal">TextInput</tt></li>
+<li>空のフォームデータに対する値: <tt class="docutils literal">''</tt> (空文字列)</li>
+<li>Python データへの正規化: Unicode 文字列オブジェクト</li>
+<li>やや複雑な正規表現を使って，入力値が有効なメールアドレスであるか検証
+します．</li>
+</ul>
+</blockquote>
+<p>オプションの引数として， <tt class="docutils literal">max_length</tt> と <tt class="docutils literal">min_length</tt> の二つをとれます．
+これらの引数を指定すると，文字列長が最大，あるいは最小値の条件を満たしてい
+るか検証します．</p>
+</div>
+<div class="section" id="integerfield">
+<h2><tt class="docutils literal">IntegerField</tt></h2>
+<blockquote>
+<ul class="simple">
+<li>デフォルトのウィジェット: <tt class="docutils literal">TextInput</tt></li>
+<li>空のフォームデータに対する値: <tt class="docutils literal">None</tt></li>
+<li>Python データへの正規化: Python 整数型または長整数型</li>
+<li>入力値が整数であるか検証します． Python の <tt class="docutils literal">int()</tt> 関数と同様，先頭
+や末尾に空白があってもかまいません．</li>
+</ul>
+</blockquote>
+</div>
+<div class="section" id="multiplechoicefield">
+<h2><tt class="docutils literal">MultipleChoiceField</tt></h2>
+<blockquote>
+<ul class="simple">
+<li>デフォルトのウィジェット: <tt class="docutils literal">SelectMultiple</tt></li>
+<li>空のフォームデータに対する値: <tt class="docutils literal">[]</tt> (an empty list)</li>
+<li>Python データへの正規化: Unicode 文字列オブジェクトのリスト</li>
+<li>入力値のリスト中の全ての値が選択肢内の値であるかどうか検証します．</li>
+</ul>
+</blockquote>
+<p>追加の引数として， <tt class="docutils literal">choices</tt> 引数をとります． <tt class="docutils literal">choices</tt> 引数はイテレー
+ション可能オブジェクト (たとえばリストやタプルなど) で，各要素はフィールド
+の選択肢として使える 2 要素のタプルでなければなりません．</p>
+</div>
+<div class="section" id="nullbooleanfield">
+<h2><tt class="docutils literal">NullBooleanField</tt></h2>
+<blockquote>
+<ul class="simple">
+<li>デフォルトのウィジェット: <tt class="docutils literal">NullBooleanSelect</tt></li>
+<li>空のフォームデータに対する値: <tt class="docutils literal">None</tt></li>
+<li>Python データへの正規化: A Python <tt class="docutils literal">True</tt>, <tt class="docutils literal">False</tt> or <tt class="docutils literal">None</tt> value.</li>
+<li>バリデーションなし (<tt class="docutils literal">VaridationError</tt> を送出しない)</li>
+</ul>
+</blockquote>
+</div>
+<div class="section" id="regexfield">
+<h2><tt class="docutils literal">RegexField</tt></h2>
+<blockquote>
+<ul class="simple">
+<li>デフォルトのウィジェット: <tt class="docutils literal">TextInput</tt></li>
+<li>空のフォームデータに対する値: <tt class="docutils literal">''</tt> (空文字列)</li>
+<li>Python データへの正規化: Unicode 文字列オブジェクト</li>
+<li>入力値が特定の正規表現にマッチするかどうか検証します．</li>
+</ul>
+</blockquote>
+<p>必須の引数 <tt class="docutils literal">regex</tt> をとります． <tt class="docutils literal">regex</tt> は正規表現を表す文字列またはコ
+ンパイル済みの正規表現オブジェクトです．</p>
+<p>また，以下のオプション引数をとります:</p>
+<pre class="literal-block">
+======================  =================================================
+引数                    説明
+======================  =================================================
+``max_length``          文字列の最大長です．
+``min_length``          文字列の最小長です．
+``error_message``       バリデーションに失敗したときに返すエラーメッセー
+                        ジです．メッセージを指定しなければ，汎用のエラー
+                        メッセージを使います．
+======================  =================================================
+</pre>
+</div>
+<div class="section" id="timefield">
+<h2><tt class="docutils literal">TimeField</tt></h2>
+<blockquote>
+<ul class="simple">
+<li>デフォルトのウィジェット: <tt class="docutils literal">TextInput</tt></li>
+<li>空のフォームデータに対する値: <tt class="docutils literal">None</tt></li>
+<li>Python データへの正規化: Python <tt class="docutils literal">datetime.time</tt> オブジェクト</li>
+<li>入力値が <tt class="docutils literal">datetime.time</tt> オブジェクトまたは特定の日付フォーマットの
+形式に従っているか検証します．</li>
+</ul>
+</blockquote>
+<p>オプションの引数として， <tt class="docutils literal">input_formats</tt> をとります． <tt class="docutils literal">input_formats</tt>
+は，文字列から有効な <tt class="docutils literal">datetime.time</tt> オブジェクトへの変換を試みるために使
+われるフォーマット文字列からなるリストです．</p>
+<p><tt class="docutils literal">input_formats</tt> を指定しない場合，デフォルトで以下の入力フォーマットをサ
+ポートします:</p>
+<pre class="literal-block">
+'%H:%M:%S',     # '14:30:59'
+'%H:%M',        # '14:30'
+</pre>
+</div>
+<div class="section" id="urlfield">
+<h2><tt class="docutils literal">URLField</tt></h2>
+<blockquote>
+<ul class="simple">
+<li>デフォルトのウィジェット: <tt class="docutils literal">TextInput</tt></li>
+<li>空のフォームデータに対する値: <tt class="docutils literal">''</tt> (空文字列)</li>
+<li>Python データへの正規化: Unicode 文字列オブジェクト</li>
+<li>入力値が有効な URL であるかどうか検証します．</li>
+</ul>
+</blockquote>
+<p>以下のオプションの引数をとります:</p>
+<pre class="literal-block">
+========================  ==============================================
+引数                      説明                 Description
+========================  ==============================================
+``max_length``            文字列の最大長です．
+``min_length``            文字列の最小長です．
+``verify_exists``         ``True`` にすると，バリデータが指定された URL
+                          をロードできるか調べ，該当ページの HTTP レス
+                          ポンスが 404 のときに ``ValidationError`` を
+                          送出します．デフォルト値は ``False`` です．
+``validator_user_agent``  URL が存在するか確かめるときに使うユーザエー
+                          ジェントを表す文字列です．デフォルト値は
+                          ``URL_VALIDATOR_USER_AGENT`` 設定の値です．
+========================  ==============================================
+</pre>
+</div>
+</div>
+<div class="section" id="id3">
+<span id="slightly-complex-built-in-field-classes"></span><h1>やや複雑な組み込みフィールドクラス</h1>
+<p>以下のフィールドはまだドキュメント化されていません．使いかたは，このドキュ
+メントの末尾のリンクから辿れる各フィールド型のユニットテストを参照してくだ
+さい．</p>
+<div class="section" id="combofield">
+<h2><tt class="docutils literal">ComboField</tt></h2>
+</div>
+<div class="section" id="multivaluefield">
+<h2><tt class="docutils literal">MultiValueField</tt></h2>
+</div>
+<div class="section" id="splitdatetimefield">
+<h2><tt class="docutils literal">SplitDateTimeField</tt></h2>
+<!--  -->
+<hr class="docutils" />
+<p><a class="reference external" href="http://MiCHiLU.com/blog/posts/55/">http://MiCHiLU.com/blog/posts/55/</a></p>
+<blockquote>
+<ul class="simple">
+<li>Added at         Tue, 15 May 2007 09:51:10 +0900</li>
+<li>Last modified at Tue, 15 May 2007 09:56:11 +0900</li>
+</ul>
+</blockquote>
+<p>This work is licensed under a Creative Commons Attribution-Noncommercial-Share Alike 2.1 Japan License.
+<a class="reference external" href="http://creativecommons.org/licenses/by-nc-sa/2.1/jp/">http://creativecommons.org/licenses/by-nc-sa/2.1/jp/</a></p>
+</div>
+</div>
+
+<p>
+author:
+
+
+
+
+<br>
+Posted on
+<time datetime='2007-05-15T09:51:10+09:00'>2007-5-15</time>
+
+
+<br>
+Updated on
+<time datetime='2007-05-15T09:56:11+09:00'>2007-5-15</time>
+
+</p>
+
+</section>
+</div>
+
+</article>
+
+<script>
+  (function() {
+    var element, i, len, ref, selector;
+  
+    if (window.matchMedia('(max-width: 629px)').matches) {
+      selector = '.\\-\\-pc';
+    } else {
+      selector = '.\\-\\-sp';
+    }
+  
+    ref = document.querySelectorAll(selector);
+    for (i = 0, len = ref.length; i < len; i++) {
+      element = ref[i];
+      element.parentNode.removeChild(element);
+    }
+  
+  }).call(this);
+</script>
+
+
+
+<div class='explore'>
+<div>
+<header class='grid'>
+<div class='grid'>
+<a class='btn btn--link visible-xs-inline-block disabled'>
+<figure>
+<amp-img alt='Author Avatar' class='img-circle' layout='fill' src='/img/author_avatar.jpg'></amp-img>
+</figure>
+</a>
+<a class='btn btn--link visible-xs-inline-block disabled'>&#8203;</a>
+<a class='btn btn--link' href='https://feedly.com/i/subscription/feed/https://michilu.com/rss.xml' target='_blank'>
+<span class='icon-feedly'></span>
+</a>
+<a class='btn btn--link visible-xs-inline-block disabled'>&#8203;</a>
+<a class='btn btn--link visible-xs-inline-block disabled'>&#8203;</a>
+</div>
+</header>
+
+<amp-carousel autoplay delay='3500' height='320' layout='responsive' loop type='slides' width='320'>
+<div class='slide'>
+<amp-img layout='fill' src='https://picsum.photos/2048.webp?random'></amp-img>
+<amp-fit-text class='caption' layout='fill' min-font-size='15'></amp-fit-text>
+</div>
+</amp-carousel>
+<div class='next'>
+<amp-list height='1' layout='responsive' src='/amp-list/newer.json?RANDOM' width='320'>
+<template type='amp-mustache'>
+<a href='{{root_relative_url}}'>
+<amp-fit-text height='152' layout='responsive' width='320'>{{title}}</amp-fit-text>
+{{#image}}
+<amp-img layout='fill' src='{{.}}'></amp-img>
+{{/image}}
+{{^image}}
+<amp-img layout='fill' src='https://picsum.photos/2048.webp?{{root_relative_url}}'></amp-img>
+{{/image}}
+</a>
+</template>
+</amp-list>
+</div>
+</div>
+</div>
+<footer class='ta-center fs-small text-muted' id='copyright'>
+&copy;<span>2001-</span><span id='this-year'>2020</span>&nbsp;
+ツキヨミチル
+</footer>
+</body>
+</html>
+<script async src='/js/script.js?d1c2727beb38af70907976dee9ffe7e4'></script>

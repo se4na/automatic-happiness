@@ -1,0 +1,1420 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<rss version='2.0' xmlns:atom='http://www.w3.org/2005/Atom'>
+<channel>
+<title>ツキヨミチル</title>
+<description>ツキヨミチル</description>
+<atom:link href='https://michilu.com/rss.xml' rel='self' type='application/rss+xml' />
+<atom:link href='https://pubsubhubbub.appspot.com/' rel='hub' />
+<link>https://michilu.com/</link>
+<item>
+<title>ツキヨミチル</title>
+<link>https://michilu.com/</link>
+<guid>https://michilu.com/</guid>
+<pubDate>Sat, 26 Dec 2020 01:31:45 +0000</pubDate>
+</item>
+<item>
+<title>2014</title>
+<link>https://michilu.com/2014.html</link>
+<guid>https://michilu.com/2014.html</guid>
+<pubDate>Sun, 18 Dec 2016 08:24:02 +0800</pubDate>
+</item>
+<item>
+<title>2008-2009</title>
+<link>https://michilu.com/2008-2009.html</link>
+<guid>https://michilu.com/2008-2009.html</guid>
+<pubDate>Sat, 17 Dec 2016 09:12:20 +0800</pubDate>
+</item>
+<item>
+<title>TestFlightテスター登録の手順を解説</title>
+<link>https://michilu.com/post/4358411121/testflight-reference-manual-for-the-tester/</link>
+<guid>https://michilu.com/post/4358411121/testflight-reference-manual-for-the-tester/</guid>
+<pubDate>Tue, 05 Apr 2011 04:12:00 -0400</pubDate>
+</item>
+<item>
+<title>[memo]: 決済システム</title>
+<link>https://michilu.com/blog/posts/130/</link>
+<guid>https://michilu.com/blog/posts/130/</guid>
+<pubDate>Fri, 15 Feb 2008 23:57:02 +0900</pubDate>
+</item>
+<item>
+<title>[Python]: metaclass memo</title>
+<link>https://michilu.com/blog/posts/129/</link>
+<guid>https://michilu.com/blog/posts/129/</guid>
+<pubDate>Fri, 18 Jan 2008 01:18:52 +0900</pubDate>
+</item>
+<item>
+<title>GnuPG (GNU Privacy Guard)</title>
+<link>https://michilu.com/blog/posts/128/</link>
+<guid>https://michilu.com/blog/posts/128/</guid>
+<pubDate>Sun, 30 Dec 2007 16:29:08 +0900</pubDate>
+</item>
+<item>
+<title>[Django][s6]: Google Gears</title>
+<link>https://michilu.com/blog/posts/127/</link>
+<guid>https://michilu.com/blog/posts/127/</guid>
+<pubDate>Sat, 15 Dec 2007 22:23:27 +0900</pubDate>
+</item>
+<item>
+<title>[Python]: hatena.api.auth</title>
+<link>https://michilu.com/blog/posts/126/</link>
+<guid>https://michilu.com/blog/posts/126/</guid>
+<pubDate>Fri, 09 Nov 2007 03:35:22 +0900</pubDate>
+</item>
+<item>
+<title>[Python]: Python チュートリアル メモ2</title>
+<link>https://michilu.com/blog/posts/125/</link>
+<guid>https://michilu.com/blog/posts/125/</guid>
+<pubDate>Fri, 02 Nov 2007 03:02:36 +0900</pubDate>
+</item>
+<item>
+<title>[Python]: pyhabu global.cfgをオプションで渡すpatch</title>
+<link>https://michilu.com/blog/posts/124/</link>
+<guid>https://michilu.com/blog/posts/124/</guid>
+<pubDate>Thu, 25 Oct 2007 16:10:58 +0900</pubDate>
+</item>
+<item>
+<title>[ECMAScript]: LDRに はてスタ をつけるGreasemonkey</title>
+<link>https://michilu.com/blog/posts/123/</link>
+<guid>https://michilu.com/blog/posts/123/</guid>
+<pubDate>Thu, 25 Oct 2007 16:07:23 +0900</pubDate>
+</item>
+<item>
+<title>[Python]: Python版Plagger pyhabuのpluginを作ってみる</title>
+<link>https://michilu.com/blog/posts/122/</link>
+<guid>https://michilu.com/blog/posts/122/</guid>
+<pubDate>Tue, 16 Oct 2007 10:22:45 +0900</pubDate>
+</item>
+<item>
+<title>[Python]: Python版Plagger pyhabuを使ってみる</title>
+<link>https://michilu.com/blog/posts/121/</link>
+<guid>https://michilu.com/blog/posts/121/</guid>
+<pubDate>Tue, 16 Oct 2007 02:59:42 +0900</pubDate>
+</item>
+<item>
+<title>[Python]: Python チュートリアル メモ1</title>
+<link>https://michilu.com/blog/posts/120/</link>
+<guid>https://michilu.com/blog/posts/120/</guid>
+<pubDate>Mon, 08 Oct 2007 03:40:17 +0900</pubDate>
+</item>
+<item>
+<title>Subversion repositoryの一部をGoogle codeにsyncする</title>
+<link>https://michilu.com/blog/posts/119/</link>
+<guid>https://michilu.com/blog/posts/119/</guid>
+<pubDate>Sun, 30 Sep 2007 22:47:08 +0900</pubDate>
+</item>
+<item>
+<title>[ECMAScript]: JavaScriptパフォーマンス改善の定石</title>
+<link>https://michilu.com/blog/posts/118/</link>
+<guid>https://michilu.com/blog/posts/118/</guid>
+<pubDate>Sun, 30 Sep 2007 16:33:42 +0900</pubDate>
+</item>
+<item>
+<title>[Python]: PyObjC版Cocoaセミナー初級編1</title>
+<link>https://michilu.com/blog/posts/117/</link>
+<guid>https://michilu.com/blog/posts/117/</guid>
+<pubDate>Sun, 30 Sep 2007 15:42:59 +0900</pubDate>
+</item>
+<item>
+<title>Project.vimのfilterでexcludeできないの？</title>
+<link>https://michilu.com/blog/posts/116/</link>
+<guid>https://michilu.com/blog/posts/116/</guid>
+<pubDate>Sat, 22 Sep 2007 14:22:19 +0900</pubDate>
+</item>
+<item>
+<title>[Django]: manage.py shellでclassic promptのIPythonを使えるようにする</title>
+<link>https://michilu.com/blog/posts/115/</link>
+<guid>https://michilu.com/blog/posts/115/</guid>
+<pubDate>Fri, 21 Sep 2007 16:44:41 +0900</pubDate>
+</item>
+<item>
+<title>[Django]: newforms Modelに紐付かないformデータをバリデートする</title>
+<link>https://michilu.com/blog/posts/114/</link>
+<guid>https://michilu.com/blog/posts/114/</guid>
+<pubDate>Thu, 13 Sep 2007 10:53:37 +0900</pubDate>
+</item>
+<item>
+<title>[Django]: Django ドキュメント周り更新のお知らせ</title>
+<link>https://michilu.com/blog/posts/113/</link>
+<guid>https://michilu.com/blog/posts/113/</guid>
+<pubDate>Sun, 09 Sep 2007 22:54:40 +0900</pubDate>
+</item>
+<item>
+<title>[Django]: tests.pyを分割する</title>
+<link>https://michilu.com/blog/posts/112/</link>
+<guid>https://michilu.com/blog/posts/112/</guid>
+<pubDate>Sun, 09 Sep 2007 22:53:17 +0900</pubDate>
+</item>
+<item>
+<title>[Django]: サロゲートペア文字を検出するカスタムフィールド</title>
+<link>https://michilu.com/blog/posts/111/</link>
+<guid>https://michilu.com/blog/posts/111/</guid>
+<pubDate>Fri, 07 Sep 2007 17:25:53 +0900</pubDate>
+</item>
+<item>
+<title>[Django]: Django和訳ドキュメント差分 Rev.6000:6036</title>
+<link>https://michilu.com/blog/posts/110/</link>
+<guid>https://michilu.com/blog/posts/110/</guid>
+<pubDate>Wed, 05 Sep 2007 22:48:20 +0900</pubDate>
+</item>
+<item>
+<title>[Django]: Django和訳ドキュメント sync to r6000</title>
+<link>https://michilu.com/blog/posts/109/</link>
+<guid>https://michilu.com/blog/posts/109/</guid>
+<pubDate>Mon, 27 Aug 2007 12:38:50 +0900</pubDate>
+</item>
+<item>
+<title>[Django]: Django和訳ドキュメント sync to r5922</title>
+<link>https://michilu.com/blog/posts/108/</link>
+<guid>https://michilu.com/blog/posts/108/</guid>
+<pubDate>Mon, 27 Aug 2007 12:38:19 +0900</pubDate>
+</item>
+<item>
+<title>[Django][s6]: Django Testing</title>
+<link>https://michilu.com/blog/posts/107/</link>
+<guid>https://michilu.com/blog/posts/107/</guid>
+<pubDate>Sat, 25 Aug 2007 15:14:27 +0900</pubDate>
+</item>
+<item>
+<title>ECMAScript]: Google Gears + `GearsORM`_</title>
+<link>https://michilu.com/blog/posts/106/</link>
+<guid>https://michilu.com/blog/posts/106/</guid>
+<pubDate>Wed, 22 Aug 2007 00:48:54 +0900</pubDate>
+</item>
+<item>
+<title>[Django]: Search Feed</title>
+<link>https://michilu.com/blog/posts/105/</link>
+<guid>https://michilu.com/blog/posts/105/</guid>
+<pubDate>Tue, 21 Aug 2007 01:27:57 +0900</pubDate>
+</item>
+<item>
+<title>[Django]: Django和訳ドキュメント sync to r5881</title>
+<link>https://michilu.com/blog/posts/104/</link>
+<guid>https://michilu.com/blog/posts/104/</guid>
+<pubDate>Tue, 21 Aug 2007 00:07:59 +0900</pubDate>
+</item>
+<item>
+<title>[Django]: Django和訳ドキュメント sync to r5832</title>
+<link>https://michilu.com/blog/posts/103/</link>
+<guid>https://michilu.com/blog/posts/103/</guid>
+<pubDate>Mon, 20 Aug 2007 23:24:48 +0900</pubDate>
+</item>
+<item>
+<title>[Linux]: daemontools</title>
+<link>https://michilu.com/blog/posts/102/</link>
+<guid>https://michilu.com/blog/posts/102/</guid>
+<pubDate>Fri, 17 Aug 2007 16:26:54 +0900</pubDate>
+</item>
+<item>
+<title>[ECMAScript][s6]: amachang + reStructuredText + Django</title>
+<link>https://michilu.com/blog/posts/101/</link>
+<guid>https://michilu.com/blog/posts/101/</guid>
+<pubDate>Sun, 12 Aug 2007 04:32:16 +0900</pubDate>
+</item>
+<item>
+<title>[Django]: Django和訳ドキュメント sync to r5754</title>
+<link>https://michilu.com/blog/posts/100/</link>
+<guid>https://michilu.com/blog/posts/100/</guid>
+<pubDate>Tue, 07 Aug 2007 00:10:09 +0900</pubDate>
+</item>
+<item>
+<title>[ECMAScript]: jQuery 1.1.3 の $.merge と $.unique</title>
+<link>https://michilu.com/blog/posts/99/</link>
+<guid>https://michilu.com/blog/posts/99/</guid>
+<pubDate>Wed, 01 Aug 2007 17:03:14 +0900</pubDate>
+</item>
+<item>
+<title>[Django]: 特定のviewで軽い404 Not Foundページを返す</title>
+<link>https://michilu.com/blog/posts/98/</link>
+<guid>https://michilu.com/blog/posts/98/</guid>
+<pubDate>Tue, 31 Jul 2007 22:50:06 +0900</pubDate>
+</item>
+<item>
+<title>[Linux]: cherokee Web Server</title>
+<link>https://michilu.com/blog/posts/97/</link>
+<guid>https://michilu.com/blog/posts/97/</guid>
+<pubDate>Mon, 23 Jul 2007 04:04:05 +0900</pubDate>
+</item>
+<item>
+<title>[Python]: PyS60をインストールする</title>
+<link>https://michilu.com/blog/posts/96/</link>
+<guid>https://michilu.com/blog/posts/96/</guid>
+<pubDate>Sun, 22 Jul 2007 20:11:39 +0900</pubDate>
+</item>
+<item>
+<title>[Python]: Python for Series60 (PyS60)</title>
+<link>https://michilu.com/blog/posts/95/</link>
+<guid>https://michilu.com/blog/posts/95/</guid>
+<pubDate>Sun, 22 Jul 2007 10:55:25 +0900</pubDate>
+</item>
+<item>
+<title>[Django]: Django ドキュメント周り更新まとめ</title>
+<link>https://michilu.com/blog/posts/94/</link>
+<guid>https://michilu.com/blog/posts/94/</guid>
+<pubDate>Mon, 16 Jul 2007 22:13:41 +0900</pubDate>
+</item>
+<item>
+<title>Install List</title>
+<link>https://michilu.com/blog/posts/93/</link>
+<guid>https://michilu.com/blog/posts/93/</guid>
+<pubDate>Sat, 14 Jul 2007 20:08:25 +0900</pubDate>
+</item>
+<item>
+<title>[Django]: Django和訳ドキュメント sync to r5692</title>
+<link>https://michilu.com/blog/posts/92/</link>
+<guid>https://michilu.com/blog/posts/92/</guid>
+<pubDate>Sat, 14 Jul 2007 18:22:42 +0900</pubDate>
+</item>
+<item>
+<title>[Django][Python]: Django / Python path周りのメモ</title>
+<link>https://michilu.com/blog/posts/91/</link>
+<guid>https://michilu.com/blog/posts/91/</guid>
+<pubDate>Thu, 12 Jul 2007 20:04:17 +0900</pubDate>
+</item>
+<item>
+<title>[Django]: Django和訳ドキュメント sync to r5613</title>
+<link>https://michilu.com/blog/posts/90/</link>
+<guid>https://michilu.com/blog/posts/90/</guid>
+<pubDate>Thu, 05 Jul 2007 11:08:42 +0900</pubDate>
+</item>
+<item>
+<title>[Django]: Django和訳ドキュメント sync to r5583</title>
+<link>https://michilu.com/blog/posts/89/</link>
+<guid>https://michilu.com/blog/posts/89/</guid>
+<pubDate>Wed, 04 Jul 2007 05:47:09 +0900</pubDate>
+</item>
+<item>
+<title>[Django]: Python温泉#00の成果発表</title>
+<link>https://michilu.com/blog/posts/88/</link>
+<guid>https://michilu.com/blog/posts/88/</guid>
+<pubDate>Thu, 28 Jun 2007 11:55:33 +0900</pubDate>
+</item>
+<item>
+<title>[Django]: 文字化けしない JSON serializer</title>
+<link>https://michilu.com/blog/posts/87/</link>
+<guid>https://michilu.com/blog/posts/87/</guid>
+<pubDate>Sun, 24 Jun 2007 21:09:23 +0900</pubDate>
+</item>
+<item>
+<title>[Django]: Django和訳ドキュメント sync to r5519</title>
+<link>https://michilu.com/blog/posts/86/</link>
+<guid>https://michilu.com/blog/posts/86/</guid>
+<pubDate>Sun, 24 Jun 2007 03:01:05 +0900</pubDate>
+</item>
+<item>
+<title>[Django]: Django和訳ドキュメント sync to r5512</title>
+<link>https://michilu.com/blog/posts/85/</link>
+<guid>https://michilu.com/blog/posts/85/</guid>
+<pubDate>Sat, 23 Jun 2007 12:40:42 +0900</pubDate>
+</item>
+<item>
+<title>[Django]: オレオレ Test モジュール</title>
+<link>https://michilu.com/blog/posts/84/</link>
+<guid>https://michilu.com/blog/posts/84/</guid>
+<pubDate>Fri, 22 Jun 2007 18:35:19 +0900</pubDate>
+</item>
+<item>
+<title>[Django]: Django和訳ドキュメント sync to r5505</title>
+<link>https://michilu.com/blog/posts/83/</link>
+<guid>https://michilu.com/blog/posts/83/</guid>
+<pubDate>Fri, 22 Jun 2007 15:15:55 +0900</pubDate>
+</item>
+<item>
+<title>[Django]: Django和訳ドキュメント sync to r5492</title>
+<link>https://michilu.com/blog/posts/82/</link>
+<guid>https://michilu.com/blog/posts/82/</guid>
+<pubDate>Tue, 19 Jun 2007 14:38:09 +0900</pubDate>
+</item>
+<item>
+<title>[Django]: Django settings</title>
+<link>https://michilu.com/blog/posts/81/</link>
+<guid>https://michilu.com/blog/posts/81/</guid>
+<pubDate>Tue, 19 Jun 2007 14:37:53 +0900</pubDate>
+</item>
+<item>
+<title>そろそろPlaggerについて一言いっとくか</title>
+<link>https://michilu.com/blog/posts/80/</link>
+<guid>https://michilu.com/blog/posts/80/</guid>
+<pubDate>Tue, 19 Jun 2007 14:37:21 +0900</pubDate>
+</item>
+<item>
+<title>[Django]: Django和訳ドキュメント sync to r5468</title>
+<link>https://michilu.com/blog/posts/79/</link>
+<guid>https://michilu.com/blog/posts/79/</guid>
+<pubDate>Fri, 15 Jun 2007 20:17:45 +0900</pubDate>
+</item>
+<item>
+<title>[Django]: Django和訳ドキュメント sync to r5455</title>
+<link>https://michilu.com/blog/posts/78/</link>
+<guid>https://michilu.com/blog/posts/78/</guid>
+<pubDate>Sun, 10 Jun 2007 13:41:15 +0900</pubDate>
+</item>
+<item>
+<title>[Django]: `admin/doc`_ には models のドキュメントが自動生成される</title>
+<link>https://michilu.com/blog/posts/77/</link>
+<guid>https://michilu.com/blog/posts/77/</guid>
+<pubDate>Sat, 09 Jun 2007 08:55:11 +0900</pubDate>
+</item>
+<item>
+<title>[Django]: Django和訳ドキュメント sync to r5442</title>
+<link>https://michilu.com/blog/posts/76/</link>
+<guid>https://michilu.com/blog/posts/76/</guid>
+<pubDate>Sat, 09 Jun 2007 08:06:39 +0900</pubDate>
+</item>
+<item>
+<title>[Django]: Django和訳ドキュメント sync to r5418</title>
+<link>https://michilu.com/blog/posts/75/</link>
+<guid>https://michilu.com/blog/posts/75/</guid>
+<pubDate>Sun, 03 Jun 2007 15:32:06 +0900</pubDate>
+</item>
+<item>
+<title>[Python]: lxml_ を使ってみました</title>
+<link>https://michilu.com/blog/posts/73/</link>
+<guid>https://michilu.com/blog/posts/73/</guid>
+<pubDate>Sun, 03 Jun 2007 10:59:30 +0900</pubDate>
+</item>
+<item>
+<title>[Linux]: Fedora 7 で `mod_wsgi`_ をビルドするメモ</title>
+<link>https://michilu.com/blog/posts/74/</link>
+<guid>https://michilu.com/blog/posts/74/</guid>
+<pubDate>Sun, 03 Jun 2007 10:54:51 +0900</pubDate>
+</item>
+<item>
+<title>[Linux]: Trac メモ</title>
+<link>https://michilu.com/blog/posts/72/</link>
+<guid>https://michilu.com/blog/posts/72/</guid>
+<pubDate>Sun, 03 Jun 2007 08:47:02 +0900</pubDate>
+</item>
+<item>
+<title>[Mac OSX]: vim メモ</title>
+<link>https://michilu.com/blog/posts/71/</link>
+<guid>https://michilu.com/blog/posts/71/</guid>
+<pubDate>Sun, 03 Jun 2007 08:44:17 +0900</pubDate>
+</item>
+<item>
+<title>[Django]: Apache + mod_wsgi + Django !!!</title>
+<link>https://michilu.com/blog/posts/30/</link>
+<guid>https://michilu.com/blog/posts/30/</guid>
+<pubDate>Sun, 03 Jun 2007 06:24:44 +0900</pubDate>
+</item>
+<item>
+<title>[Django]: Django和訳ドキュメント sync to r5387</title>
+<link>https://michilu.com/blog/posts/70/</link>
+<guid>https://michilu.com/blog/posts/70/</guid>
+<pubDate>Fri, 01 Jun 2007 11:49:15 +0900</pubDate>
+</item>
+<item>
+<title>[Django]: doctestで特定のappだけfixturesをreloadする方法</title>
+<link>https://michilu.com/blog/posts/69/</link>
+<guid>https://michilu.com/blog/posts/69/</guid>
+<pubDate>Wed, 30 May 2007 21:31:51 +0900</pubDate>
+</item>
+<item>
+<title>[Django]: Template を models に入れる</title>
+<link>https://michilu.com/blog/posts/68/</link>
+<guid>https://michilu.com/blog/posts/68/</guid>
+<pubDate>Wed, 30 May 2007 01:17:43 +0900</pubDate>
+</item>
+<item>
+<title>[Django]: JING をダウンロードするメモ</title>
+<link>https://michilu.com/blog/posts/67/</link>
+<guid>https://michilu.com/blog/posts/67/</guid>
+<pubDate>Wed, 30 May 2007 00:38:31 +0900</pubDate>
+</item>
+<item>
+<title>[Python]: Httplib2 を使ってみました</title>
+<link>https://michilu.com/blog/posts/66/</link>
+<guid>https://michilu.com/blog/posts/66/</guid>
+<pubDate>Wed, 30 May 2007 00:23:58 +0900</pubDate>
+</item>
+<item>
+<title>[Django]: Django和訳ドキュメント sync to r5370</title>
+<link>https://michilu.com/blog/posts/65/</link>
+<guid>https://michilu.com/blog/posts/65/</guid>
+<pubDate>Mon, 28 May 2007 14:01:34 +0900</pubDate>
+</item>
+<item>
+<title>[Python]: Mac OSX に pysqlite2 を入れる時のメモ</title>
+<link>https://michilu.com/blog/posts/64/</link>
+<guid>https://michilu.com/blog/posts/64/</guid>
+<pubDate>Wed, 23 May 2007 01:17:37 +0900</pubDate>
+</item>
+<item>
+<title>[Django]: custom SQL から fixture に移行してみました</title>
+<link>https://michilu.com/blog/posts/63/</link>
+<guid>https://michilu.com/blog/posts/63/</guid>
+<pubDate>Mon, 21 May 2007 18:15:50 +0900</pubDate>
+</item>
+<item>
+<title>[Django]: Django和訳ドキュメント sync to r5302</title>
+<link>https://michilu.com/blog/posts/62/</link>
+<guid>https://michilu.com/blog/posts/62/</guid>
+<pubDate>Mon, 21 May 2007 13:21:12 +0900</pubDate>
+</item>
+<item>
+<title>[Linux]: Subversion サーバを立てるメモ</title>
+<link>https://michilu.com/blog/posts/61/</link>
+<guid>https://michilu.com/blog/posts/61/</guid>
+<pubDate>Fri, 18 May 2007 18:11:32 +0900</pubDate>
+</item>
+<item>
+<title>[Python]: Mercurial をインストールしてみた</title>
+<link>https://michilu.com/blog/posts/60/</link>
+<guid>https://michilu.com/blog/posts/60/</guid>
+<pubDate>Fri, 18 May 2007 14:20:26 +0900</pubDate>
+</item>
+<item>
+<title>[Django]: doctest 用に TestCase をカスタマイズ</title>
+<link>https://michilu.com/blog/posts/59/</link>
+<guid>https://michilu.com/blog/posts/59/</guid>
+<pubDate>Fri, 18 May 2007 01:16:39 +0900</pubDate>
+</item>
+<item>
+<title>[Django]: Django和訳ドキュメント sync to r5272</title>
+<link>https://michilu.com/blog/posts/58/</link>
+<guid>https://michilu.com/blog/posts/58/</guid>
+<pubDate>Thu, 17 May 2007 11:26:25 +0900</pubDate>
+</item>
+<item>
+<title>[Python]: iCalendar ライブラリの vobject を使ってみました</title>
+<link>https://michilu.com/blog/posts/57/</link>
+<guid>https://michilu.com/blog/posts/57/</guid>
+<pubDate>Wed, 16 May 2007 22:25:35 +0900</pubDate>
+</item>
+<item>
+<title>[Django]: Test Client に IPアドレスと cookie を設定する方法</title>
+<link>https://michilu.com/blog/posts/56/</link>
+<guid>https://michilu.com/blog/posts/56/</guid>
+<pubDate>Wed, 16 May 2007 00:13:56 +0900</pubDate>
+</item>
+<item>
+<title>[Django]: Django和訳ドキュメント sync to r5241</title>
+<link>https://michilu.com/blog/posts/55/</link>
+<guid>https://michilu.com/blog/posts/55/</guid>
+<pubDate>Tue, 15 May 2007 09:56:11 +0900</pubDate>
+</item>
+<item>
+<title>[Django]: Django和訳ドキュメント sync to r5221</title>
+<link>https://michilu.com/blog/posts/54/</link>
+<guid>https://michilu.com/blog/posts/54/</guid>
+<pubDate>Mon, 14 May 2007 15:14:08 +0900</pubDate>
+</item>
+<item>
+<title>[Django]: Django和訳ドキュメント sync to r5213</title>
+<link>https://michilu.com/blog/posts/53/</link>
+<guid>https://michilu.com/blog/posts/53/</guid>
+<pubDate>Mon, 14 May 2007 14:36:10 +0900</pubDate>
+</item>
+<item>
+<title>[Django]: Django和訳ドキュメント sync to r5194</title>
+<link>https://michilu.com/blog/posts/52/</link>
+<guid>https://michilu.com/blog/posts/52/</guid>
+<pubDate>Sat, 12 May 2007 08:28:18 +0900</pubDate>
+</item>
+<item>
+<title>[Django][Python]: Apache で FreeComment が動かない件</title>
+<link>https://michilu.com/blog/posts/51/</link>
+<guid>https://michilu.com/blog/posts/51/</guid>
+<pubDate>Fri, 11 May 2007 18:27:14 +0900</pubDate>
+</item>
+<item>
+<title>[Django]: Django和訳ドキュメント sync to r5174</title>
+<link>https://michilu.com/blog/posts/50/</link>
+<guid>https://michilu.com/blog/posts/50/</guid>
+<pubDate>Wed, 09 May 2007 19:13:15 +0900</pubDate>
+</item>
+<item>
+<title>[Linux]: Pound</title>
+<link>https://michilu.com/blog/posts/19/</link>
+<guid>https://michilu.com/blog/posts/19/</guid>
+<pubDate>Tue, 08 May 2007 01:21:35 +0900</pubDate>
+</item>
+<item>
+<title>[Django]: Inclusion Tag に Custom Context を詰め込む</title>
+<link>https://michilu.com/blog/posts/49/</link>
+<guid>https://michilu.com/blog/posts/49/</guid>
+<pubDate>Tue, 08 May 2007 01:13:29 +0900</pubDate>
+</item>
+<item>
+<title>[Django]: Django和訳ドキュメント sync to r5155</title>
+<link>https://michilu.com/blog/posts/48/</link>
+<guid>https://michilu.com/blog/posts/48/</guid>
+<pubDate>Sun, 06 May 2007 17:07:03 +0900</pubDate>
+</item>
+<item>
+<title>[ECMAScript]: jQuery を使ってみました。</title>
+<link>https://michilu.com/blog/posts/47/</link>
+<guid>https://michilu.com/blog/posts/47/</guid>
+<pubDate>Sun, 06 May 2007 11:20:05 +0900</pubDate>
+</item>
+<item>
+<title>[Django]: Django和訳ドキュメント sync to r5150</title>
+<link>https://michilu.com/blog/posts/46/</link>
+<guid>https://michilu.com/blog/posts/46/</guid>
+<pubDate>Sat, 05 May 2007 18:12:14 +0900</pubDate>
+</item>
+<item>
+<title>[ECMAScript]: MochiKit を使ってみました。</title>
+<link>https://michilu.com/blog/posts/45/</link>
+<guid>https://michilu.com/blog/posts/45/</guid>
+<pubDate>Fri, 04 May 2007 07:14:36 +0900</pubDate>
+</item>
+<item>
+<title>[Django]: Django和訳ドキュメント sync to r5126</title>
+<link>https://michilu.com/blog/posts/44/</link>
+<guid>https://michilu.com/blog/posts/44/</guid>
+<pubDate>Sun, 29 Apr 2007 21:50:18 +0900</pubDate>
+</item>
+<item>
+<title>[Django]: models を使わないで sitemap.xml を生成する</title>
+<link>https://michilu.com/blog/posts/43/</link>
+<guid>https://michilu.com/blog/posts/43/</guid>
+<pubDate>Wed, 25 Apr 2007 01:32:45 +0900</pubDate>
+</item>
+<item>
+<title>[ECMAScript]: 今日から JSer になってみよう。</title>
+<link>https://michilu.com/blog/posts/42/</link>
+<guid>https://michilu.com/blog/posts/42/</guid>
+<pubDate>Wed, 25 Apr 2007 01:32:19 +0900</pubDate>
+</item>
+<item>
+<title>[Linux]: RAID に Disk を追加する</title>
+<link>https://michilu.com/blog/posts/41/</link>
+<guid>https://michilu.com/blog/posts/41/</guid>
+<pubDate>Mon, 23 Apr 2007 22:50:39 +0900</pubDate>
+</item>
+<item>
+<title>[Linux]: LVM上のデータを移動して物理領域を解放する</title>
+<link>https://michilu.com/blog/posts/40/</link>
+<guid>https://michilu.com/blog/posts/40/</guid>
+<pubDate>Mon, 23 Apr 2007 22:32:09 +0900</pubDate>
+</item>
+<item>
+<title>[Linux]: MiCHiLU.com のメンテナンスが終わるまで禁酒するエントリ</title>
+<link>https://michilu.com/blog/posts/39/</link>
+<guid>https://michilu.com/blog/posts/39/</guid>
+<pubDate>Mon, 23 Apr 2007 22:31:44 +0900</pubDate>
+</item>
+<item>
+<title>[Django]: Django和訳ドキュメント sync to r5023</title>
+<link>https://michilu.com/blog/posts/38/</link>
+<guid>https://michilu.com/blog/posts/38/</guid>
+<pubDate>Thu, 19 Apr 2007 02:26:20 +0900</pubDate>
+</item>
+<item>
+<title>[Django]: Generic Views で CacheMiddleware を使う</title>
+<link>https://michilu.com/blog/posts/37/</link>
+<guid>https://michilu.com/blog/posts/37/</guid>
+<pubDate>Thu, 19 Apr 2007 02:13:15 +0900</pubDate>
+</item>
+<item>
+<title>[Python]: Subversionコミット時メール送信 by Python</title>
+<link>https://michilu.com/blog/posts/36/</link>
+<guid>https://michilu.com/blog/posts/36/</guid>
+<pubDate>Tue, 10 Apr 2007 01:29:44 +0900</pubDate>
+</item>
+<item>
+<title>[Django]: Django和訳ドキュメント sync to r4985</title>
+<link>https://michilu.com/blog/posts/35/</link>
+<guid>https://michilu.com/blog/posts/35/</guid>
+<pubDate>Tue, 10 Apr 2007 00:58:49 +0900</pubDate>
+</item>
+<item>
+<title>[yapcaia2007]: YAPC::ASIA Tokyo 2007</title>
+<link>https://michilu.com/blog/posts/34/</link>
+<guid>https://michilu.com/blog/posts/34/</guid>
+<pubDate>Thu, 05 Apr 2007 20:11:28 +0900</pubDate>
+</item>
+<item>
+<title>[yapcaia2007]: YAPC::ASIA Tokyo 2007</title>
+<link>https://michilu.com/blog/posts/33/</link>
+<guid>https://michilu.com/blog/posts/33/</guid>
+<pubDate>Wed, 04 Apr 2007 22:33:44 +0900</pubDate>
+</item>
+<item>
+<title>[Django]: Django で cmemcache が使えるように。</title>
+<link>https://michilu.com/blog/posts/32/</link>
+<guid>https://michilu.com/blog/posts/32/</guid>
+<pubDate>Tue, 27 Mar 2007 19:10:17 +0900</pubDate>
+</item>
+<item>
+<title>[Django]: 「Django オンラインドキュメント和訳」 release 0.96</title>
+<link>https://michilu.com/blog/posts/31/</link>
+<guid>https://michilu.com/blog/posts/31/</guid>
+<pubDate>Mon, 26 Mar 2007 23:57:35 +0900</pubDate>
+</item>
+<item>
+<title>[Linux]: PXE + DHCP + TFTP</title>
+<link>https://michilu.com/blog/posts/29/</link>
+<guid>https://michilu.com/blog/posts/29/</guid>
+<pubDate>Sun, 18 Mar 2007 16:08:30 +0900</pubDate>
+</item>
+<item>
+<title>[Django]: Django チュートリアルの後にやったこと。</title>
+<link>https://michilu.com/blog/posts/28/</link>
+<guid>https://michilu.com/blog/posts/28/</guid>
+<pubDate>Sun, 18 Mar 2007 10:41:17 +0900</pubDate>
+</item>
+<item>
+<title>[Django]: 「Django オンラインドキュメント和訳」公開してます。</title>
+<link>https://michilu.com/blog/posts/27/</link>
+<guid>https://michilu.com/blog/posts/27/</guid>
+<pubDate>Sat, 17 Mar 2007 07:46:09 +0900</pubDate>
+</item>
+<item>
+<title>[Presen][Django]: Django Blog - views.py書いたら負けだと思っている -</title>
+<link>https://michilu.com/blog/posts/26/</link>
+<guid>https://michilu.com/blog/posts/26/</guid>
+<pubDate>Fri, 09 Mar 2007 19:17:30 +0900</pubDate>
+</item>
+<item>
+<title>[Django]: nose-django を試してみた。</title>
+<link>https://michilu.com/blog/posts/25/</link>
+<guid>https://michilu.com/blog/posts/25/</guid>
+<pubDate>Thu, 08 Mar 2007 19:28:36 +0900</pubDate>
+</item>
+<item>
+<title>[Django][Python]: Django で memcached を使う</title>
+<link>https://michilu.com/blog/posts/24/</link>
+<guid>https://michilu.com/blog/posts/24/</guid>
+<pubDate>Wed, 28 Feb 2007 12:10:55 +0900</pubDate>
+</item>
+<item>
+<title>[Django]: Django CacheMiddleware を使う</title>
+<link>https://michilu.com/blog/posts/23/</link>
+<guid>https://michilu.com/blog/posts/23/</guid>
+<pubDate>Thu, 22 Feb 2007 00:25:58 +0900</pubDate>
+</item>
+<item>
+<title>[Python][Twisted]: Twisted のお勉強</title>
+<link>https://michilu.com/blog/posts/22/</link>
+<guid>https://michilu.com/blog/posts/22/</guid>
+<pubDate>Sat, 17 Feb 2007 10:53:34 +0900</pubDate>
+</item>
+<item>
+<title>[Python]: TextMate + reStructuredText + pygments</title>
+<link>https://michilu.com/blog/posts/21/</link>
+<guid>https://michilu.com/blog/posts/21/</guid>
+<pubDate>Fri, 16 Feb 2007 01:07:06 +0900</pubDate>
+</item>
+<item>
+<title>Developers Summit 2007</title>
+<link>https://michilu.com/blog/posts/20/</link>
+<guid>https://michilu.com/blog/posts/20/</guid>
+<pubDate>Thu, 15 Feb 2007 14:14:41 +0900</pubDate>
+</item>
+<item>
+<title>[Django]: Django FreeComment を使う</title>
+<link>https://michilu.com/blog/posts/18/</link>
+<guid>https://michilu.com/blog/posts/18/</guid>
+<pubDate>Thu, 08 Feb 2007 20:04:10 +0900</pubDate>
+</item>
+<item>
+<title>Lightweight Language Web Framework Ring !!</title>
+<link>https://michilu.com/blog/posts/17/</link>
+<guid>https://michilu.com/blog/posts/17/</guid>
+<pubDate>Thu, 08 Feb 2007 17:37:54 +0900</pubDate>
+</item>
+<item>
+<title>[Python][SQLite]: Fatal Python error: PyEval_SaveThread: NULL tstate</title>
+<link>https://michilu.com/blog/posts/16/</link>
+<guid>https://michilu.com/blog/posts/16/</guid>
+<pubDate>Wed, 07 Feb 2007 18:37:05 +0900</pubDate>
+</item>
+<item>
+<title>[Python][Lingr]: Lingr API Client for Python (続き1)</title>
+<link>https://michilu.com/blog/posts/15/</link>
+<guid>https://michilu.com/blog/posts/15/</guid>
+<pubDate>Sat, 03 Feb 2007 08:05:30 +0900</pubDate>
+</item>
+<item>
+<title>[Python][Lingr]: Lingr API Client for Python</title>
+<link>https://michilu.com/blog/posts/14/</link>
+<guid>https://michilu.com/blog/posts/14/</guid>
+<pubDate>Fri, 02 Feb 2007 01:30:45 +0900</pubDate>
+</item>
+<item>
+<title>[Django][TurboGears]: 緊急告知 Django and TurboGears 温泉(勉強はありません、懇親会です)</title>
+<link>https://michilu.com/blog/posts/13/</link>
+<guid>https://michilu.com/blog/posts/13/</guid>
+<pubDate>Thu, 01 Feb 2007 00:48:12 +0900</pubDate>
+</item>
+<item>
+<title>[shell]: zsh に乗り換えてみました。</title>
+<link>https://michilu.com/blog/posts/10/</link>
+<guid>https://michilu.com/blog/posts/10/</guid>
+<pubDate>Fri, 26 Jan 2007 21:44:08 +0900</pubDate>
+</item>
+<item>
+<title>[Python]: Selenium Test Suite for Python</title>
+<link>https://michilu.com/blog/posts/12/</link>
+<guid>https://michilu.com/blog/posts/12/</guid>
+<pubDate>Fri, 26 Jan 2007 21:33:36 +0900</pubDate>
+</item>
+<item>
+<title>[Django]: views.py で django.template.defaultfilters を使う。</title>
+<link>https://michilu.com/blog/posts/11/</link>
+<guid>https://michilu.com/blog/posts/11/</guid>
+<pubDate>Thu, 25 Jan 2007 00:27:53 +0900</pubDate>
+</item>
+<item>
+<title>[Django]: models.Model.save と管理画面</title>
+<link>https://michilu.com/blog/posts/9/</link>
+<guid>https://michilu.com/blog/posts/9/</guid>
+<pubDate>Wed, 24 Jan 2007 01:29:15 +0900</pubDate>
+</item>
+<item>
+<title>[Python]: IPython で Python Shell を拡張する</title>
+<link>https://michilu.com/blog/posts/8/</link>
+<guid>https://michilu.com/blog/posts/8/</guid>
+<pubDate>Wed, 24 Jan 2007 01:18:45 +0900</pubDate>
+</item>
+<item>
+<title>[Django][DEMO]: Django勉強会 Disc 2</title>
+<link>https://michilu.com/blog/posts/7/</link>
+<guid>https://michilu.com/blog/posts/7/</guid>
+<pubDate>Sat, 20 Jan 2007 16:46:19 +0900</pubDate>
+</item>
+<item>
+<title>[Django][LightTPD]: Django + FastCGI + LightTPD</title>
+<link>https://michilu.com/blog/posts/3/</link>
+<guid>https://michilu.com/blog/posts/3/</guid>
+<pubDate>Wed, 17 Jan 2007 11:09:03 +0900</pubDate>
+</item>
+<item>
+<title>[Django]: Pygments を使って reStructuredText でも見栄えよく Highlight 表示する</title>
+<link>https://michilu.com/blog/posts/6/</link>
+<guid>https://michilu.com/blog/posts/6/</guid>
+<pubDate>Wed, 17 Jan 2007 11:04:47 +0900</pubDate>
+</item>
+<item>
+<title>[Django]: sitemaps framework を使って sitemap.xml を自動生成する</title>
+<link>https://michilu.com/blog/posts/5/</link>
+<guid>https://michilu.com/blog/posts/5/</guid>
+<pubDate>Fri, 12 Jan 2007 00:51:27 +0900</pubDate>
+</item>
+<item>
+<title>[Django]: syndication feed framework を使ってBlogのRSSフィードを配信する</title>
+<link>https://michilu.com/blog/posts/4/</link>
+<guid>https://michilu.com/blog/posts/4/</guid>
+<pubDate>Thu, 11 Jan 2007 01:03:41 +0900</pubDate>
+</item>
+<item>
+<title>[Django]: reSTのdoctitle_xformを無効にする</title>
+<link>https://michilu.com/blog/posts/2/</link>
+<guid>https://michilu.com/blog/posts/2/</guid>
+<pubDate>Tue, 19 Dec 2006 00:21:57 +0900</pubDate>
+</item>
+<item>
+<title>powered by Django blog</title>
+<link>https://michilu.com/blog/posts/1/</link>
+<guid>https://michilu.com/blog/posts/1/</guid>
+<pubDate>Mon, 18 Dec 2006 22:27:43 +0900</pubDate>
+</item>
+<item>
+<title>TiddlyWikiでhowmなScrapMemo</title>
+<link>https://michilu.com/archives/2005/08/tiddlywikiahowm.html</link>
+<guid>https://michilu.com/archives/2005/08/tiddlywikiahowm.html</guid>
+<pubDate>Wed, 31 Aug 2005 11:19:00 +0900</pubDate>
+</item>
+<item>
+<title>Mac で Live Streaming。</title>
+<link>https://michilu.com/archives/2005/08/mac_a_live_stre.html</link>
+<guid>https://michilu.com/archives/2005/08/mac_a_live_stre.html</guid>
+<pubDate>Tue, 02 Aug 2005 19:14:00 +0900</pubDate>
+</item>
+<item>
+<title>Apple Store Shibuya</title>
+<link>https://michilu.com/archives/2005/08/apple_store_shi.html</link>
+<guid>https://michilu.com/archives/2005/08/apple_store_shi.html</guid>
+<pubDate>Mon, 01 Aug 2005 12:50:00 +0900</pubDate>
+</item>
+<item>
+<title>iSync Update</title>
+<link>https://michilu.com/archives/2005/07/isync_update_1.html</link>
+<guid>https://michilu.com/archives/2005/07/isync_update_1.html</guid>
+<pubDate>Tue, 12 Jul 2005 14:56:00 +0900</pubDate>
+</item>
+<item>
+<title>ClamXav - Virus Scanner for Mac OS X</title>
+<link>https://michilu.com/archives/2005/07/clamxav_virus_s_1.html</link>
+<guid>https://michilu.com/archives/2005/07/clamxav_virus_s_1.html</guid>
+<pubDate>Thu, 07 Jul 2005 18:10:59 +0900</pubDate>
+</item>
+<item>
+<title>Fedora Core 4</title>
+<link>https://michilu.com/archives/2005/07/fedora_core_4.html</link>
+<guid>https://michilu.com/archives/2005/07/fedora_core_4.html</guid>
+<pubDate>Thu, 07 Jul 2005 17:37:00 +0900</pubDate>
+</item>
+<item>
+<title>Musical Baton</title>
+<link>https://michilu.com/archives/2005/06/musical_baton.html</link>
+<guid>https://michilu.com/archives/2005/06/musical_baton.html</guid>
+<pubDate>Thu, 30 Jun 2005 11:32:00 +0900</pubDate>
+</item>
+<item>
+<title>Perl & XML と Javascript。</title>
+<link>https://michilu.com/archives/2005/06/perl_xml_a_java.html</link>
+<guid>https://michilu.com/archives/2005/06/perl_xml_a_java.html</guid>
+<pubDate>Wed, 15 Jun 2005 11:56:00 +0900</pubDate>
+</item>
+<item>
+<title>Quartz Composer</title>
+<link>https://michilu.com/archives/2005/05/quartz_composer.html</link>
+<guid>https://michilu.com/archives/2005/05/quartz_composer.html</guid>
+<pubDate>Tue, 31 May 2005 18:12:00 +0900</pubDate>
+</item>
+<item>
+<title>Podcastメモメモ。</title>
+<link>https://michilu.com/archives/2005/05/podcastaaaaa.html</link>
+<guid>https://michilu.com/archives/2005/05/podcastaaaaa.html</guid>
+<pubDate>Mon, 30 May 2005 17:05:00 +0900</pubDate>
+</item>
+<item>
+<title>"metromixradio.com"が復活らしい！</title>
+<link>https://michilu.com/archives/2005/05/metromixradioco_1.html</link>
+<guid>https://michilu.com/archives/2005/05/metromixradioco_1.html</guid>
+<pubDate>Thu, 26 May 2005 17:48:00 +0900</pubDate>
+</item>
+<item>
+<title>Safariで複数RSSソースを表示させる。</title>
+<link>https://michilu.com/archives/2005/05/safariaerssaaaa_1.html</link>
+<guid>https://michilu.com/archives/2005/05/safariaerssaaaa_1.html</guid>
+<pubDate>Wed, 18 May 2005 16:45:00 +0900</pubDate>
+</item>
+<item>
+<title>FFmpegでswfへ変換</title>
+<link>https://michilu.com/archives/2005/05/ffmpegaswfa_1.html</link>
+<guid>https://michilu.com/archives/2005/05/ffmpegaswfa_1.html</guid>
+<pubDate>Mon, 16 May 2005 16:32:00 +0900</pubDate>
+</item>
+<item>
+<title>トゥーシング。</title>
+<link>https://michilu.com/archives/2005/05/aaaaaaa_6.html</link>
+<guid>https://michilu.com/archives/2005/05/aaaaaaa_6.html</guid>
+<pubDate>Thu, 12 May 2005 19:36:00 +0900</pubDate>
+</item>
+<item>
+<title>Tiger雑感。</title>
+<link>https://michilu.com/archives/2005/05/tigerea.html</link>
+<guid>https://michilu.com/archives/2005/05/tigerea.html</guid>
+<pubDate>Thu, 12 May 2005 15:03:00 +0900</pubDate>
+</item>
+<item>
+<title>Ming - Mac OSX Panther</title>
+<link>https://michilu.com/archives/2005/04/ming_mac_osx_pa.html</link>
+<guid>https://michilu.com/archives/2005/04/ming_mac_osx_pa.html</guid>
+<pubDate>Fri, 22 Apr 2005 11:20:00 +0900</pubDate>
+</item>
+<item>
+<title>CocoaWget</title>
+<link>https://michilu.com/archives/2005/04/cocoawget.html</link>
+<guid>https://michilu.com/archives/2005/04/cocoawget.html</guid>
+<pubDate>Tue, 19 Apr 2005 14:15:00 +0900</pubDate>
+</item>
+<item>
+<title>私たちは固定IPにこだわります！</title>
+<link>https://michilu.com/archives/2005/04/caaaipaaaaaaaie.html</link>
+<guid>https://michilu.com/archives/2005/04/caaaipaaaaaaaie.html</guid>
+<pubDate>Mon, 18 Apr 2005 13:40:00 +0900</pubDate>
+</item>
+<item>
+<title>FlashBlog.JP</title>
+<link>https://michilu.com/archives/2005/04/flashblogjp.html</link>
+<guid>https://michilu.com/archives/2005/04/flashblogjp.html</guid>
+<pubDate>Mon, 18 Apr 2005 13:16:00 +0900</pubDate>
+</item>
+<item>
+<title>CSV to XML</title>
+<link>https://michilu.com/archives/2005/04/csv_to_xml.html</link>
+<guid>https://michilu.com/archives/2005/04/csv_to_xml.html</guid>
+<pubDate>Mon, 18 Apr 2005 13:04:00 +0900</pubDate>
+</item>
+<item>
+<title>HTML TIDY</title>
+<link>https://michilu.com/archives/2005/04/html_tidy_1.html</link>
+<guid>https://michilu.com/archives/2005/04/html_tidy_1.html</guid>
+<pubDate>Wed, 13 Apr 2005 12:39:00 +0900</pubDate>
+</item>
+<item>
+<title>Blog Developer's Cookbook</title>
+<link>https://michilu.com/archives/2005/04/blog_developers.html</link>
+<guid>https://michilu.com/archives/2005/04/blog_developers.html</guid>
+<pubDate>Tue, 12 Apr 2005 12:30:00 +0900</pubDate>
+</item>
+<item>
+<title>ATOM</title>
+<link>https://michilu.com/archives/2005/04/atom.html</link>
+<guid>https://michilu.com/archives/2005/04/atom.html</guid>
+<pubDate>Tue, 12 Apr 2005 11:22:00 +0900</pubDate>
+</item>
+<item>
+<title>さくらふぶき。</title>
+<link>https://michilu.com/archives/2005/04/aaaaaaa_5.html</link>
+<guid>https://michilu.com/archives/2005/04/aaaaaaa_5.html</guid>
+<pubDate>Sun, 10 Apr 2005 15:45:00 +0900</pubDate>
+</item>
+<item>
+<title>書籍:ブログ関係</title>
+<link>https://michilu.com/archives/2005/04/caaaeae.html</link>
+<guid>https://michilu.com/archives/2005/04/caaaeae.html</guid>
+<pubDate>Thu, 07 Apr 2005 13:41:00 +0900</pubDate>
+</item>
+<item>
+<title>iPod復活！</title>
+<link>https://michilu.com/archives/2005/04/ipodie.html</link>
+<guid>https://michilu.com/archives/2005/04/ipodie.html</guid>
+<pubDate>Wed, 06 Apr 2005 11:51:00 +0900</pubDate>
+</item>
+<item>
+<title>ディスクがいっぱいです。</title>
+<link>https://michilu.com/archives/2005/04/aaaaaaaaaaaa_1.html</link>
+<guid>https://michilu.com/archives/2005/04/aaaaaaaaaaaa_1.html</guid>
+<pubDate>Wed, 06 Apr 2005 10:20:00 +0900</pubDate>
+</item>
+<item>
+<title>Google Video Search</title>
+<link>https://michilu.com/archives/2005/04/google_video_se.html</link>
+<guid>https://michilu.com/archives/2005/04/google_video_se.html</guid>
+<pubDate>Tue, 05 Apr 2005 14:04:00 +0900</pubDate>
+</item>
+<item>
+<title>PodCasting</title>
+<link>https://michilu.com/archives/2005/04/itmediaaaaaieca.html</link>
+<guid>https://michilu.com/archives/2005/04/itmediaaaaaieca.html</guid>
+<pubDate>Tue, 05 Apr 2005 13:54:00 +0900</pubDate>
+</item>
+<item>
+<title>PowerBookを傾けて遊ぶ</title>
+<link>https://michilu.com/archives/2005/04/powerbookaaaea.html</link>
+<guid>https://michilu.com/archives/2005/04/powerbookaaaea.html</guid>
+<pubDate>Tue, 05 Apr 2005 09:57:00 +0900</pubDate>
+</item>
+<item>
+<title>足跡</title>
+<link>https://michilu.com/archives/2005/03/ee_1.html</link>
+<guid>https://michilu.com/archives/2005/03/ee_1.html</guid>
+<pubDate>Thu, 24 Mar 2005 17:40:00 +0900</pubDate>
+</item>
+<item>
+<title>CreativeCommons</title>
+<link>https://michilu.com/archives/2005/03/creativecommons.html</link>
+<guid>https://michilu.com/archives/2005/03/creativecommons.html</guid>
+<pubDate>Thu, 24 Mar 2005 16:35:00 +0900</pubDate>
+</item>
+<item>
+<title>GarageBand</title>
+<link>https://michilu.com/archives/2005/03/garageband.html</link>
+<guid>https://michilu.com/archives/2005/03/garageband.html</guid>
+<pubDate>Thu, 24 Mar 2005 16:30:00 +0900</pubDate>
+</item>
+<item>
+<title>ぶっちゃけ聴ききれません。</title>
+<link>https://michilu.com/archives/2005/03/aaaaaeaaaaaaa.html</link>
+<guid>https://michilu.com/archives/2005/03/aaaaaeaaaaaaa.html</guid>
+<pubDate>Thu, 24 Mar 2005 16:24:00 +0900</pubDate>
+</item>
+<item>
+<title>unisonでデータ同期</title>
+<link>https://michilu.com/archives/2005/03/unisonaaaa.html</link>
+<guid>https://michilu.com/archives/2005/03/unisonaaaa.html</guid>
+<pubDate>Thu, 24 Mar 2005 16:18:00 +0900</pubDate>
+</item>
+<item>
+<title>mt-sukeroku-plus(Ver.1.11β)</title>
+<link>https://michilu.com/archives/2005/03/mtsukerokuplusv.html</link>
+<guid>https://michilu.com/archives/2005/03/mtsukerokuplusv.html</guid>
+<pubDate>Fri, 18 Mar 2005 17:22:24 +0900</pubDate>
+</item>
+<item>
+<title>ドメインは安かった。</title>
+<link>https://michilu.com/archives/2005/03/aaaaaaaaa.html</link>
+<guid>https://michilu.com/archives/2005/03/aaaaaaaaa.html</guid>
+<pubDate>Thu, 17 Mar 2005 14:20:00 +0900</pubDate>
+</item>
+<item>
+<title>FTP/SCP GUI client for MacOSX</title>
+<link>https://michilu.com/archives/2005/03/ftpscp_gui_clie.html</link>
+<guid>https://michilu.com/archives/2005/03/ftpscp_gui_clie.html</guid>
+<pubDate>Wed, 16 Mar 2005 14:03:00 +0900</pubDate>
+</item>
+<item>
+<title>Heartbeat, DRBD</title>
+<link>https://michilu.com/archives/2005/03/heartbeat_drbd.html</link>
+<guid>https://michilu.com/archives/2005/03/heartbeat_drbd.html</guid>
+<pubDate>Tue, 15 Mar 2005 11:59:00 +0900</pubDate>
+</item>
+<item>
+<title>折りたたみ</title>
+<link>https://michilu.com/archives/2005/03/aaaa_7.html</link>
+<guid>https://michilu.com/archives/2005/03/aaaa_7.html</guid>
+<pubDate>Sun, 13 Mar 2005 11:45:00 +0900</pubDate>
+</item>
+<item>
+<title>Categoryで日本語を使う</title>
+<link>https://michilu.com/archives/2005/03/categoryaeaaea_1.html</link>
+<guid>https://michilu.com/archives/2005/03/categoryaeaaea_1.html</guid>
+<pubDate>Sun, 13 Mar 2005 11:42:00 +0900</pubDate>
+</item>
+<item>
+<title>Unison File Synchronizer</title>
+<link>https://michilu.com/archives/2005/02/unison_file_syn.html</link>
+<guid>https://michilu.com/archives/2005/02/unison_file_syn.html</guid>
+<pubDate>Mon, 28 Feb 2005 21:23:00 +0900</pubDate>
+</item>
+<item>
+<title>Zope2.7</title>
+<link>https://michilu.com/wiki/Zope2.7.html</link>
+<guid>https://michilu.com/wiki/Zope2.7.html</guid>
+<pubDate>Fri, 04 Feb 2005 10:29:04 +0900</pubDate>
+</item>
+<item>
+<title>Ethereal</title>
+<link>https://michilu.com/wiki/Ethereal.html</link>
+<guid>https://michilu.com/wiki/Ethereal.html</guid>
+<pubDate>Tue, 25 Jan 2005 12:30:17 +0900</pubDate>
+</item>
+<item>
+<title>ZopeX3</title>
+<link>https://michilu.com/archives/2005/01/zopex3.html</link>
+<guid>https://michilu.com/archives/2005/01/zopex3.html</guid>
+<pubDate>Fri, 21 Jan 2005 18:01:33 +0900</pubDate>
+</item>
+<item>
+<title>ZopeX3</title>
+<link>https://michilu.com/wiki/ZopeX3.html</link>
+<guid>https://michilu.com/wiki/ZopeX3.html</guid>
+<pubDate>Fri, 21 Jan 2005 18:01:05 +0900</pubDate>
+</item>
+<item>
+<title>Mac OS X v10.4 "Tiger"</title>
+<link>https://michilu.com/archives/2005/01/mac_os_x_v104_t_1.html</link>
+<guid>https://michilu.com/archives/2005/01/mac_os_x_v104_t_1.html</guid>
+<pubDate>Sat, 01 Jan 2005 11:11:39 +0900</pubDate>
+</item>
+<item>
+<title>Nokia 6630</title>
+<link>https://michilu.com/archives/2004/12/nokia_6630_2.html</link>
+<guid>https://michilu.com/archives/2004/12/nokia_6630_2.html</guid>
+<pubDate>Mon, 13 Dec 2004 12:35:00 +0900</pubDate>
+</item>
+<item>
+<title>iSCSI</title>
+<link>https://michilu.com/archives/2004/11/iscsi.html</link>
+<guid>https://michilu.com/archives/2004/11/iscsi.html</guid>
+<pubDate>Tue, 30 Nov 2004 14:27:00 +0900</pubDate>
+</item>
+<item>
+<title>Nokia 6630</title>
+<link>https://michilu.com/archives/2004/11/nokia_6630_3.html</link>
+<guid>https://michilu.com/archives/2004/11/nokia_6630_3.html</guid>
+<pubDate>Thu, 25 Nov 2004 16:34:00 +0900</pubDate>
+</item>
+<item>
+<title>Fedora Core 3 移行</title>
+<link>https://michilu.com/archives/2004/11/fedora_core_3_c.html</link>
+<guid>https://michilu.com/archives/2004/11/fedora_core_3_c.html</guid>
+<pubDate>Mon, 15 Nov 2004 20:00:00 +0900</pubDate>
+</item>
+<item>
+<title>ETag</title>
+<link>https://michilu.com/archives/2004/11/etag.html</link>
+<guid>https://michilu.com/archives/2004/11/etag.html</guid>
+<pubDate>Thu, 11 Nov 2004 17:51:00 +0900</pubDate>
+</item>
+<item>
+<title>iPod 改造</title>
+<link>https://michilu.com/archives/2004/11/ipod_e.html</link>
+<guid>https://michilu.com/archives/2004/11/ipod_e.html</guid>
+<pubDate>Mon, 01 Nov 2004 18:56:00 +0900</pubDate>
+</item>
+<item>
+<title>BBS</title>
+<link>https://michilu.com/archives/2004/10/bbs.html</link>
+<guid>https://michilu.com/archives/2004/10/bbs.html</guid>
+<pubDate>Wed, 27 Oct 2004 00:12:00 +0900</pubDate>
+</item>
+<item>
+<title>コンテントネゴシエーション</title>
+<link>https://michilu.com/archives/2004/10/aaaaaaaaaaaaa.html</link>
+<guid>https://michilu.com/archives/2004/10/aaaaaaaaaaaaa.html</guid>
+<pubDate>Mon, 25 Oct 2004 17:24:00 +0900</pubDate>
+</item>
+<item>
+<title>RSS Reader for Mac OS X</title>
+<link>https://michilu.com/archives/2004/10/rss_reader_for.html</link>
+<guid>https://michilu.com/archives/2004/10/rss_reader_for.html</guid>
+<pubDate>Tue, 19 Oct 2004 17:58:00 +0900</pubDate>
+</item>
+<item>
+<title>Amazonの画像置換</title>
+<link>https://michilu.com/archives/2004/10/amazonacc.html</link>
+<guid>https://michilu.com/archives/2004/10/amazonacc.html</guid>
+<pubDate>Mon, 18 Oct 2004 21:55:00 +0900</pubDate>
+</item>
+<item>
+<title>Pound - SSL wrapper</title>
+<link>https://michilu.com/archives/2004/10/pound_ssl_wrapp.html</link>
+<guid>https://michilu.com/archives/2004/10/pound_ssl_wrapp.html</guid>
+<pubDate>Tue, 05 Oct 2004 16:54:36 +0900</pubDate>
+</item>
+<item>
+<title>Movable Type 3.1x Scheduled Posting</title>
+<link>https://michilu.com/archives/2004/10/movable_type_31_1.html</link>
+<guid>https://michilu.com/archives/2004/10/movable_type_31_1.html</guid>
+<pubDate>Mon, 04 Oct 2004 13:10:43 +0900</pubDate>
+</item>
+<item>
+<title>Movable Type 3.1x で検索ができない件</title>
+<link>https://michilu.com/archives/2004/10/movable_type_31.html</link>
+<guid>https://michilu.com/archives/2004/10/movable_type_31.html</guid>
+<pubDate>Fri, 01 Oct 2004 12:26:30 +0900</pubDate>
+</item>
+<item>
+<title>Breaking Down! Crazy Mixed Up!</title>
+<link>https://michilu.com/archives/2004/09/breaking_down_c.html</link>
+<guid>https://michilu.com/archives/2004/09/breaking_down_c.html</guid>
+<pubDate>Thu, 30 Sep 2004 18:49:00 +0900</pubDate>
+</item>
+<item>
+<title>HARDCORE RADIO "HC10000:OSAKA"</title>
+<link>https://michilu.com/archives/2004/09/hardcore_radio_1.html</link>
+<guid>https://michilu.com/archives/2004/09/hardcore_radio_1.html</guid>
+<pubDate>Fri, 17 Sep 2004 16:49:00 +0900</pubDate>
+</item>
+<item>
+<title>Mac OSX Tiger</title>
+<link>https://michilu.com/archives/2004/09/mac_osx_tiger.html</link>
+<guid>https://michilu.com/archives/2004/09/mac_osx_tiger.html</guid>
+<pubDate>Wed, 15 Sep 2004 10:07:21 +0900</pubDate>
+</item>
+<item>
+<title>CSSでテキストにドロップシャドウをかける</title>
+<link>https://michilu.com/archives/2004/09/cssaaaaaaaaaaaa.html</link>
+<guid>https://michilu.com/archives/2004/09/cssaaaaaaaaaaaa.html</guid>
+<pubDate>Sat, 11 Sep 2004 01:24:00 +0900</pubDate>
+</item>
+<item>
+<title>HARDCORE CHAMPION IN TOKYO HAMMER BROS LIVE</title>
+<link>https://michilu.com/archives/2004/09/hardcore_champi.html</link>
+<guid>https://michilu.com/archives/2004/09/hardcore_champi.html</guid>
+<pubDate>Fri, 10 Sep 2004 12:35:00 +0900</pubDate>
+</item>
+<item>
+<title>クイックポストのカスタマイズ:Pukiwiki風</title>
+<link>https://michilu.com/archives/2004/09/aaaaaaaaaaaaaap.html</link>
+<guid>https://michilu.com/archives/2004/09/aaaaaaaaaaaaaap.html</guid>
+<pubDate>Thu, 02 Sep 2004 11:19:00 +0900</pubDate>
+</item>
+<item>
+<title>Plugin:Wiki書式で記述する</title>
+<link>https://michilu.com/archives/2004/09/pluginwikiaeeaa.html</link>
+<guid>https://michilu.com/archives/2004/09/pluginwikiaeeaa.html</guid>
+<pubDate>Wed, 01 Sep 2004 17:29:00 +0900</pubDate>
+</item>
+<item>
+<title>bind</title>
+<link>https://michilu.com/archives/2004/08/bind.html</link>
+<guid>https://michilu.com/archives/2004/08/bind.html</guid>
+<pubDate>Tue, 31 Aug 2004 11:36:00 +0900</pubDate>
+</item>
+<item>
+<title>電気予報のミニチュア版：でんき予報バナー</title>
+<link>https://michilu.com/archives/2004/07/eaeaaaaaacieaaa.html</link>
+<guid>https://michilu.com/archives/2004/07/eaeaaaaaacieaaa.html</guid>
+<pubDate>Mon, 05 Jul 2004 11:00:00 +0900</pubDate>
+</item>
+<item>
+<title>WeblogUpdates pingサーバ</title>
+<link>https://michilu.com/archives/2004/07/weblogupdates_p.html</link>
+<guid>https://michilu.com/archives/2004/07/weblogupdates_p.html</guid>
+<pubDate>Mon, 05 Jul 2004 10:28:34 +0900</pubDate>
+</item>
+<item>
+<title>長らく、apacheの起動が失敗でした</title>
+<link>https://michilu.com/archives/2004/06/eaaaapacheaeaaa.html</link>
+<guid>https://michilu.com/archives/2004/06/eaaaapacheaeaaa.html</guid>
+<pubDate>Thu, 24 Jun 2004 13:23:00 +0900</pubDate>
+</item>
+<item>
+<title>NOKIA 6260, 6170, 6630, 2600, 2650</title>
+<link>https://michilu.com/archives/2004/06/nokia_6260_6170.html</link>
+<guid>https://michilu.com/archives/2004/06/nokia_6260_6170.html</guid>
+<pubDate>Wed, 23 Jun 2004 18:17:00 +0900</pubDate>
+</item>
+<item>
+<title>日本語対応 UNIX パッケージ for Mac OS X</title>
+<link>https://michilu.com/archives/2004/06/e_unix_aaaaa_fo.html</link>
+<guid>https://michilu.com/archives/2004/06/e_unix_aaaaa_fo.html</guid>
+<pubDate>Wed, 23 Jun 2004 17:45:00 +0900</pubDate>
+</item>
+<item>
+<title>MT導入手順メモ</title>
+<link>https://michilu.com/archives/2004/06/mteaa.html</link>
+<guid>https://michilu.com/archives/2004/06/mteaa.html</guid>
+<pubDate>Tue, 15 Jun 2004 10:39:00 +0900</pubDate>
+</item>
+<item>
+<title>Movable Type 3.0 Developer Edition MT 日本語版ベータ、コメントできない</title>
+<link>https://michilu.com/archives/2004/06/movable_type_30.html</link>
+<guid>https://michilu.com/archives/2004/06/movable_type_30.html</guid>
+<pubDate>Mon, 14 Jun 2004 21:18:00 +0900</pubDate>
+</item>
+<item>
+<title>iBOXブロードメディアサーバK</title>
+<link>https://michilu.com/archives/2004/06/iboxaaaaaaaaaaa.html</link>
+<guid>https://michilu.com/archives/2004/06/iboxaaaaaaaaaaa.html</guid>
+<pubDate>Tue, 01 Jun 2004 18:42:00 +0900</pubDate>
+</item>
+<item>
+<title>ツキヨミチル</title>
+<link>https://michilu.com/archives/2004/06/fedora_core_2.html</link>
+<guid>https://michilu.com/archives/2004/06/fedora_core_2.html</guid>
+<pubDate>Tue, 01 Jun 2004 18:26:00 +0900</pubDate>
+</item>
+<item>
+<title>強制終了Tシャツ</title>
+<link>https://michilu.com/archives/2004/06/caetaaa.html</link>
+<guid>https://michilu.com/archives/2004/06/caetaaa.html</guid>
+<pubDate>Tue, 01 Jun 2004 17:51:13 +0900</pubDate>
+</item>
+<item>
+<title>2日目</title>
+<link>https://michilu.com/archives/2004/05/2c.html</link>
+<guid>https://michilu.com/archives/2004/05/2c.html</guid>
+<pubDate>Sun, 16 May 2004 23:10:00 +0900</pubDate>
+</item>
+<item>
+<title>アントかっさらい計画</title>
+<link>https://michilu.com/archives/2004/05/aaaaaaaaec.html</link>
+<guid>https://michilu.com/archives/2004/05/aaaaaaaaec.html</guid>
+<pubDate>Sat, 15 May 2004 18:46:11 +0900</pubDate>
+</item>
+<item>
+<title>Nokia 7600</title>
+<link>https://michilu.com/archives/2004/05/nokia_7600_1.html</link>
+<guid>https://michilu.com/archives/2004/05/nokia_7600_1.html</guid>
+<pubDate>Thu, 13 May 2004 18:21:08 +0900</pubDate>
+</item>
+<item>
+<title>FileVaultの落とし穴</title>
+<link>https://michilu.com/archives/2004/05/filevaultaeaac.html</link>
+<guid>https://michilu.com/archives/2004/05/filevaultaeaac.html</guid>
+<pubDate>Sat, 08 May 2004 11:54:00 +0900</pubDate>
+</item>
+<item>
+<title>www.metaspect.com</title>
+<link>https://michilu.com/archives/2004/05/wwwmetaspectcom.html</link>
+<guid>https://michilu.com/archives/2004/05/wwwmetaspectcom.html</guid>
+<pubDate>Sat, 08 May 2004 02:43:00 +0900</pubDate>
+</item>
+<item>
+<title>COOL KILLERS 復活!!</title>
+<link>https://michilu.com/archives/2004/05/cool_killers.html</link>
+<guid>https://michilu.com/archives/2004/05/cool_killers.html</guid>
+<pubDate>Sat, 08 May 2004 02:30:00 +0900</pubDate>
+</item>
+<item>
+<title>metromixradio.com</title>
+<link>https://michilu.com/archives/2004/05/metromixradioco.html</link>
+<guid>https://michilu.com/archives/2004/05/metromixradioco.html</guid>
+<pubDate>Sat, 08 May 2004 02:10:00 +0900</pubDate>
+</item>
+<item>
+<title>Blogに至るまでの歴</title>
+<link>https://michilu.com/archives/2004/05/blogaeaaaa.html</link>
+<guid>https://michilu.com/archives/2004/05/blogaeaaaa.html</guid>
+<pubDate>Fri, 07 May 2004 19:20:00 +0900</pubDate>
+</item>
+<item>
+<title>NOKIA 7600</title>
+<link>https://michilu.com/archives/2004/05/nokia_7600.html</link>
+<guid>https://michilu.com/archives/2004/05/nokia_7600.html</guid>
+<pubDate>Thu, 06 May 2004 17:47:06 +0900</pubDate>
+</item>
+<item>
+<title>映画ツアー</title>
+<link>https://michilu.com/archives/2004/05/caaa.html</link>
+<guid>https://michilu.com/archives/2004/05/caaa.html</guid>
+<pubDate>Sun, 02 May 2004 19:57:00 +0900</pubDate>
+</item>
+<item>
+<title>ニワトリだ!!</title>
+<link>https://michilu.com/archives/2004/05/aaaaa.html</link>
+<guid>https://michilu.com/archives/2004/05/aaaaa.html</guid>
+<pubDate>Sun, 02 May 2004 19:11:00 +0900</pubDate>
+</item>
+<item>
+<title>Blog構築</title>
+<link>https://michilu.com/archives/2004/05/blogc.html</link>
+<guid>https://michilu.com/archives/2004/05/blogc.html</guid>
+<pubDate>Sun, 02 May 2004 18:57:00 +0900</pubDate>
+</item>
+<item>
+<title>iTunes 4.5リリース</title>
+<link>https://michilu.com/archives/2004/05/itunes_45aaaa.html</link>
+<guid>https://michilu.com/archives/2004/05/itunes_45aaaa.html</guid>
+<pubDate>Sun, 02 May 2004 18:42:00 +0000</pubDate>
+</item>
+<item>
+<title>アントクアリウム到着</title>
+<link>https://michilu.com/archives/2004/05/aaaaaaaac.html</link>
+<guid>https://michilu.com/archives/2004/05/aaaaaaaac.html</guid>
+<pubDate>Sun, 02 May 2004 18:14:00 +0900</pubDate>
+</item>
+<item>
+<title>GABBA到来！</title>
+<link>https://michilu.com/archives/2004/04/gabbaie.html</link>
+<guid>https://michilu.com/archives/2004/04/gabbaie.html</guid>
+<pubDate>Tue, 20 Apr 2004 12:51:00 +0900</pubDate>
+</item>
+<item>
+<title>続:HotSpotを探せ〜！</title>
+<link>https://michilu.com/archives/2004/04/chotspotaaaie.html</link>
+<guid>https://michilu.com/archives/2004/04/chotspotaaaie.html</guid>
+<pubDate>Fri, 16 Apr 2004 17:14:00 +0900</pubDate>
+</item>
+<item>
+<title>テルミン Second</title>
+<link>https://michilu.com/archives/2004/04/aaaa_second.html</link>
+<guid>https://michilu.com/archives/2004/04/aaaa_second.html</guid>
+<pubDate>Fri, 16 Apr 2004 13:12:00 +0900</pubDate>
+</item>
+<item>
+<title>HotSpotを探せ〜！</title>
+<link>https://michilu.com/archives/2004/04/hotspotaaaie.html</link>
+<guid>https://michilu.com/archives/2004/04/hotspotaaaie.html</guid>
+<pubDate>Wed, 14 Apr 2004 16:00:00 +0900</pubDate>
+</item>
+<item>
+<title>Kill Bill Vol.2 予告編映像を配信開始</title>
+<link>https://michilu.com/archives/2004/04/kill_bill_vol2.html</link>
+<guid>https://michilu.com/archives/2004/04/kill_bill_vol2.html</guid>
+<pubDate>Mon, 12 Apr 2004 14:39:00 +0900</pubDate>
+</item>
+<item>
+<title>Mac OS X Server 導入</title>
+<link>https://michilu.com/archives/2004/04/mac_os_x_server.html</link>
+<guid>https://michilu.com/archives/2004/04/mac_os_x_server.html</guid>
+<pubDate>Fri, 09 Apr 2004 17:11:17 +0900</pubDate>
+</item>
+<item>
+<title>IEEE802.11g AP 導入</title>
+<link>https://michilu.com/archives/2004/04/ieee80211g_ap.html</link>
+<guid>https://michilu.com/archives/2004/04/ieee80211g_ap.html</guid>
+<pubDate>Fri, 09 Apr 2004 17:01:00 +0900</pubDate>
+</item>
+<item>
+<title>「Gmail」登場。今度はギガメール?!</title>
+<link>https://michilu.com/archives/2004/04/agmailacaaeaaaa.html</link>
+<guid>https://michilu.com/archives/2004/04/agmailacaaeaaaa.html</guid>
+<pubDate>Fri, 09 Apr 2004 16:11:00 +0900</pubDate>
+</item>
+<item>
+<title>音楽ができるまでQuiz by Sony</title>
+<link>https://michilu.com/archives/2004/04/eaaaaaaquiz_by.html</link>
+<guid>https://michilu.com/archives/2004/04/eaaaaaaquiz_by.html</guid>
+<pubDate>Fri, 09 Apr 2004 10:14:00 +0900</pubDate>
+</item>
+</channel>
+</rss>

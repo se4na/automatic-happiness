@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="manifest" href="/bpush_manifest.json" />
+    <script src="/bpush_swlib.js"></script>
+    <script language="javascript">
+    //<!--
+    var global = ("global",eval)("this");
+global['_bpush_env'] = {
+  endpoint_base: "https://bpush.net",
+  app_key: "<bpush_api_key>"
+};
+
+    function bpush_init() {
+      if ( isSupportPushNotification() ) {
+        enablePushNotification();
+      }
+    }
+
+    if ( window.addEventListener ) {
+      window.addEventListener('load', bpush_init);
+    } else {
+      document.attachEvent('onload', bpush_init)
+    }
+    //-->
+    </script>
+  </head>
+  <body>
+  </body>
+</html>
